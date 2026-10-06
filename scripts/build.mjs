@@ -5,7 +5,8 @@
  *   node scripts/build.mjs --lms <Pfad zum feh-lms-Checkout> [--date YYYY-MM-DD] [--no-llm]
  *
  * Umgebung: GITHUB_TOKEN (Lesen: feh-lms Contents + Pull requests, Org-Projekte),
- *           ANTHROPIC_API_KEY (optional, für die Laiensätze).
+ *           ANTHROPIC_API_KEY (optional, für die Laiensätze),
+ *           ANTHROPIC_WORKSPACE_ID (nur bei einem Org-weiten Key ohne Workspace-Bindung).
  *
  * Das Log nennt nur Zähler und Fehlerarten, keine Inhalte aus dem privaten Repo.
  */
@@ -127,7 +128,7 @@ for (const [slug, list] of copies) {
 }
 
 // 3. Laiensätze
-const textStats = await annotatePhases(features, { cachePath: join(outDir, 'texte.json'), apiKey, log });
+const textStats = await annotatePhases(features, { cachePath: join(outDir, 'texte.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log });
 log(`Laiensätze: ${textStats.created} neu erzeugt, ${textStats.skipped} ohne Satz${apiKey ? '' : ' (kein API-Key)'}`);
 for (const f of features) for (const p of f.phases) { delete p.items; delete p.dbaText; }
 

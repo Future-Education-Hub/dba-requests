@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "generatedAt": "2026-10-06T15:14:57.432Z",
+  "generatedAt": "2026-10-06T15:20:23.499Z",
   "boardUrl": "https://github.com/orgs/Future-Education-Hub/projects/3/views/6",
   "tickets": [
     {
@@ -228,8 +228,8 @@
               "total": 8,
               "startedAt": "2026-10-01",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Organisationen können künftig feste Lerngruppen mit Kalender, Live-Terminen und Tagesplan anlegen, wobei jede Rolle genau die passenden Rechte erhält.",
+              "textSource": "generiert"
             },
             {
               "n": 2,
@@ -239,8 +239,8 @@
               "total": 5,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Lehrtexte lassen sich als Vorlesung kennzeichnen, mit einer Bearbeitungszeit in Kurstagen versehen und mit passenden Praxisaufgaben verknüpfen.",
+              "textSource": "generiert"
             },
             {
               "n": 3,
@@ -250,8 +250,8 @@
               "total": 5,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Für jede Gruppe entsteht automatisch ein Kursplan mit Lerninhalten in sinnvoller Reihenfolge, verteilt auf Kurstage ohne Feiertage und mit berechnetem Enddatum.",
+              "textSource": "generiert"
             },
             {
               "n": 4,
@@ -261,8 +261,8 @@
               "total": 6,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Organisationen können Lerngruppen mit Tagesplan per Assistent anlegen, Teilnehmende und Lehrkräfte zuordnen und Abläufe sowie Regeln selbst einstellen.",
+              "textSource": "generiert"
             },
             {
               "n": 5,
@@ -272,8 +272,8 @@
               "total": 7,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Planende können den Gruppenplan anpassen, Inhalte verschieben, streichen oder Tage zusammenlegen, und Teilnehmende erfahren rechtzeitig von Ausfällen.",
+              "textSource": "generiert"
             },
             {
               "n": 6,
@@ -283,8 +283,8 @@
               "total": 7,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Inhalte und Lösungen einer Gruppe werden nach Plan oder durch die Lehrkraft freigeschaltet, und Abschlüsse ergeben sich automatisch aus dem Fortschritt im Plan.",
+              "textSource": "generiert"
             },
             {
               "n": 7,
@@ -294,8 +294,8 @@
               "total": 5,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Teilnehmende sehen ihre Kurswoche mit Terminen, Lerneinheiten und deren Freigabestand sowie auf der Startseite alles für den heutigen Tag auf einen Blick.",
+              "textSource": "generiert"
             },
             {
               "n": 8,
@@ -305,8 +305,8 @@
               "total": 6,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Für jeden Kurstag entstehen automatisch Live-Termine der Gruppe mit Raum-Link, Lehrkraft und Vertretung, die sich bei Verschiebungen oder Ausfällen mit anpassen.",
+              "textSource": "generiert"
             },
             {
               "n": 9,
@@ -316,8 +316,8 @@
               "total": 5,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Lehrkräfte können die Live-Teilnahme je Person erfassen und korrigieren, und Teilnehmende sehen täglich ihren Anwesenheitswert aus Live-Zeit und Inhalten.",
+              "textSource": "generiert"
             },
             {
               "n": 10,
@@ -327,8 +327,8 @@
               "total": 5,
               "startedAt": "2026-10-06",
               "doneAt": "2026-10-06",
-              "text": null,
-              "textSource": null
+              "text": "Die Anwesenheit in Live-Sitzungen wird automatisch erfasst und angerechnet, unbekannte Namen lassen sich Personen zuordnen und manuelle Angaben haben Vorrang.",
+              "textSource": "generiert"
             },
             {
               "n": 11,
@@ -338,8 +338,8 @@
               "total": 7,
               "startedAt": "2026-10-06",
               "doneAt": null,
-              "text": null,
-              "textSource": null
+              "text": "Nach Zoom-Sitzungen wird die Teilnahme automatisch erfasst, und bei freiwilligen Veranstaltungen sind Anwesenheit und Minuten auch in der Personenübersicht sichtbar.",
+              "textSource": "generiert"
             },
             {
               "n": 12,
@@ -349,8 +349,8 @@
               "total": 3,
               "startedAt": null,
               "doneAt": null,
-              "text": null,
-              "textSource": null
+              "text": "Teilnehmende einer Lerngruppe sehen auf Startseite und Fortschrittsseite, wie viele Lerneinheiten sie laut gemeinsamem Gruppenplan im Rückstand sind.",
+              "textSource": "generiert"
             },
             {
               "n": 13,
@@ -360,8 +360,8 @@
               "total": 4,
               "startedAt": null,
               "doneAt": null,
-              "text": null,
-              "textSource": null
+              "text": "Bei Teilnehmenden einer Gruppe meldet das System künftig automatisch, wenn sie über mehrere Kurstage wenig live dabei sind, nichts erledigen oder beim Nachholen zurückliegen.",
+              "textSource": "generiert"
             },
             {
               "n": 14,
@@ -371,8 +371,8 @@
               "total": 4,
               "startedAt": null,
               "doneAt": null,
-              "text": null,
-              "textSource": null
+              "text": "Lehrkräfte sehen Anwesenheit und Lernfortschritt ihrer Gruppe auf einen Blick, geben Tage direkt frei und finden Verlaufsberichte sowie Erklärungen im Handbuch.",
+              "textSource": "generiert"
             },
             {
               "n": 15,
@@ -382,8 +382,8 @@
               "total": 20,
               "startedAt": null,
               "doneAt": null,
-              "text": null,
-              "textSource": null
+              "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kursplanung, Freigaben, Anwesenheit und Fortschritt für alle Beteiligten verlässlich funktionieren.",
+              "textSource": "generiert"
             }
           ]
         }

@@ -39,6 +39,8 @@ Secrets (Repository-Secrets dieses Repos):
 - `LMS_READ_TOKEN` – fine-grained PAT, nur `feh-lms`: Contents *Read*, Metadata *Read*,
   Pull requests *Read*; Organisation: Projects *Read*.
 - `ANTHROPIC_API_KEY` – für die Laiensätze. Fehlt er, bleibt der Satz leer, die Seite läuft trotzdem.
+- `ANTHROPIC_WORKSPACE_ID` – nur nötig, wenn der Key nicht an einen Workspace gebunden ist
+  (Fehler „not scoped to a workspace“); Wert `wrkspc_…` aus der Anthropic Console → Settings → Workspaces.
 
 Die Action-Logs sind öffentlich. Der Generator schreibt deshalb nur Zähler und Fehlerarten ins
 Log, nie Inhalte aus dem LMS-Repo.

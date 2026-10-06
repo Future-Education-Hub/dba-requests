@@ -1,0 +1,107 @@
+{
+  "087e79d0ec7872bd3826": {
+    "text": "Organisationen können künftig feste Lerngruppen mit Kalender, Live-Terminen und Tagesplan anlegen, wobei jede Rolle genau die passenden Rechte erhält.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:07.811Z",
+    "slug": "batch-mode",
+    "phase": 1
+  },
+  "06fc09d2eacff0dc6c8a": {
+    "text": "Lehrtexte lassen sich als Vorlesung kennzeichnen, mit einer Bearbeitungszeit in Kurstagen versehen und mit passenden Praxisaufgaben verknüpfen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:11.316Z",
+    "slug": "batch-mode",
+    "phase": 2
+  },
+  "8ce92221c91cc20592e9": {
+    "text": "Für jede Gruppe entsteht automatisch ein Kursplan mit Lerninhalten in sinnvoller Reihenfolge, verteilt auf Kurstage ohne Feiertage und mit berechnetem Enddatum.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:13.658Z",
+    "slug": "batch-mode",
+    "phase": 3
+  },
+  "60e778f35ee80c7e6461": {
+    "text": "Organisationen können Lerngruppen mit Tagesplan per Assistent anlegen, Teilnehmende und Lehrkräfte zuordnen und Abläufe sowie Regeln selbst einstellen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:17.432Z",
+    "slug": "batch-mode",
+    "phase": 4
+  },
+  "c7ecdab9e49a29f06e5b": {
+    "text": "Inhalte und Lösungen einer Gruppe werden nach Plan oder durch die Lehrkraft freigeschaltet, und Abschlüsse ergeben sich automatisch aus dem Fortschritt im Plan.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:25.268Z",
+    "slug": "batch-mode",
+    "phase": 6
+  },
+  "2253ce865eaa09d7baed": {
+    "text": "Teilnehmende sehen ihre Kurswoche mit Terminen, Lerneinheiten und deren Freigabestand sowie auf der Startseite alles für den heutigen Tag auf einen Blick.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:28.512Z",
+    "slug": "batch-mode",
+    "phase": 7
+  },
+  "e151bf815fdd1f3925dd": {
+    "text": "Für jeden Kurstag entstehen automatisch Live-Termine der Gruppe mit Raum-Link, Lehrkraft und Vertretung, die sich bei Verschiebungen oder Ausfällen mit anpassen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:30.820Z",
+    "slug": "batch-mode",
+    "phase": 8
+  },
+  "8350804ce88b1032d517": {
+    "text": "Lehrkräfte können die Live-Teilnahme je Person erfassen und korrigieren, und Teilnehmende sehen täglich ihren Anwesenheitswert aus Live-Zeit und Inhalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:33.012Z",
+    "slug": "batch-mode",
+    "phase": 9
+  },
+  "ccf23f5ef2eaaf4f9bb7": {
+    "text": "Die Anwesenheit in Live-Sitzungen wird automatisch erfasst und angerechnet, unbekannte Namen lassen sich Personen zuordnen und manuelle Angaben haben Vorrang.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:36.936Z",
+    "slug": "batch-mode",
+    "phase": 10
+  },
+  "fb422364c8735fbba0c6": {
+    "text": "Nach Zoom-Sitzungen wird die Teilnahme automatisch erfasst, und bei freiwilligen Veranstaltungen sind Anwesenheit und Minuten auch in der Personenübersicht sichtbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:38.973Z",
+    "slug": "batch-mode",
+    "phase": 11
+  },
+  "d7bf7b0f75473e26e4d0": {
+    "text": "Bei Teilnehmenden einer Gruppe meldet das System künftig automatisch, wenn sie über mehrere Kurstage wenig live dabei sind, nichts erledigen oder beim Nachholen zurückliegen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:46.425Z",
+    "slug": "batch-mode",
+    "phase": 13
+  },
+  "95a94c98899a92b47968": {
+    "text": "Lehrkräfte sehen Anwesenheit und Lernfortschritt ihrer Gruppe auf einen Blick, geben Tage direkt frei und finden Verlaufsberichte sowie Erklärungen im Handbuch.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:48.750Z",
+    "slug": "batch-mode",
+    "phase": 14
+  },
+  "0b2f7a0cf2a56b4a4c4e": {
+    "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kursplanung, Freigaben, Anwesenheit und Fortschritt für alle Beteiligten verlässlich funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:19:50.781Z",
+    "slug": "batch-mode",
+    "phase": 15
+  },
+  "807dff584ee1b814f7f3": {
+    "text": "Planende können den Gruppenplan anpassen, Inhalte verschieben, streichen oder Tage zusammenlegen, und Teilnehmende erfahren rechtzeitig von Ausfällen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:20:16.307Z",
+    "slug": "batch-mode",
+    "phase": 5
+  },
+  "60f0086ba10030e47dbe": {
+    "text": "Teilnehmende einer Lerngruppe sehen auf Startseite und Fortschrittsseite, wie viele Lerneinheiten sie laut gemeinsamem Gruppenplan im Rückstand sind.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:20:20.682Z",
+    "slug": "batch-mode",
+    "phase": 12
+  }
+}

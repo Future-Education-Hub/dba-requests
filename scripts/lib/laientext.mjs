@@ -47,7 +47,7 @@ async function askClaude(client, featureTitle, phase) {
   ].join('\n');
   const params = {
     model: MODEL,
-    max_tokens: 400,
+    max_tokens: 2000,
     system: SYSTEM,
     output_config: { effort: 'low' },
     messages: [{ role: 'user', content: user }],
@@ -68,9 +68,12 @@ async function askClaude(client, featureTitle, phase) {
  * Ergänzt jede Phase um `text` und `textSource` ('plan' | 'generiert' | null).
  * Gibt die Anzahl neu erzeugter Sätze zurück. Ohne API-Key wird nichts erzeugt.
  */
-export async function annotatePhases(features, { cachePath, apiKey, maxNew = 60, log }) {
+export async function annotatePhases(features, { cachePath, apiKey, workspaceId, maxNew = 60, log }) {
   const cache = loadCache(cachePath);
-  const client = apiKey ? new Anthropic({ apiKey }) : null;
+  // Ein Org-weiter Key braucht die Workspace-Kennung als Header; ein workspace-gebundener Key nicht.
+  const client = apiKey
+    ? new Anthropic({ apiKey, defaultHeaders: workspaceId ? { 'anthropic-workspace-id': workspaceId } : {} })
+    : null;
   let created = 0;
   let skipped = 0;
   for (const feature of features) {
@@ -86,7 +89,9 @@ export async function annotatePhases(features, { cachePath, apiKey, maxNew = 60,
           phase.text = text; phase.textSource = 'generiert'; created += 1;
         } else { phase.text = null; phase.textSource = null; skipped += 1; }
       } catch (err) {
-        log(`Laientext: API-Fehler (${err?.status ?? err?.name ?? 'unbekannt'}), Schritt übersprungen`);
+        const reason = err?.error?.error?.message || err?.message || '';
+        log(`Laientext: API-Fehler (${err?.status ?? err?.name ?? 'unbekannt'}${/workspace/i.test(reason) ? ', Key braucht ANTHROPIC_WORKSPACE_ID' : ''}), Schritt übersprungen`);
+        if (err?.status === 400 || err?.status === 401) { log('Laientext: Erzeugung für diesen Lauf abgebrochen'); return { created, skipped: skipped + 1 }; }
         phase.text = null; phase.textSource = null; skipped += 1;
       }
     }
