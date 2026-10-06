@@ -72,8 +72,9 @@ export function fileCommits(repo, ref, path) {
     });
 }
 
-export function lastCommitDate(repo, ref) {
-  const out = tryGit(repo, ['log', '-1', '--format=%aI', ref]);
+/** Datum des letzten Commits auf einem Ref, optional eingeschränkt auf einen Pfad. */
+export function lastCommitDate(repo, ref, path) {
+  const out = tryGit(repo, path ? ['log', '-1', '--format=%aI', ref, '--', path] : ['log', '-1', '--format=%aI', ref]);
   return out ? out.trim() : null;
 }
 

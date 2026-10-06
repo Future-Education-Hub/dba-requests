@@ -76,11 +76,16 @@ if (args.worktree) {
 }
 log(`${branches.length} Branches durchsucht, ${copies.size} Vorhaben mit Plan gefunden`);
 
-// 1b. Je Vorhaben die maßgebliche Kopie wählen
+// 1b. Je Vorhaben die maßgebliche Kopie wählen: Arbeitskopie (lokaler Test) → deklarierter Branch →
+//     main (abgeschlossene oder alte Pläne) → sonst die Kopie mit dem jüngsten Commit am Plan-Ordner
 const chosenBySlug = new Map();
 for (const [slug, list] of copies) {
-  const declared = list.find((c) => c.ref === 'HEAD') || list.find((c) => c.plan.branch && c.branch === c.plan.branch);
-  chosenBySlug.set(slug, declared || list.sort((a, b) => (lastCommitDate(lms, b.ref) || '').localeCompare(lastCommitDate(lms, a.ref) || ''))[0]);
+  const chosen = list.find((c) => c.ref === 'HEAD')
+    || list.find((c) => c.plan.branch && c.branch === c.plan.branch)
+    || list.find((c) => c.branch === 'main')
+    || list.sort((a, b) => (lastCommitDate(lms, b.ref, `docs/features/${slug}`) || '').localeCompare(lastCommitDate(lms, a.ref, `docs/features/${slug}`) || ''))[0];
+  chosen.declared = chosen.ref === 'HEAD' || (chosen.plan.branch && chosen.branch === chosen.plan.branch);
+  chosenBySlug.set(slug, chosen);
 }
 
 // 1c. DBA-Tickets lesen und Vorhaben zuordnen (Claude API, Cache, Konfiguration)
@@ -99,8 +104,11 @@ log(`${releases.length} Releases gelesen`);
 
 const features = [];
 for (const [slug, chosen] of chosenBySlug) {
-  const { plan, ref, path, branch } = chosen;
+  const { plan, ref, path, branch, declared } = chosen;
   if (!plan.dbaTickets.length) continue;
+  const folder = `docs/features/${slug}`;
+  // Auf dem eigenen Branch zählt jeder Commit; auf main oder fremden Branches nur Arbeit am Plan selbst
+  const lastActivity = declared ? lastCommitDate(lms, ref) : lastCommitDate(lms, ref, folder);
 
   // Phasen-Daten aus der Historie der PLAN.md auf diesem Branch
   const firstDone = new Map();
@@ -117,11 +125,20 @@ for (const [slug, chosen] of chosenBySlug) {
 
   // Pull Request und Release
   let pull = plan.pr ? await pullByNumber(token, ORG, LMS_REPO, plan.pr) : null;
-  if (!pull && branch) pull = await pullForBranch(token, ORG, LMS_REPO, branch);
+  if (!pull && declared && branch) pull = await pullForBranch(token, ORG, LMS_REPO, branch);
   let release = null;
   if (pull?.mergeSha && commitExists(lms, pull.mergeSha)) {
     const tags = new Set(tagsContaining(lms, pull.mergeSha));
     release = releases.find((r) => tags.has(r.tag)) || null;
+  }
+  const allDone = plan.phases.length > 0 && plan.phases.every((p) => p.state === 'done');
+  if (!release && !declared && branch === 'main' && allDone) {
+    // Alter Plan ohne Status-Block: live ab dem ersten Release, das den letzten Plan-Commit auf main enthält
+    const sha = (tryGit(lms, ['log', '-1', '--format=%H', ref, '--', folder]) || '').trim();
+    if (sha) {
+      const tags = new Set(tagsContaining(lms, sha));
+      release = releases.find((r) => tags.has(r.tag)) || null;
+    }
   }
 
   const phases = plan.phases.map((p) => ({
@@ -142,10 +159,10 @@ for (const [slug, chosen] of chosenBySlug) {
     stand: plan.stand,
     branch,
     dbaTickets: plan.dbaTickets,
-    lastActivity: lastCommitDate(lms, ref),
+    lastActivity,
     pull: pull ? { number: pull.number, state: pull.state, url: pull.url, mergedAt: pull.mergedAt } : null,
     release: release ? { tag: release.tag, publishedAt: release.publishedAt, url: release.url } : null,
-    stage: featureStage(plan, pull, release),
+    stage: featureStage(plan, pull, release, { declared, onMain: branch === 'main', allDone }),
     phases,
   });
 }
@@ -223,14 +240,17 @@ log(`geschrieben: ${tickets.length} Tickets, ${features.length} Vorhaben, ${date
 
 // ---------------------------------------------------------------------------
 
-function featureStage(plan, pull, release) {
+function featureStage(plan, pull, release, { declared, onMain, allDone }) {
   if (release) return 'live';
   if (pull?.state === 'merged') return 'test';
   if (pull?.state === 'open') return 'test';
   if (/^(Abgeschlossen|PR offen|Review grün|Manuell getestet|Pre-PR grün)/.test(plan.stand)) return 'test';
-  if (/^In Arbeit/.test(plan.stand)) return 'in_arbeit';
+  if (/^In Arbeit/.test(plan.stand)) return declared ? 'in_arbeit' : 'geplant';
   if (/^(Entwurf|Freigegeben)/.test(plan.stand)) return 'geplant';
-  return 'in_arbeit';
+  // Kein Status-Block (alte Pläne): nur auf dem eigenen Branch ist etwas in Arbeit
+  if (declared) return 'in_arbeit';
+  if (onMain && allDone) return 'test';
+  return 'geplant';
 }
 
 function ticketStage(issue, boardStatus, linked) {

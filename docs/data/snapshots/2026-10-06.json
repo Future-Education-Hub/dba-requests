@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "generatedAt": "2026-10-06T15:57:57.776Z",
+  "generatedAt": "2026-10-06T16:03:59.502Z",
   "boardUrl": "https://github.com/orgs/Future-Education-Hub/projects/3/views/6",
   "tickets": [
     {
@@ -488,10 +488,10 @@
       "createdAt": "2026-09-29T08:41:04Z",
       "closedAt": null,
       "boardStatus": "Backlog",
-      "stage": "in_arbeit",
-      "liveSince": null,
-      "releaseTag": null,
-      "lastActivity": "2026-10-06T17:42:35+02:00",
+      "stage": "live",
+      "liveSince": "2026-07-24",
+      "releaseTag": "v3.4.2",
+      "lastActivity": "2026-07-23T11:04:35+02:00",
       "phasesTotal": 9,
       "phasesDone": 9,
       "features": [
@@ -499,11 +499,15 @@
           "slug": "attendance",
           "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
           "stand": "",
-          "branch": "feat/batch-mode",
-          "lastActivity": "2026-10-06T17:42:35+02:00",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
           "pull": null,
-          "release": null,
-          "stage": "in_arbeit",
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
           "phases": [
             {
               "n": 1,
@@ -936,7 +940,7 @@
       "stage": "live",
       "liveSince": "2026-09-25",
       "releaseTag": "v3.7.0",
-      "lastActivity": "2026-10-06T17:42:35+02:00",
+      "lastActivity": "2026-09-16T21:05:23+02:00",
       "phasesTotal": 6,
       "phasesDone": 6,
       "features": [
@@ -944,8 +948,8 @@
           "slug": "curriculum-import",
           "title": "Curriculum-Import mit Material",
           "stand": "Abgeschlossen",
-          "branch": "feat/batch-mode",
-          "lastActivity": "2026-10-06T17:42:35+02:00",
+          "branch": "main",
+          "lastActivity": "2026-09-16T21:05:23+02:00",
           "pull": {
             "number": 331,
             "state": "merged",
