@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LMS-Fortschritt für die DBA</title>
+<meta name="description" content="Woran das LMS-Team für die DBA arbeitet: Stand je Anforderung, Arbeitsschritte, Zeitpunkte, Verlauf.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eaeef2; --fg: #1c2430; --muted: #5d6874; --line: #d6dce3;
+  --accent: #0e6b70; --accent-soft: #d6ecec; --accent-ink: #0a4f53;
+  --work: #a86200; --work-soft: #f6e6cc;
+  --test: #24589e; --test-soft: #dbe6f6;
+  --live: #2b7a4b; --live-soft: #dbeee2;
+  --plan: #5d6874; --plan-soft: #e6eaee;
+  --bad: #ad3f3c;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --radius: 8px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11161c; --surface: #191f27; --surface-2: #222a34; --fg: #e5e9ee; --muted: #9aa5b1; --line: #2c3540;
+  --accent: #4fb4b8; --accent-soft: #143638; --accent-ink: #8fd6d9;
+  --work: #bf8128; --work-soft: #3a2b12;
+  --test: #4f8bd6; --test-soft: #1b2c45;
+  --live: #45a86c; --live-soft: #173321;
+  --plan: #9aa5b1; --plan-soft: #242c36;
+  --bad: #ef8b87;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #11161c; --surface: #191f27; --surface-2: #222a34; --fg: #e5e9ee; --muted: #9aa5b1; --line: #2c3540;
+  --accent: #4fb4b8; --accent-soft: #143638; --accent-ink: #8fd6d9;
+  --work: #bf8128; --work-soft: #3a2b12;
+  --test: #4f8bd6; --test-soft: #1b2c45;
+  --live: #45a86c; --live-soft: #173321;
+  --plan: #9aa5b1; --plan-soft: #242c36;
+  --bad: #ef8b87;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+a { color: inherit; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px 72px; display: grid; gap: 36px; }
+h1, h2, h3 { font-family: var(--font-display); margin: 0; line-height: 1.15; text-wrap: balance; }
+h1 { font-size: clamp(28px, 4.5vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 22px; font-weight: 700; }
+h3 { font-size: 18px; font-weight: 700; }
+p { margin: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.lede { color: var(--muted); font-size: 18px; max-width: 64ch; }
+header.hero { display: grid; gap: 12px; }
+.datebar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 6px; }
+.datebar .label { font-size: 14px; color: var(--muted); }
+.btn, select { font: inherit; font-size: 15px; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.btn:hover:not(:disabled), select:hover { border-color: var(--accent); }
+.btn:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn:disabled { opacity: 0.4; cursor: default; }
+.datebar .today { font-size: 14px; color: var(--muted); }
+.datebar .today a { color: var(--accent-ink); }
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 2px; border-top: 3px solid var(--line); }
+.tile .num { font-family: var(--font-display); font-size: 34px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.tile .lbl { font-size: 14px; color: var(--muted); }
+.tile.work { border-top-color: var(--work); } .tile.test { border-top-color: var(--test); } .tile.live { border-top-color: var(--live); } .tile.parts { border-top-color: var(--accent); }
+
+.news { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 16px 18px; display: grid; gap: 10px; }
+.news ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.news li b { font-weight: 600; }
+.news .none { color: var(--muted); }
+
+section.group { display: grid; gap: 14px; }
+.group-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.group-head .count { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.group-head .hint { font-size: 14px; color: var(--muted); }
+.cards { display: grid; gap: 12px; }
+.cards.compact { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; display: grid; gap: 10px; min-width: 0; }
+.card header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.card .meta { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.card .meta a { color: var(--muted); }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; color: var(--plan); background: var(--plan-soft); }
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex: none; }
+.chip.in_arbeit { color: var(--work); background: var(--work-soft); }
+.chip.test { color: var(--test); background: var(--test-soft); }
+.chip.live, .chip.erledigt { color: var(--live); background: var(--live-soft); }
+.chip.pausiert::before { background: transparent; border: 2px solid currentColor; width: 5px; height: 5px; }
+.chip.idee::before { background: transparent; border: 1.5px dashed currentColor; width: 5px; height: 5px; }
+
+.feature { display: grid; gap: 8px; padding-top: 8px; border-top: 1px dashed var(--line); }
+.feature .ftitle { font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.feature .ftitle b { color: var(--fg); font-weight: 600; }
+.bar { display: flex; gap: 2px; height: 14px; }
+.seg { flex: 1; background: var(--surface-2); border-radius: 3px; min-width: 4px; position: relative; overflow: hidden; }
+.seg.done { background: var(--accent); }
+.seg.active { background: repeating-linear-gradient(135deg, var(--accent) 0 4px, var(--accent-soft) 4px 8px); }
+.bar-label { font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.bar-label b { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+details { display: grid; gap: 8px; }
+summary { cursor: pointer; font-size: 14px; color: var(--accent-ink); list-style: none; display: inline-flex; align-items: center; gap: 6px; user-select: none; width: fit-content; padding: 2px 0; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸"; font-size: 12px; transition: transform .15s; }
+details[open] summary::before { transform: rotate(90deg); }
+ol.phases { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.phase { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 6px 10px; padding: 8px 10px; border-radius: 6px; align-items: start; font-size: 15px; }
+.phase:nth-child(odd) { background: var(--surface-2); }
+.phase .ic { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--line); margin-top: 4px; position: relative; }
+.phase.done .ic { background: var(--accent); border-color: var(--accent); }
+.phase.done .ic::after { content: ""; position: absolute; left: 4px; top: 1px; width: 4px; height: 7px; border: solid var(--surface); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.phase.active .ic { border-color: var(--accent); background: linear-gradient(90deg, var(--accent) 50%, transparent 50%); }
+.phase .ttl { font-weight: 600; }
+.phase .txt { color: var(--muted); font-size: 14.5px; grid-column: 2; }
+.phase .when { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; margin-top: 3px; }
+.phase.open .ttl { color: var(--muted); font-weight: 400; }
+.phase.active .when { color: var(--work); }
+@media (max-width: 560px) { .phase { grid-template-columns: 22px minmax(0, 1fr); } .phase .when { grid-column: 2; margin-top: 0; } }
+
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 4px; }
+footer a { color: var(--accent-ink); }
+.status { color: var(--muted); font-size: 15px; }
+.status.err { color: var(--bad); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">FEH-LMS · Fortschritt für die DBA</div>
+    <h1>Woran wir für euch arbeiten</h1>
+    <p class="lede">Der Stand jeder Anforderung, die einzelnen Arbeitsschritte und wann sie fertig wurden. Die Seite wird jeden Morgen automatisch aus dem Projektstand erzeugt.</p>
+    <div class="datebar" id="datebar" hidden>
+      <span class="label">Stand vom</span>
+      <button class="btn" id="prev" type="button" aria-label="Früherer Stand">‹</button>
+      <select id="dates" aria-label="Datum des Standes"></select>
+      <button class="btn" id="next" type="button" aria-label="Späterer Stand">›</button>
+      <span class="today" id="today"></span>
+    </div>
+  </header>
+
+  <p class="status" id="status">Lade den Stand …</p>
+  <div id="app" hidden>
+    <div class="tiles" id="tiles" style="margin-bottom:36px"></div>
+    <section class="news" id="news" style="margin-bottom:36px"></section>
+    <div id="groups" style="display:grid;gap:36px"></div>
+  </div>
+
+  <footer>
+    <span>Automatisch erzeugt aus dem Projektstand des LMS-Teams. Zeiten in deutscher Zeit.</span>
+    <span>Die zugrunde liegenden Tickets: <a id="boardlink" href="https://github.com/orgs/Future-Education-Hub/projects/3/views/6">Task-Board „DBA only“</a></span>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const STAGES = [
+    { key: 'in_arbeit', label: 'In Arbeit', hint: 'Daran wird gerade gebaut.' },
+    { key: 'test', label: 'Wird geprüft', hint: 'Fertig gebaut, wird getestet und für die Freigabe vorbereitet.' },
+    { key: 'live', label: 'Live', hint: 'Für euch nutzbar.' },
+    { key: 'erledigt', label: 'Erledigt', hint: 'Abgeschlossen ohne eigene Veröffentlichung.' },
+    { key: 'geplant', label: 'Geplant', hint: 'Als Nächstes vorgesehen.' },
+    { key: 'pausiert', label: 'Pausiert', hint: 'Vorerst zurückgestellt.' },
+    { key: 'idee', label: 'Ideen und Wünsche', chip: 'Idee', hint: 'Aufgenommen, noch nicht eingeplant.' },
+  ];
+  const LABEL = Object.fromEntries(STAGES.map((s) => [s.key, s.label]));
+  const CHIP = Object.fromEntries(STAGES.map((s) => [s.key, s.chip || s.label]));
+  const $ = (id) => document.getElementById(id);
+  const fmtDate = (iso, opts = { day: '2-digit', month: '2-digit', year: 'numeric' }) => iso ? new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', ...opts }).format(new Date(iso.length === 10 ? iso + 'T12:00:00' : iso)) : '';
+  const fmtShort = (iso) => fmtDate(iso, { day: '2-digit', month: '2-digit' });
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  function daysBetween(a, b) { return Math.round((new Date(b) - new Date(a)) / 86400000); }
+  function ago(iso, ref) {
+    if (!iso) return null;
+    const d = daysBetween(iso.slice(0, 10) + 'T12:00:00', ref + 'T12:00:00');
+    if (d <= 0) return 'heute';
+    if (d === 1) return 'gestern';
+    if (d < 14) return `vor ${d} Tagen`;
+    if (d < 60) return `vor ${Math.round(d / 7)} Wochen`;
+    return `am ${fmtDate(iso)}`;
+  }
+
+  let index = null;
+  const cache = new Map();
+  async function loadSnapshot(date) {
+    if (!cache.has(date)) {
+      const res = await fetch(`data/snapshots/${date}.json`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Stand ${date} nicht gefunden`);
+      cache.set(date, await res.json());
+    }
+    return cache.get(date);
+  }
+
+  function compareDate(dates, current) {
+    const target = new Date(current + 'T12:00:00'); target.setDate(target.getDate() - 7);
+    const t = target.toISOString().slice(0, 10);
+    const earlier = dates.filter((d) => d < current);
+    if (!earlier.length) return null;
+    const atOrBefore = earlier.filter((d) => d <= t);
+    return atOrBefore.length ? atOrBefore.at(-1) : earlier[0];
+  }
+
+  function diff(cur, old) {
+    const items = [];
+    if (!old) return items;
+    const oldTickets = new Map(old.tickets.map((t) => [t.number, t]));
+    for (const t of cur.tickets) {
+      const o = oldTickets.get(t.number);
+      if (!o) { items.push({ kind: 'neu', html: `<b>${esc(t.title)}</b> ist als neue Anforderung dazugekommen.` }); continue; }
+      if (o.stage !== t.stage) {
+        const extra = t.stage === 'live' && t.liveSince ? ` (seit ${fmtDate(t.liveSince)})` : '';
+        items.push({ kind: 'stage', html: `<b>${esc(t.title)}</b>: jetzt „${LABEL[t.stage] || t.stage}“${extra}, vorher „${LABEL[o.stage] || o.stage}“.` });
+      }
+      for (const f of t.features) {
+        const of = (o.features || []).find((x) => x.slug === f.slug);
+        const newlyDone = f.phases.filter((p) => p.state === 'done' && !(of?.phases || []).some((q) => q.n === p.n && q.state === 'done'));
+        if (newlyDone.length) {
+          const names = newlyDone.map((p) => esc(p.title)).join(', ');
+          items.push({ kind: 'phase', html: `<b>${esc(t.title)}</b>: ${newlyDone.length === 1 ? 'ein Arbeitsschritt fertig' : newlyDone.length + ' Arbeitsschritte fertig'} – ${names}.` });
+        }
+      }
+    }
+    return items;
+  }
+
+  function renderTiles(s) {
+    const n = (k) => s.tickets.filter((t) => t.stage === k).length;
+    const done = s.tickets.reduce((a, t) => a + t.phasesDone, 0);
+    const total = s.tickets.reduce((a, t) => a + t.phasesTotal, 0);
+    $('tiles').innerHTML = [
+      ['work', n('in_arbeit'), 'in Arbeit'],
+      ['test', n('test'), 'wird geprüft'],
+      ['live', n('live') + n('erledigt'), 'live oder erledigt'],
+      ['parts', total ? `${done}/${total}` : '–', 'Arbeitsschritte fertig'],
+    ].map(([cls, num, lbl]) => `<div class="tile ${cls}"><span class="num">${num}</span><span class="lbl">${lbl}</span></div>`).join('');
+  }
+
+  function renderNews(cur, oldDate, old) {
+    const el = $('news');
+    if (!old) { el.innerHTML = `<h2>Neu seit …</h2><p class="none">Noch kein früherer Stand zum Vergleichen. Ab morgen steht hier, was sich geändert hat.</p>`; return; }
+    const items = diff(cur, old);
+    el.innerHTML = `<h2>Neu seit dem ${fmtDate(oldDate)}</h2>` + (items.length
+      ? `<ul>${items.map((i) => `<li>${i.html}</li>`).join('')}</ul>`
+      : `<p class="none">Keine sichtbaren Änderungen in diesem Zeitraum.</p>`);
+  }
+
+  function renderPhase(p) {
+    const when = p.state === 'done' && p.doneAt ? `fertig ${fmtShort(p.doneAt)}` : p.state === 'active' ? 'in Arbeit' : '';
+    return `<li class="phase ${p.state}"><span class="ic" aria-hidden="true"></span><span class="ttl">${esc(p.title)}</span><span class="when">${when}</span>${p.text ? `<span class="txt">${esc(p.text)}</span>` : ''}</li>`;
+  }
+
+  function renderFeature(f, multiple, ref) {
+    const done = f.phases.filter((p) => p.state === 'done').length;
+    const activeIdx = f.phases.findIndex((p) => p.state === 'active');
+    const next = activeIdx >= 0 ? f.phases[activeIdx] : null;
+    const segs = f.phases.map((p) => `<span class="seg ${p.state}" title="${esc(p.title)}"></span>`).join('');
+    const right = f.release ? `live seit ${fmtDate(f.release.publishedAt)}` : f.pull?.state === 'merged' ? 'auf der Testumgebung' : f.pull?.state === 'open' ? 'in der Abschlussprüfung' : multiple && f.lastActivity ? `zuletzt gearbeitet ${ago(f.lastActivity, ref)}` : '';
+    return `<div class="feature">
+      ${multiple ? `<div class="ftitle"><b>${esc(f.title)}</b></div>` : ''}
+      <div class="bar" role="img" aria-label="${done} von ${f.phases.length} Arbeitsschritten fertig">${segs}</div>
+      <div class="bar-label"><span><b>${done} von ${f.phases.length}</b> Arbeitsschritten fertig${next ? ` · gerade: ${esc(next.title)}` : ''}</span><span>${right}</span></div>
+      <details><summary>Alle Arbeitsschritte</summary><ol class="phases">${f.phases.map(renderPhase).join('')}</ol></details>
+    </div>`;
+  }
+
+  function renderCard(t, ref) {
+    const meta = [];
+    meta.push(`<a href="${esc(t.url)}" target="_blank" rel="noopener">Ticket #${t.number}</a>`);
+    if (t.stage === 'live' && t.liveSince) meta.push(`live seit ${fmtDate(t.liveSince)}`);
+    else if (t.lastActivity) meta.push(`zuletzt gearbeitet ${ago(t.lastActivity, ref)}`);
+    else if (t.closedAt) meta.push(`erledigt am ${fmtDate(t.closedAt)}`);
+    else meta.push(`aufgenommen am ${fmtDate(t.createdAt)}`);
+    const multiple = t.features.length > 1;
+    return `<article class="card">
+      <header><h3>${esc(t.title)}</h3><span class="chip ${t.stage}">${CHIP[t.stage] || t.stage}</span></header>
+      <p class="meta">${meta.map((m) => `<span>${m}</span>`).join('')}</p>
+      ${t.features.map((f) => renderFeature(f, multiple, ref)).join('')}
+    </article>`;
+  }
+
+  function renderGroups(s) {
+    const html = [];
+    for (const st of STAGES) {
+      const list = s.tickets.filter((t) => t.stage === st.key);
+      if (!list.length) continue;
+      const compact = st.key === 'idee' || st.key === 'pausiert' || st.key === 'geplant';
+      list.sort((a, b) => (b.lastActivity || '').localeCompare(a.lastActivity || '') || a.title.localeCompare(b.title, 'de'));
+      html.push(`<section class="group" aria-labelledby="g-${st.key}">
+        <div class="group-head"><h2 id="g-${st.key}">${st.label}</h2><span class="count">${list.length}</span><span class="hint">${st.hint}</span></div>
+        <div class="cards${compact ? ' compact' : ''}">${list.map((t) => renderCard(t, s.date)).join('')}</div>
+      </section>`);
+    }
+    $('groups').innerHTML = html.join('');
+  }
+
+  async function show(date) {
+    const s = await loadSnapshot(date);
+    const sel = $('dates'); sel.value = date;
+    const i = index.dates.indexOf(date);
+    $('prev').disabled = i <= 0; $('next').disabled = i >= index.dates.length - 1;
+    $('today').innerHTML = date === index.latest ? `aktuell · erzeugt ${fmtDate(s.generatedAt, { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} Uhr` : `<a href="#${index.latest}">zum aktuellen Stand</a>`;
+    history.replaceState(null, '', `#${date}`);
+    const oldDate = compareDate(index.dates, date);
+    const old = oldDate ? await loadSnapshot(oldDate) : null;
+    renderTiles(s); renderNews(s, oldDate, old); renderGroups(s);
+    $('boardlink').href = s.boardUrl || $('boardlink').href;
+    $('status').hidden = true; $('app').hidden = false;
+  }
+
+  async function init() {
+    try {
+      const res = await fetch('data/index.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('index');
+      index = await res.json();
+      if (!index.dates?.length) throw new Error('leer');
+      const sel = $('dates');
+      sel.innerHTML = index.dates.map((d) => `<option value="${d}">${fmtDate(d, { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' })}</option>`).join('');
+      sel.addEventListener('change', () => show(sel.value));
+      $('prev').addEventListener('click', () => { const i = index.dates.indexOf(sel.value); if (i > 0) show(index.dates[i - 1]); });
+      $('next').addEventListener('click', () => { const i = index.dates.indexOf(sel.value); if (i < index.dates.length - 1) show(index.dates[i + 1]); });
+      window.addEventListener('hashchange', () => { const d = location.hash.slice(1); if (index.dates.includes(d)) show(d); });
+      $('datebar').hidden = false;
+      const fromHash = location.hash.slice(1);
+      await show(index.dates.includes(fromHash) ? fromHash : index.latest);
+    } catch (err) {
+      const el = $('status'); el.className = 'status err'; el.textContent = 'Der Stand konnte nicht geladen werden. Bitte später noch einmal versuchen.';
+    }
+  }
+  init();
+})();
+</script>
+</body>
+</html>

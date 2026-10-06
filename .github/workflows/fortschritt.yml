@@ -1,0 +1,56 @@
+name: Fortschrittsseite
+
+on:
+  schedule:
+    - cron: '30 4 * * *'   # täglich 06:30 Berlin (Sommerzeit) bzw. 05:30 (Winterzeit)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fortschritt
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dieses Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: LMS-Repo lesend auschecken (alle Branches und Tags)
+        uses: actions/checkout@v4
+        with:
+          repository: Future-Education-Hub/feh-lms
+          token: ${{ secrets.LMS_READ_TOKEN }}
+          path: lms
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci --no-audit --no-fund
+
+      - name: Snapshot erzeugen
+        run: node scripts/build.mjs --lms lms
+        env:
+          GITHUB_TOKEN: ${{ secrets.LMS_READ_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Änderungen veröffentlichen
+        run: |
+          git config user.name "fortschritt-bot"
+          git config user.email "fortschritt-bot@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Fortschritt $(TZ=Europe/Berlin date +%F)"
+          git push

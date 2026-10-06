@@ -1,0 +1,14 @@
+{
+  "name": "dba-fortschritt",
+  "private": true,
+  "type": "module",
+  "description": "Fortschrittsseite für die DBA: erzeugt aus den Plänen im LMS-Repo, dem Task-Board und den Releases.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0"
+  }
+}
