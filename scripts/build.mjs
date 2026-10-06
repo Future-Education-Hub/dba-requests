@@ -8,21 +8,27 @@
  *           ANTHROPIC_API_KEY (optional, für die Laiensätze),
  *           ANTHROPIC_WORKSPACE_ID (nur bei einem Org-weiten Key ohne Workspace-Bindung).
  *
+ * Das LMS-Repo weiß nichts von dieser Seite: Die Zuordnung Vorhaben → DBA-Ticket trifft die Claude API
+ * (scripts/lib/zuordnung.mjs), Korrekturen stehen in config/zuordnung.json dieses Repos.
+ *
  * Das Log nennt nur Zähler und Fehlerarten, keine Inhalte aus dem privaten Repo.
  */
 import { mkdirSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { tryGit, listRemoteBranches, grepPlanFiles, readFileAt, fileCommits, lastCommitDate, tagsContaining, commitExists } from './lib/git.mjs';
+import { tryGit, listRemoteBranches, listPlanBlobs, readBlob, readFileAt, fileCommits, lastCommitDate, tagsContaining, commitExists } from './lib/git.mjs';
+import { ordneZu, ordnePRsZu } from './lib/zuordnung.mjs';
 import { parsePlan } from './lib/plan.mjs';
-import { listIssues, boardStatuses, pullByNumber, pullForBranch, listReleases } from './lib/github.mjs';
-import { annotatePhases } from './lib/laientext.mjs';
+import { listIssues, boardStatuses, pullByNumber, pullForBranch, listReleases, listMergedPulls } from './lib/github.mjs';
+import { annotatePhases, annotateMerged } from './lib/laientext.mjs';
 
 const ORG = 'Future-Education-Hub';
 const LMS_REPO = 'feh-lms';
 const DBA_REPO = 'dba-requests';
 const PROJECT_NUMBER = 3;
 const BOARD_URL = `https://github.com/orgs/${ORG}/projects/${PROJECT_NUMBER}/views/6`;
+const MERGED_WINDOW_DAYS = 42;              // Zeitraum für „Zuletzt fertig geworden“
+const SKIP_TITLE = /^(chore|ci|docs|test|tests|refactor|build|style|revert|perf)(\(|:|!)/i;
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = parseArgs(process.argv.slice(2));
@@ -38,16 +44,19 @@ const log = (msg) => console.log(`[fortschritt] ${msg}`);
 const today = args.date || berlinDate(new Date());
 log(`Snapshot für ${today}`);
 
-// 1. Pläne mit DBA-Verknüpfung auf allen Branches einsammeln
+// 1. Alle Pläne auf allen Branches einsammeln (je Blob nur einmal parsen)
 const branches = listRemoteBranches(lms);
+const parsedBlobs = new Map();
 const copies = new Map(); // slug → [{ ref, branch, path, plan }]
 for (const ref of branches) {
-  for (const path of grepPlanFiles(lms, ref, 'DBA-Ticket')) {
-    const md = readFileAt(lms, ref, path);
-    if (!md) continue;
+  for (const { blob, path } of listPlanBlobs(lms, ref)) {
     const slug = path.split('/')[2];
-    const plan = parsePlan(md, slug);
-    if (!plan.dbaTickets.length) continue;
+    if (!parsedBlobs.has(blob)) {
+      const md = readBlob(lms, blob);
+      parsedBlobs.set(blob, md ? parsePlan(md, slug) : null);
+    }
+    const plan = parsedBlobs.get(blob);
+    if (!plan || !plan.phases.length) continue;
     if (!copies.has(slug)) copies.set(slug, []);
     copies.get(slug).push({ ref, branch: ref.replace(/^origin\//, ''), path, plan });
   }
@@ -55,18 +64,33 @@ for (const ref of branches) {
 if (args.worktree) {
   // Lokaler Test: unveröffentlichte Arbeitskopie des aktuellen Branches mit einbeziehen
   const head = (tryGit(lms, ['rev-parse', '--abbrev-ref', 'HEAD']) || '').trim();
-  for (const path of (tryGit(lms, ['grep', '-l', '--fixed-strings', 'DBA-Ticket', '--', 'docs/features/*/PLAN.md']) || '').split('\n').filter(Boolean)) {
+  for (const path of (tryGit(lms, ['ls-files', '--', 'docs/features/*/PLAN.md']) || '').split('\n').filter(Boolean)) {
     try {
-      const md = readFileSync(join(lms, path), 'utf8');
       const slug = path.split('/')[2];
-      const plan = parsePlan(md, slug);
-      if (!plan.dbaTickets.length) continue;
+      const plan = parsePlan(readFileSync(join(lms, path), 'utf8'), slug);
+      if (!plan.phases.length) continue;
       if (!copies.has(slug)) copies.set(slug, []);
       copies.get(slug).unshift({ ref: 'HEAD', branch: head, path, plan });
     } catch { /* Datei nicht lesbar */ }
   }
 }
-log(`${branches.length} Branches durchsucht, ${copies.size} verknüpfte Vorhaben gefunden`);
+log(`${branches.length} Branches durchsucht, ${copies.size} Vorhaben mit Plan gefunden`);
+
+// 1b. Je Vorhaben die maßgebliche Kopie wählen
+const chosenBySlug = new Map();
+for (const [slug, list] of copies) {
+  const declared = list.find((c) => c.ref === 'HEAD') || list.find((c) => c.plan.branch && c.branch === c.plan.branch);
+  chosenBySlug.set(slug, declared || list.sort((a, b) => (lastCommitDate(lms, b.ref) || '').localeCompare(lastCommitDate(lms, a.ref) || ''))[0]);
+}
+
+// 1c. DBA-Tickets lesen und Vorhaben zuordnen (Claude API, Cache, Konfiguration)
+const issues = await listIssues(token, ORG, DBA_REPO);
+const zuordnung = await ordneZu(
+  issues,
+  [...chosenBySlug.values()].map((c) => c.plan),
+  { cachePath: join(outDir, 'zuordnung.json'), configPath: join(here, '..', 'config', 'zuordnung.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log },
+);
+for (const [slug, c] of chosenBySlug) c.plan.dbaTickets = [...(zuordnung.get(slug) || [])];
 
 // 2. Je Vorhaben die maßgebliche Kopie wählen und anreichern
 const releases = await listReleases(token, ORG, LMS_REPO);
@@ -74,10 +98,9 @@ const releaseByTag = new Map(releases.map((r) => [r.tag, r]));
 log(`${releases.length} Releases gelesen`);
 
 const features = [];
-for (const [slug, list] of copies) {
-  const declared = list.find((c) => c.ref === 'HEAD') || list.find((c) => c.plan.branch && c.branch === c.plan.branch);
-  const chosen = declared || list.sort((a, b) => (lastCommitDate(lms, b.ref) || '').localeCompare(lastCommitDate(lms, a.ref) || ''))[0];
+for (const [slug, chosen] of chosenBySlug) {
   const { plan, ref, path, branch } = chosen;
+  if (!plan.dbaTickets.length) continue;
 
   // Phasen-Daten aus der Historie der PLAN.md auf diesem Branch
   const firstDone = new Map();
@@ -132,8 +155,27 @@ const textStats = await annotatePhases(features, { cachePath: join(outDir, 'text
 log(`Laiensätze: ${textStats.created} neu erzeugt, ${textStats.skipped} ohne Satz${apiKey ? '' : ' (kein API-Key)'}`);
 for (const f of features) for (const p of f.phases) { delete p.items; delete p.dbaText; }
 
+// 3b. Zuletzt fertig geworden: gemergte Pull Requests nach main
+const since = new Date(Date.now() - MERGED_WINDOW_DAYS * 86400000).toISOString();
+const planBranches = new Map(features.filter((f) => f.branch).map((f) => [f.branch, f]));
+const mergedRaw = (await listMergedPulls(token, ORG, LMS_REPO, since)).filter((p) => !SKIP_TITLE.test(p.title));
+const prZuordnung = await ordnePRsZu(issues, mergedRaw, { cachePath: join(outDir, 'zuordnung-prs.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log });
+const merged = mergedRaw
+  .map((p) => {
+    const ticketRefs = new Set(prZuordnung.get(p.number) || []);
+    const viaPlan = p.branch && planBranches.get(p.branch);
+    if (viaPlan) for (const t of viaPlan.dbaTickets) ticketRefs.add(t);
+    if (!ticketRefs.size) return null;
+    const tags = p.mergeSha && commitExists(lms, p.mergeSha) ? new Set(tagsContaining(lms, p.mergeSha)) : new Set();
+    const release = releases.find((r) => tags.has(r.tag)) || null;
+    return { number: p.number, title: p.title, body: p.body, mergedAt: p.mergedAt, release: release ? { tag: release.tag, publishedAt: release.publishedAt } : null, tickets: [...ticketRefs] };
+  })
+  .filter(Boolean);
+const mergedStats = await annotateMerged(merged, { cachePath: join(outDir, 'texte.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log });
+log(`Fertig geworden: ${mergedRaw.length} gemergte PRs im Zeitraum, ${merged.length} mit Ticket-Bezug sichtbar, ${mergedStats.created} Sätze neu, ${mergedStats.skipped} ohne Satz`);
+for (const m of merged) delete m.body;
+
 // 4. DBA-Issues und Board-Status
-const issues = await listIssues(token, ORG, DBA_REPO);
 const board = await boardStatuses(token, ORG, PROJECT_NUMBER);
 log(`${issues.length} DBA-Tickets gelesen, Board-Status ${board ? 'verfügbar' : 'nicht verfügbar'}`);
 
@@ -159,12 +201,11 @@ const tickets = issues.map((issue) => {
     lastActivity,
     phasesTotal,
     phasesDone,
-    features: linked.map(({ dbaTickets, ...rest }) => rest),
+    features: linked.map(({ dbaTickets, ...rest }) => ({ ...rest, ticketCount: dbaTickets.length })),
+    merged: merged.filter((m) => m.tickets.includes(issue.number)).map(({ tickets, ...rest }) => rest),
   };
 });
 
-const orphanLinks = features.flatMap((f) => f.dbaTickets).filter((n) => !issues.some((i) => i.number === n));
-if (orphanLinks.length) log(`Warnung: ${orphanLinks.length} Verknüpfung(en) auf unbekannte Ticketnummern`);
 
 // 5. Schreiben
 const snapshot = {
@@ -172,6 +213,7 @@ const snapshot = {
   generatedAt: new Date().toISOString(),
   boardUrl: BOARD_URL,
   tickets: tickets.sort((a, b) => a.number - b.number),
+  merged: merged.map(({ tickets, ...rest }) => ({ ...rest, ticket: tickets[0] ?? null })),
 };
 writeFileSync(join(snapDir, `${today}.json`), JSON.stringify(snapshot, null, 2) + '\n');
 

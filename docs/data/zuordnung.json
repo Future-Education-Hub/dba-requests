@@ -1,0 +1,92 @@
+{
+  "d941dd85327deec128ad": {
+    "createdAt": "2026-10-06T15:45:55.284Z",
+    "model": "claude-opus-5-5",
+    "zuordnungen": [
+      {
+        "slug": "sales-call-to-offer-speed",
+        "ticket": 18,
+        "sicherheit": 0.9,
+        "begruendung": "Das Vorhaben verkürzt die Zeit vom Call bis zum Angebot auf höchstens drei Minuten und macht die Angebotskette zuverlässiger."
+      },
+      {
+        "slug": "sales-offer-refinements",
+        "ticket": 18,
+        "sicherheit": 0.5,
+        "begruendung": "Erweiterte Pflichtfelder und der präzisere Skill-Gap-Abgleich verbessern die Qualität der Angebote."
+      },
+      {
+        "slug": "curriculum-import",
+        "ticket": 17,
+        "sicherheit": 0.7,
+        "begruendung": "Der Curriculum-Import mit Material ist das Werkzeug, mit dem bestehende Kurse ins LMS übertragen werden."
+      },
+      {
+        "slug": "curriculum-day-bundle",
+        "ticket": 17,
+        "sicherheit": 0.55,
+        "begruendung": "Tagesbündel im Import bilden tagesstrukturierte Kurse ab, wie sie bei der Kursmigration vorliegen."
+      },
+      {
+        "slug": "curriculum-import-generation",
+        "ticket": 17,
+        "sicherheit": 0.45,
+        "begruendung": "Die Generierung für importierte Curricula ergänzt migrierte Kurse um fehlende Inhalte."
+      },
+      {
+        "slug": "batch-mode",
+        "ticket": 13,
+        "sicherheit": 0.95,
+        "begruendung": "Der Batch-Modus setzt die Batch-Logik mit Kalender, Plan, Freigaben und Sessions um."
+      },
+      {
+        "slug": "batch-mode",
+        "ticket": 3,
+        "sicherheit": 0.85,
+        "begruendung": "Das Vorhaben enthält einen eigenen Schritt mit Incident-Detektoren für den Batch."
+      },
+      {
+        "slug": "batch-mode",
+        "ticket": 7,
+        "sicherheit": 0.6,
+        "begruendung": "Der Batch-Anwesenheitsmodus mit manueller Live-Erfassung je Session deckt das Tracking für Vorlesungen und Tutorien ab."
+      },
+      {
+        "slug": "attendance",
+        "ticket": 7,
+        "sicherheit": 0.45,
+        "begruendung": "Die Anwesenheitslogik 2.0 bildet mit ihrer Kandidaten-Unit-Engine die Grundlage für das Tracking nach Veranstaltungsart."
+      },
+      {
+        "slug": "batch-mode",
+        "ticket": 4,
+        "sicherheit": 0.5,
+        "begruendung": "Das Soll aus dem Plan-Tag berücksichtigt Tage mit Vorlesung und weiteren Veranstaltungen."
+      },
+      {
+        "slug": "attendance",
+        "ticket": 4,
+        "sicherheit": 0.45,
+        "begruendung": "Die Tagesbewertung der Anwesenheitslogik 2.0 bewertet Tage abhängig von ihren Veranstaltungen."
+      },
+      {
+        "slug": "attendance",
+        "ticket": 8,
+        "sicherheit": 0.6,
+        "begruendung": "Freistellungen und Karenz-Verlängerungen erlauben es, Entschuldigungen nachträglich einzureichen."
+      },
+      {
+        "slug": "attendance",
+        "ticket": 5,
+        "sicherheit": 0.55,
+        "begruendung": "Freistellungen und die Kaskade der Tagesbewertung unterscheiden die Formen entschuldigter Abwesenheit."
+      },
+      {
+        "slug": "attendance",
+        "ticket": 6,
+        "sicherheit": 0.45,
+        "begruendung": "Die Tagesbewertung über einzelne Signale ermöglicht die Bewertung teilweiser Abwesenheit."
+      }
+    ]
+  }
+}

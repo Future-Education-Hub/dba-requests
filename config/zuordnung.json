@@ -1,0 +1,5 @@
+{
+  "_hinweis": "Manuelle Korrekturen der automatischen Zuordnung Plan → DBA-Ticket. pin: Plan-Slug → Ticketnummern (gewinnt immer). ausblenden: Plan-Slugs, die nie erscheinen sollen.",
+  "pin": {},
+  "ausblenden": []
+}

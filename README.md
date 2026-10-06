@@ -17,16 +17,25 @@ lassen sich über die Datumsauswahl ansehen.
 | Task-Board „DBA only“ | Spalte (Backlog, Next Up, In progress, …) |
 | `docs/features/<slug>/PLAN.md` im LMS-Repo (alle Branches) | Arbeitsschritte, Checklisten, Zeitpunkte aus der Git-Historie |
 | Pull Requests und Releases des LMS-Repos | „wird geprüft“ bzw. „live seit“ |
-| Claude API | ein Satz je Arbeitsschritt in Alltagssprache, einmal je Inhalt (Cache `docs/data/texte.json`) |
+| Pull Requests und Releases des LMS-Repos | „wird geprüft“ bzw. „live seit“; Bereich „Zuletzt fertig geworden“ aus den gemergten PRs der letzten 6 Wochen mit Ticket-Bezug |
+| Claude API | Zuordnung Vorhaben → Ticket; ein Satz je Arbeitsschritt und je PR in Alltagssprache, einmal je Inhalt (Cache in `docs/data/`) |
 
-Ein Vorhaben erscheint nur, wenn seine `PLAN.md` im Status-Block eine Zeile trägt:
+**Das LMS-Repo weiß nichts von dieser Seite.** Es gibt dort keine Markierung, kein Label, keine
+Konvention. Die Zuordnung eines Vorhabens (`PLAN.md`) zu einem DBA-Ticket trifft die Claude API aus
+Ticket-Text und Plan-Inhalt; sie wird je Eingabestand gecacht (`docs/data/zuordnung.json`) und läuft
+erst wieder, wenn ein Ticket oder Plan dazukommt oder sich ändert. Korrekturen stehen hier im Repo in
+`config/zuordnung.json`:
 
-```markdown
-- **DBA-Ticket:** dba-requests#13
+```json
+{ "pin": { "batch-mode": [13] }, "ausblenden": ["interner-plan"] }
 ```
 
-Mehrere Nummern sind erlaubt. Soll ein Arbeitsschritt einen handgeschriebenen Satz bekommen,
-steht in seinem Abschnitt eine Zeile `*Für die DBA: …*`; sie gewinnt vor dem erzeugten Satz.
+`pin` erzwingt eine Zuordnung, `ausblenden` hält einen Plan dauerhaft von der Seite fern.
+
+Im Bereich „Zuletzt fertig geworden“ erscheinen nur gemergte Pull Requests nach `main`, die die
+Claude API einem DBA-Ticket zuordnet (oder deren Branch zu einem zugeordneten Vorhaben gehört).
+`chore`/`ci`/`docs`/`test`/`refactor`/`build`/`perf` werden vorab ausgefiltert. Cache:
+`docs/data/zuordnung-prs.json`, je PR eine Entscheidung; nur neue PRs werden angefragt.
 
 ## Ablauf
 
@@ -55,4 +64,5 @@ npm run serve                                                        # http://lo
 ```
 
 `--worktree` nimmt zusätzlich die ungepushte Arbeitskopie des LMS-Checkouts mit, `--no-llm`
-lässt die Satz-Erzeugung aus, `--date YYYY-MM-DD` schreibt einen Snapshot unter anderem Datum.
+lässt Zuordnung und Satz-Erzeugung aus (dann gelten Cache und Konfiguration), `--date YYYY-MM-DD`
+schreibt einen Snapshot unter anderem Datum.

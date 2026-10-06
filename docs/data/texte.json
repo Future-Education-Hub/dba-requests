@@ -103,5 +103,478 @@
     "createdAt": "2026-10-06T15:20:20.682Z",
     "slug": "batch-mode",
     "phase": 12
+  },
+  "baf8277ff4b5879597d9": {
+    "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:04.737Z",
+    "slug": "attendance",
+    "phase": 1
+  },
+  "dbea9cd08b7fe56fd6d2": {
+    "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:07.030Z",
+    "slug": "attendance",
+    "phase": 2
+  },
+  "f7b640bcb6daa58841b9": {
+    "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:09.321Z",
+    "slug": "attendance",
+    "phase": 3
+  },
+  "d89cefa717d78fb0a4e5": {
+    "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:11.613Z",
+    "slug": "attendance",
+    "phase": 4
+  },
+  "a2d515ec093fd6e052f2": {
+    "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:13.671Z",
+    "slug": "attendance",
+    "phase": 5
+  },
+  "b32bf612db1f48de81c5": {
+    "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:17.935Z",
+    "slug": "attendance",
+    "phase": 6
+  },
+  "69577c76b003ee56543f": {
+    "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:21.808Z",
+    "slug": "attendance",
+    "phase": 7
+  },
+  "47a512b422a4e3d4b992": {
+    "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:25.904Z",
+    "slug": "attendance",
+    "phase": 8
+  },
+  "b62a70267176c9934bc7": {
+    "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:28.055Z",
+    "slug": "attendance",
+    "phase": 9
+  },
+  "ec63fa66895561c6d915": {
+    "text": "Mitarbeitende können einen Lehrplan aus einer Datei samt Modulen, Kapiteln und Lektionen übernehmen und Lektionen Material anhängen, das Teilnehmende nur passend sehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:30.244Z",
+    "slug": "curriculum-import",
+    "phase": 1
+  },
+  "732db438ce6c8ecec9b9": {
+    "text": "Hochgeladene Excel- oder CSV-Lehrpläne werden automatisch in Module, Kapitel und Lektionen gegliedert, auf Fehler geprüft und Materialien passend zugeordnet.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:35.538Z",
+    "slug": "curriculum-import",
+    "phase": 2
+  },
+  "a08b87cba8c21b847ba7": {
+    "text": "Ihr könnt ein Curriculum aus einer Excel-Datei Schritt für Schritt importieren, Struktur und Hinweise vorab prüfen und daraus eine neue Journey anlegen oder aktualisieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:37.692Z",
+    "slug": "curriculum-import",
+    "phase": 3
+  },
+  "6444b199f0f866458ef7": {
+    "text": "Lehrende können Folien, Aufgabenblätter und Begleitmaterial zu Lektionen hochladen und zuordnen, Lernende sehen es direkt in der Lektion zum Öffnen oder Herunterladen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:39.990Z",
+    "slug": "curriculum-import",
+    "phase": 4
+  },
+  "e316a441212574cd1f75": {
+    "text": "Eine neue Anleitung erklärt den Import von Lehrplänen mit Material Schritt für Schritt, und exportierte Lehrpläne lassen sich direkt wieder einlesen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:43.929Z",
+    "slug": "curriculum-import",
+    "phase": 5
+  },
+  "2a6fe60fb9368eaa112c": {
+    "text": "Das Team sichert die Qualität des Curriculum-Imports mit Material umfassend ab, damit Import, Zuordnung von Unterlagen und Zugriffsrechte zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:46.046Z",
+    "slug": "curriculum-import",
+    "phase": 6
+  },
+  "d6993307d424a42bab13": {
+    "text": "Ab jetzt wird bei jedem neuen Angebot festgehalten, wie lange die einzelnen Schritte vom Gespräch bis zum fertigen Angebot dauern.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:49.092Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 1
+  },
+  "ae594d7b92ca6f42a06e": {
+    "text": "Gespräche werden sofort nach dem Telefonat ausgewertet und zuverlässig dem richtigen Kunden zugeordnet, unklare Fälle lassen sich von Hand einem Auftrag zuweisen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:51.866Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 2
+  },
+  "3da57f5b52691fb75d60": {
+    "text": "Nach einem Erstgespräch oder einem Phasenwechsel entsteht sofort genau ein Angebot je Verkaufschance, das auch bei Störungen zuverlässig fertiggestellt wird.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:53.776Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 3
+  },
+  "0da4f7fbc5f9a184c48f": {
+    "text": "Angebote entstehen nach dem Gespräch schneller, da mehrere Schritte gleichzeitig laufen, die Anrede sofort steht und der Fortschritt sichtbar ist.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:46:59.001Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 4
+  },
+  "efd68508aed76e96842e": {
+    "text": "Angebote nach einem Gespräch entstehen jetzt mit einem neueren KI-Modell, und Admins können für schnellere Ergebnisse gegen Aufpreis einen Schnell-Modus einschalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:01.065Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 5
+  },
+  "5a0fcf4708e1f8410e00": {
+    "text": "Neue und geänderte Kontakte und Deals aus HubSpot erscheinen jetzt sofort im System, sodass Angebote direkt nach dem Gespräch erstellt werden können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:02.988Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 6
+  },
+  "21d69a2c011c847ad64d": {
+    "text": "Der Vertrieb erhält täglich eine vorbereitete Auswahl passender Stellen je Spezialisierung, die er pflegen und direkt ins Angebot übernehmen kann.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:05.014Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 7
+  },
+  "6fac2db0e27e764afc65": {
+    "text": "Das Team sichert die Qualität des Vorhabens ab, damit Angebote nach einem Gespräch zuverlässig, schnell und ohne Fehler entstehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:07.039Z",
+    "slug": "sales-call-to-offer-speed",
+    "phase": 8
+  },
+  "pr:8668b173d3930e7fa98d": {
+    "text": "Der Stellenmarkt versorgt Kurse jetzt täglich automatisch mit aktuellen Stellen, ordnet sie passenden Spezialisierungen zu und entfernt veraltete Angebote.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:11.847Z",
+    "pr": 407
+  },
+  "pr:d2f42e9fcb7875f60542": {
+    "text": "Der Knopf zum Wechseln der Adresse erscheint nur noch bei Organisationen mit eigener Adresse, damit niemand versehentlich die gemeinsame Plattform-Adresse ändert.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:15.515Z",
+    "pr": 412
+  },
+  "pr:1a8ccda928f9bca7d918": {
+    "text": "Die Karte für eigene Webadressen zeigt beim erneuten Prüfen keinen falschen Fehler mehr und meldet keinen Adresswechsel mehr, wenn gar keiner läuft.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:18.033Z",
+    "pr": 410
+  },
+  "pr:aaa09597e40e68936a45": {
+    "text": "Die Einrichtung einer eigenen Webadresse für Ihre Organisation kann jetzt funktionieren, statt wie bisher dauerhaft mit einer Fehlermeldung abzubrechen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:22.244Z",
+    "pr": 409
+  },
+  "pr:681860559f629d7b34d2": {
+    "text": "Organisationen können jetzt eine eigene Webadresse bekommen, unter der die Lernplattform schon vor der Anmeldung in ihrem eigenen Erscheinungsbild erscheint.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:24.691Z",
+    "pr": 408
+  },
+  "pr:bb20debd76944f15bcfb": {
+    "text": "Nach einem Verkaufsgespräch liegt das passende Angebot jetzt innerhalb von höchstens drei Minuten vor, und Gespräche lassen sich zuverlässig dem richtigen Kunden zuordnen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:26.742Z",
+    "pr": 406
+  },
+  "pr:694a60a98956534176e4": {
+    "text": "Für jede Dozentenstimme lässt sich jetzt per Klick eine ausdrucksstärkere Sprachversion mit Sprechregie wählen und jederzeit wieder zurückstellen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:30.969Z",
+    "pr": 405
+  },
+  "pr:d54da10ddb8bda2ce510": {
+    "text": "Das Online-Handbuch zeigt nur noch Anleitungen zu Funktionen, die bereits verfügbar sind, und wirkt mit kleinerem Logo und App-Symbol vertrauter.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:37.512Z",
+    "pr": 403
+  },
+  "pr:ab2af65b62566995d8b7": {
+    "text": "Wenn sich zwei Organisationen ein HubSpot-Konto teilen, sieht jede künftig nur noch die Kontakte und Deals ihrer eigenen Marke.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:40.362Z",
+    "pr": 402
+  },
+  "pr:06c75f477e37639748cc": {
+    "text": "Owner und Admins können unter Einstellungen bei den KI-Prompts jetzt auch die Vorlagen für Vertrieb und Abgabe-Analyse an ihre eigene Organisation anpassen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:42.762Z",
+    "pr": 400
+  },
+  "pr:0007d7013c1f4d3634c4": {
+    "text": "Ältere Lerneinheiten ohne Abschlussprojekt lassen sich jetzt wieder fehlerfrei einlesen, und Walkthrough und Review stehen sauber im Abschlusskapitel.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:44.797Z",
+    "pr": 401
+  },
+  "pr:c52bf3fd99895a67b3ac": {
+    "text": "Schlägt das Einlesen von Inhalten fehl, steht jetzt immer dieselbe verständliche Fehlermeldung da, und ein erneuter Start geht schneller.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:47.557Z",
+    "pr": 399
+  },
+  "pr:5eef312e42f747af9ae8": {
+    "text": "Wenn sich das Vorwort einer Lektion ändert, passt die KI den bestehenden Text nun an, statt ihn zu löschen, auf Wunsch kann die Lektion weiter ganz neu entstehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:50.112Z",
+    "pr": 398
+  },
+  "pr:22954866ec148df343a8": {
+    "text": "Ältere Kurse lassen sich im Studio jetzt mit KI überarbeiten, ohne dass Lektionen wie Links oder Coding-Videos ihren Typ oder Inhalt verlieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:52.021Z",
+    "pr": 396
+  },
+  "pr:d8696ca2f595b7dfe1b8": {
+    "text": "Beim Erstellen einer Abgabevorlage siehst du jetzt den Fortschritt live, und Vorlagen veröffentlichter Versionen sind besser vor versehentlichen Änderungen geschützt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:53.730Z",
+    "pr": 394
+  },
+  "pr:f4b4f24b68f30ff50cf8": {
+    "text": "Organisationen können jetzt die Texte, mit denen die KI für sie schreibt, selbst anpassen und Name, Tonfall und Anrede ihres Trägers festlegen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:55.703Z",
+    "pr": 392
+  },
+  "pr:4a1027955354538b5f85": {
+    "text": "Automatisch anordnen im Graph-Editor sortiert Lektionen jetzt übersichtlich in Spalten wie im Baum, Wahlthemen stehen daneben und Pfeile kreuzen keine Karten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:47:57.610Z",
+    "pr": 391
+  },
+  "pr:720bc35cc7d47d5bc7dd": {
+    "text": "Das Inhaltsverzeichnis eines Kurses lässt sich jetzt bequem per Karten bearbeiten, mit Ziehen, Anlegen, Löschen und Rückgängig, ganz ohne Formatierungskenntnisse.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:00.495Z",
+    "pr": 390
+  },
+  "pr:796b7d03845d64c02730": {
+    "text": "Das Seitenmenü für Mitarbeitende ist jetzt übersichtlich in Arbeitsbereiche gegliedert, und die Protokolle finden Sie nun in den Einstellungen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:04.293Z",
+    "pr": 388
+  },
+  "pr:46f81196a50c880abc05": {
+    "text": "Die Reihenfolge der Lektionen legen Sie nur noch in der Graph-Ansicht fest, der Baum zeigt sie verlässlich an, und neue Lektionen landen am Kapitelende.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:08.439Z",
+    "pr": 387
+  },
+  "pr:e4992e4a73168e0331ef": {
+    "text": "Kursversionen lassen sich jetzt mit einem Klick per KI überarbeiten, und Kontext und Inhaltsverzeichnis stehen platzsparend zuklappbar ganz oben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:10.426Z",
+    "pr": 386
+  },
+  "pr:2dd031be78fc167611b9": {
+    "text": "Im Skill Studio lassen sich Verbindungslinien zwischen Karten jetzt per Mausklick auswählen und löschen, das Verschieben der Ansicht funktioniert weiterhin.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:17.808Z",
+    "pr": 384
+  },
+  "pr:3727a0eac37580164a44": {
+    "text": "Das Handbuch zur Plattform ist jetzt für alle verfügbar, klar in acht Bereiche gegliedert und lässt sich auch mit Wortanfängen gezielt durchsuchen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:19.839Z",
+    "pr": 381
+  },
+  "pr:90e5e3838a51a5a86e14": {
+    "text": "Im Lernpfad-Editor behalten die Karten beim Verbinden und Speichern jetzt ihren Platz, und die Arbeitsfläche lässt sich frei verschieben und zoomen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:23.753Z",
+    "pr": 382
+  },
+  "pr:352b142e912cdf83026b": {
+    "text": "Teammitglieder können ihre Startseite jetzt selbst aus passenden Bausteinen zusammenstellen, und jede Rolle erhält eine sinnvolle Standardansicht.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:25.593Z",
+    "pr": 364
+  },
+  "pr:26b2a428a450d7757126": {
+    "text": "Team-Mitglieder öffnen über den neuen Fragezeichen-Knopf eine geschützte Hilfeseite mit Anleitung zum Einrichten neuer Organisationen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:30.636Z",
+    "pr": 362
+  },
+  "pr:af226f6b17a3a0d3d547": {
+    "text": "Hochgeladene Folien lassen sich in Lektionen jetzt bequem Folie für Folie durchblättern, auch per Wischen und im Vollbild, und die Prüfansicht ist aufgeräumter.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:35.410Z",
+    "pr": 357
+  },
+  "pr:60c3286159e8af283a42": {
+    "text": "Die Folie Du bist hier und die Fußzeile in Präsentationen zeigen jetzt dieselben, richtigen Kapitel- und Lektionsnummern, ohne doppelte Kapitel oder Aufgaben als Lektionen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:37.348Z",
+    "pr": 356
+  },
+  "pr:4b24f489094348824287": {
+    "text": "Foliensätze und PDFs lassen sich jetzt direkt im Studio präsentieren, mit Notizen, nächster Folie und Uhr für Vortragende und eigenem Fenster fürs Publikum.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:44.364Z",
+    "pr": 355
+  },
+  "pr:ee4be007904b8afc4744": {
+    "text": "Medien lassen sich jetzt übersichtlich auf einer Seite prüfen und bearbeiten, und jede Lerneinheit kann vorab so angesehen werden, wie Teilnehmende sie sehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:51.010Z",
+    "pr": 354
+  },
+  "pr:8f31d8dff2d1a9f6970d": {
+    "text": "In der Folienvorschau erscheinen jetzt auch Fortschritts-, Karten- und Vergleichsfolien korrekt, und Fortschrittsfolien zeigen die passende Kursgliederung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:48:53.113Z",
+    "pr": 353
+  },
+  "pr:f9e8fa4499d3e093731b": {
+    "text": "Foliensätze lassen sich jetzt als ausführliche Vorlesung mit Sprechernotizen erstellen, und Video wie Foliensatz bekommen eine einstellbare Fußzeile.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:00.605Z",
+    "pr": 352
+  },
+  "pr:61176848ec776349180f": {
+    "text": "Foliensätze lassen sich jetzt Folie für Folie prüfen, nach Folienzahl bestellen und als Bilder, PDF oder Folienschau bereitstellen, und Medien bleiben dauerhaft abrufbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:02.632Z",
+    "pr": 349
+  },
+  "pr:ae694081b2bb7307c80c": {
+    "text": "Goodies heißen jetzt Lernmittel und Teilnehmende können selbst bezahlte Auslagen mit Beleg direkt auf der Plattform zur Erstattung einreichen statt per Mail.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:04.794Z",
+    "pr": 347
+  },
+  "pr:e002f8344a1d9e0223e7": {
+    "text": "Wenn eine Lektion nachträglich zum ersten Mal ein Vorwort bekommt, bleibt ihr vorhandener Inhalt jetzt erhalten und muss nicht mehr neu erstellt werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:07.158Z",
+    "pr": 346
+  },
+  "pr:5ae4f91421ea612ddf0d": {
+    "text": "Rückmeldungen zu Lektionen und zur Plattform lassen sich jetzt mit Bildern einreichen, im Verlauf verfolgen und gezielt beantworten, mit Punkten als Dankeschön.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:09.386Z",
+    "pr": 348
+  },
+  "pr:18fb1e209f80d3cf61bc": {
+    "text": "Beim Importieren eines Kurses entsteht jeder Kurstag nun mit Vorlesung und Aufgaben, Lösungen sehen Teilnehmende erst nach Abschluss, Tutoren bekommen ihr Briefing.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:11.814Z",
+    "pr": 341
+  },
+  "pr:3e9daf724eb0f69eee0a": {
+    "text": "Übungsaufgaben und Mikroprojekte erhalten jetzt automatisch eine Musterlösung, die im Studio bearbeitet werden kann und Mentoren beim Bewerten unterstützt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:13.871Z",
+    "pr": 339
+  },
+  "pr:66be4e6039fca2b0dc66": {
+    "text": "Bei importierten oder selbst gegliederten Lerninhalten im ersten Entwurf ist der Knopf zum Erzeugen der Vorwörter jetzt sichtbar und nutzbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:16.146Z",
+    "pr": 340
+  },
+  "pr:98e14f852048ce8017b1": {
+    "text": "Das Team hat die Plattform im Hintergrund stabiler gemacht, damit Fehler beim Ein- und Ausklappen der Seitenleiste früher auffallen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:49:17.611Z",
+    "pr": 337
+  },
+  "pr:351f04f934545e1d7705": {
+    "text": "Im Verlaufsbericht lassen sich jetzt die eingereichten Projekte einer Teilnehmerin automatisch auswerten, auswählen und als Text übernehmen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:03.353Z",
+    "pr": 336
+  },
+  "pr:867c03679aa42e5196d7": {
+    "text": "Beim Bearbeiten von Benutzern ist das Formular jetzt sofort ausgefüllt, sodass beim Ändern der Rolle der Name nicht mehr verschwindet und das Speichern zuverlässig klappt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:06.047Z",
+    "pr": 333
+  },
+  "pr:d6316e7e07f8547828f9": {
+    "text": "Im Studio zeigen Baum und Graph jetzt dieselbe Lektionsreihenfolge, die sich per Ziehen ändern lässt, und Videos, Podcasts und Folien sind einfacher zu bestellen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:08.254Z",
+    "pr": 326
+  },
+  "pr:0a34b03af1941294e1fb": {
+    "text": "Jede Organisation kann jetzt eigene Rollen anlegen und anpassen, und Menüs zeigen nur noch, was man wirklich darf und betreut.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:10.153Z",
+    "pr": 322
+  },
+  "pr:bbc9f245d5eda03cb8d8": {
+    "text": "Veranstaltungen können jetzt auf ganze Themen, Kapitel oder einzelne Lerneinheiten verweisen, die Teilnehmende direkt per Klick öffnen können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:13.372Z",
+    "pr": 321
+  },
+  "pr:ecec2e41c58d064b3e3e": {
+    "text": "Im Kursstudio sieht man jetzt direkt an der Versionsanzeige, wer einen Entwurf bearbeitet, kann ihn dort übernehmen und findet sich in Übersichten leichter zurecht.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:15.211Z",
+    "pr": 320
+  },
+  "pr:c9e2e881374b6d2b585c": {
+    "text": "Lektionen, die auf Freigabe warten, lassen sich jetzt wie Medien per Auswahl gesammelt oder alle auf einmal freigeben, statt jede einzeln anzuklicken.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:16.838Z",
+    "pr": 319
+  },
+  "pr:f0154ba1c5080e3dee18": {
+    "text": "Im Skill Studio lassen sich Versionen und Rückmeldungen jetzt direkt bearbeiten, der Status aktualisiert sich live und Kapitel können eingeklappt werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:20.965Z",
+    "pr": 318
+  },
+  "pr:4cf3e7613251785d3093": {
+    "text": "Beim Bearbeiten von Skills sehen Sie Lektionen jetzt genau wie Lernende, und Korrekturen erscheinen mit der nächsten Skill-Veröffentlichung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:25.895Z",
+    "pr": 317
+  },
+  "pr:8b0d7eb9fbe4d9bc371e": {
+    "text": "Neue Versionen eines Kurses lassen sich jetzt mit einem Klick anlegen, das Inhaltsverzeichnis optional neu erstellen, und Entwürfe gehören klar einer Person.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:27.696Z",
+    "pr": 316
+  },
+  "pr:1f1fabcce929f92d0c1a": {
+    "text": "Genehmigte Aufgaben stehen im Dashboard jetzt als abgeschlossen da und verschwinden, sobald man sich Musterlösung und Rückmeldung einmal angesehen hat.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:29.397Z",
+    "pr": 312
+  },
+  "pr:1c8966826ba28dcc087a": {
+    "text": "Einzelne Termine einer Veranstaltung lassen sich nun separat absagen, und Zusammenfassungen können einem bestimmten Termin zugeordnet werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-06T15:52:34.468Z",
+    "pr": 310
   }
 }

@@ -122,6 +122,27 @@ ol.phases { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .phase.active .when { color: var(--work); }
 @media (max-width: 560px) { .phase { grid-template-columns: 22px minmax(0, 1fr); } .phase .when { grid-column: 2; margin-top: 0; } }
 
+/* Zuletzt fertig geworden */
+.done-groups { display: grid; gap: 14px; }
+.done-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; display: grid; gap: 8px; }
+.done-group .gh { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.done-group .gh h3 { font-size: 16px; }
+.done-group .gh .chip { font-size: 10px; }
+details.done-group > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; width: auto; color: inherit; font-size: inherit; }
+details.done-group > summary::before { display: none; }
+details.done-group > summary .gh { display: contents; }
+details.done-group > summary .gh h3::before { content: "▸ "; color: var(--muted); font-size: 12px; }
+details.done-group[open] > summary .gh h3::before { content: "▾ "; }
+details.done-group > summary .n { grid-column: 1 / -1; font-size: 13px; color: var(--muted); }
+ul.done { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+ul.done li { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 10px; padding: 6px 0; border-top: 1px solid var(--line); font-size: 15px; }
+ul.done li:first-child { border-top: 0; }
+ul.done .d { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 3px; }
+ul.done .t { color: var(--fg); }
+ul.done .t small { display: block; color: var(--muted); font-size: 13px; }
+.card ul.done { padding-top: 6px; border-top: 1px dashed var(--line); }
+.card ul.done li { font-size: 14.5px; }
+.card .done-head { font-size: 14px; color: var(--muted); }
 footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 4px; }
 footer a { color: var(--accent-ink); }
 .status { color: var(--muted); font-size: 15px; }
@@ -148,6 +169,7 @@ footer a { color: var(--accent-ink); }
   <div id="app" hidden>
     <div class="tiles" id="tiles" style="margin-bottom:36px"></div>
     <section class="news" id="news" style="margin-bottom:36px"></section>
+    <section class="group" id="done" style="margin-bottom:36px" hidden></section>
     <div id="groups" style="display:grid;gap:36px"></div>
   </div>
 
@@ -226,6 +248,13 @@ footer a { color: var(--accent-ink); }
         }
       }
     }
+    const oldMerged = new Set((old.merged || []).map((m) => m.number));
+    const fresh = (cur.merged || []).filter((m) => !oldMerged.has(m.number));
+    if (fresh.length) {
+      const shown = fresh.slice(0, 5).map((m) => esc(m.text || m.title));
+      const rest = fresh.length - shown.length;
+      items.push({ kind: 'merged', html: `<b>${fresh.length === 1 ? 'Eine Verbesserung' : fresh.length + ' Verbesserungen'} fertig geworden:</b> ${shown.join(' · ')}${rest > 0 ? ` · und ${rest} weitere` : ''}` });
+    }
     return items;
   }
 
@@ -250,19 +279,47 @@ footer a { color: var(--accent-ink); }
       : `<p class="none">Keine sichtbaren Änderungen in diesem Zeitraum.</p>`);
   }
 
+  const plainTitle = (t) => String(t || '').replace(/^[a-z]+(\([^)]*\))?!?:\s*/i, '');
+  function doneItem(m) {
+    return `<li><span class="d">${fmtShort(m.mergedAt)}</span><span class="t">${esc(m.text || plainTitle(m.title))}</span></li>`;
+  }
+
+  function renderDone(s) {
+    const el = $('done');
+    const list = s.merged || [];
+    if (!list.length) { el.hidden = true; return; }
+    const groups = new Map();
+    for (const m of list) {
+      const key = m.release ? m.release.publishedAt.slice(0, 10) : '__next';
+      if (!groups.has(key)) groups.set(key, { key, release: m.release, items: [] });
+      groups.get(key).items.push(m);
+    }
+    const ordered = [...groups.values()].sort((a, b) => (b.release?.publishedAt || '9999').localeCompare(a.release?.publishedAt || '9999'));
+    const recent = (g) => !g.release || daysBetween(g.release.publishedAt.slice(0, 10) + 'T12:00:00', s.date + 'T12:00:00') <= 14;
+    el.hidden = false;
+    el.innerHTML = `<div class="group-head"><h2 id="g-done">Zuletzt fertig geworden</h2><span class="count">${list.length}</span><span class="hint">Fertige Verbesserungen der letzten Wochen, die zu euren Anforderungen gehören. Ältere Tage sind eingeklappt.</span></div>
+      <div class="done-groups">${ordered.map((g) => {
+        const head = `<div class="gh"><h3>${g.release ? `Veröffentlicht am ${fmtDate(g.release.publishedAt)}` : 'Fertig, kommt mit der nächsten Veröffentlichung'}</h3><span class="chip ${g.release ? 'live' : 'test'}">${g.release ? 'Live' : 'Wird geprüft'}</span></div>`;
+        const body = `<ul class="done">${g.items.map(doneItem).join('')}</ul>`;
+        return recent(g)
+          ? `<div class="done-group">${head}${body}</div>`
+          : `<details class="done-group"><summary>${head}<span class="n">${g.items.length === 1 ? '1 Verbesserung' : g.items.length + ' Verbesserungen'}</span></summary>${body}</details>`;
+      }).join('')}</div>`;
+  }
+
   function renderPhase(p) {
     const when = p.state === 'done' && p.doneAt ? `fertig ${fmtShort(p.doneAt)}` : p.state === 'active' ? 'in Arbeit' : '';
     return `<li class="phase ${p.state}"><span class="ic" aria-hidden="true"></span><span class="ttl">${esc(p.title)}</span><span class="when">${when}</span>${p.text ? `<span class="txt">${esc(p.text)}</span>` : ''}</li>`;
   }
 
-  function renderFeature(f, multiple, ref) {
+  function renderFeature(f, multiple, ref, shared) {
     const done = f.phases.filter((p) => p.state === 'done').length;
     const activeIdx = f.phases.findIndex((p) => p.state === 'active');
     const next = activeIdx >= 0 ? f.phases[activeIdx] : null;
     const segs = f.phases.map((p) => `<span class="seg ${p.state}" title="${esc(p.title)}"></span>`).join('');
     const right = f.release ? `live seit ${fmtDate(f.release.publishedAt)}` : f.pull?.state === 'merged' ? 'auf der Testumgebung' : f.pull?.state === 'open' ? 'in der Abschlussprüfung' : multiple && f.lastActivity ? `zuletzt gearbeitet ${ago(f.lastActivity, ref)}` : '';
     return `<div class="feature">
-      ${multiple ? `<div class="ftitle"><b>${esc(f.title)}</b></div>` : ''}
+      ${multiple || shared ? `<div class="ftitle"><b>${esc(f.title)}</b>${shared && !multiple ? '<span>gemeinsames Vorhaben mit anderen Anforderungen</span>' : ''}</div>` : ''}
       <div class="bar" role="img" aria-label="${done} von ${f.phases.length} Arbeitsschritten fertig">${segs}</div>
       <div class="bar-label"><span><b>${done} von ${f.phases.length}</b> Arbeitsschritten fertig${next ? ` · gerade: ${esc(next.title)}` : ''}</span><span>${right}</span></div>
       <details><summary>Alle Arbeitsschritte</summary><ol class="phases">${f.phases.map(renderPhase).join('')}</ol></details>
@@ -280,7 +337,8 @@ footer a { color: var(--accent-ink); }
     return `<article class="card">
       <header><h3>${esc(t.title)}</h3><span class="chip ${t.stage}">${CHIP[t.stage] || t.stage}</span></header>
       <p class="meta">${meta.map((m) => `<span>${m}</span>`).join('')}</p>
-      ${t.features.map((f) => renderFeature(f, multiple, ref)).join('')}
+      ${t.features.map((f) => renderFeature(f, multiple, ref, (f.ticketCount || 1) > 1)).join('')}
+      ${(t.merged || []).length ? `<ul class="done">${t.merged.map(doneItem).join('')}</ul>` : ''}
     </article>`;
   }
 
@@ -308,7 +366,7 @@ footer a { color: var(--accent-ink); }
     history.replaceState(null, '', `#${date}`);
     const oldDate = compareDate(index.dates, date);
     const old = oldDate ? await loadSnapshot(oldDate) : null;
-    renderTiles(s); renderNews(s, oldDate, old); renderGroups(s);
+    renderTiles(s); renderNews(s, oldDate, old); renderDone(s); renderGroups(s);
     $('boardlink').href = s.boardUrl || $('boardlink').href;
     $('status').hidden = true; $('app').hidden = false;
   }

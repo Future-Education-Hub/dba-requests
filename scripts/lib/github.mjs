@@ -111,3 +111,28 @@ export async function listReleases(token, owner, repo) {
       .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
   } catch { return []; }
 }
+
+/** Gemergte Pull Requests nach main seit einem Zeitpunkt (neueste zuerst). */
+export async function listMergedPulls(token, owner, repo, sinceIso) {
+  const out = [];
+  for (let page = 1; page <= 10; page += 1) {
+    const batch = await rest(token, `/repos/${owner}/${repo}/pulls?state=closed&base=main&sort=updated&direction=desc&per_page=100&page=${page}`);
+    let older = false;
+    for (const p of batch) {
+      if (!p.merged_at) continue;
+      if (p.merged_at < sinceIso) { older = true; continue; }
+      out.push({
+        number: p.number,
+        title: p.title || '',
+        body: p.body || '',
+        url: p.html_url,
+        mergedAt: p.merged_at,
+        mergeSha: p.merge_commit_sha,
+        branch: p.head?.ref || null,
+        labels: (p.labels || []).map((l) => l.name),
+      });
+    }
+    if (batch.length < 100 || older) break;
+  }
+  return out.sort((a, b) => b.mergedAt.localeCompare(a.mergedAt));
+}

@@ -37,6 +37,24 @@ export function grepPlanFiles(repo, ref, needle) {
     .filter((p) => /^docs\/features\/[^/]+\/PLAN\.md$/.test(p));
 }
 
+/** Alle PLAN.md unter docs/features auf einem Ref, mit Blob-Kennung (zum Entdoppeln über Branches). */
+export function listPlanBlobs(repo, ref) {
+  const out = tryGit(repo, ['ls-tree', '-r', ref, '--', 'docs/features']);
+  if (!out) return [];
+  return out
+    .split('\n')
+    .filter(Boolean)
+    .map((line) => {
+      const [meta, path] = line.split('\t');
+      return { blob: meta.split(' ')[2], path };
+    })
+    .filter((e) => /^docs\/features\/[^/]+\/PLAN\.md$/.test(e.path));
+}
+
+export function readBlob(repo, blob) {
+  return tryGit(repo, ['cat-file', '-p', blob]);
+}
+
 export function readFileAt(repo, ref, path) {
   return tryGit(repo, ['show', `${ref}:${path}`]);
 }
