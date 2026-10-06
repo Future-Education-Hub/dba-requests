@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "generatedAt": "2026-10-06T15:20:23.499Z",
+  "generatedAt": "2026-10-06T15:32:32.601Z",
   "boardUrl": "https://github.com/orgs/Future-Education-Hub/projects/3/views/6",
   "tickets": [
     {
@@ -206,7 +206,7 @@
       "stage": "in_arbeit",
       "liveSince": null,
       "releaseTag": null,
-      "lastActivity": "2026-10-06T17:09:16+02:00",
+      "lastActivity": "2026-10-06T17:32:09+02:00",
       "phasesTotal": 15,
       "phasesDone": 10,
       "features": [
@@ -215,7 +215,7 @@
           "title": "Batch-Modus",
           "stand": "In Arbeit (Phase 10/15)",
           "branch": "feat/batch-mode",
-          "lastActivity": "2026-10-06T17:09:16+02:00",
+          "lastActivity": "2026-10-06T17:32:09+02:00",
           "pull": null,
           "release": null,
           "stage": "in_arbeit",
