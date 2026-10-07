@@ -44,6 +44,7 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-padding-top: 16px; }
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
 a { color: inherit; }
@@ -75,6 +76,7 @@ header.hero { display: grid; gap: 12px; }
 .news ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
 .news li b { font-weight: 600; }
 .news .none { color: var(--muted); }
+.news .sub { color: var(--muted); font-size: 14px; }
 
 section.group { display: grid; gap: 14px; }
 .group-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
@@ -143,6 +145,27 @@ ul.done .t small { display: block; color: var(--muted); font-size: 13px; }
 .card ul.done { padding-top: 6px; border-top: 1px dashed var(--line); }
 .card ul.done li { font-size: 14.5px; }
 .card .done-head { font-size: 14px; color: var(--muted); }
+/* Ansicht-Umschalter */
+.viewseg { margin-left: auto; display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--surface); }
+.segbtn { font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.segbtn[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
+.segbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (max-width: 560px) { .viewseg { margin-left: 0; } }
+
+/* Board-Ansicht */
+.wrap > * { min-width: 0; }
+.board { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); gap: 12px; overflow-x: auto; max-width: 100%; padding-bottom: 8px; align-items: start; }
+.col { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px; display: grid; gap: 8px; align-content: start; min-width: 0; border-top: 3px solid var(--plan); }
+.col.in_arbeit { border-top-color: var(--work); } .col.test { border-top-color: var(--test); } .col.live { border-top-color: var(--live); }
+.col .ch { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 2px 4px 4px; }
+.col .ch h2 { font-size: 15px; }
+.col .ch .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.col .empty { font-size: 13px; color: var(--muted); padding: 8px 4px; }
+.kcard { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 6px; min-width: 0; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+.kcard:hover, .kcard:focus-visible { border-color: var(--accent); outline: none; }
+.kcard .kt { font-weight: 600; font-size: 14.5px; line-height: 1.3; }
+.kcard .km { font-size: 12.5px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.kcard .bar { height: 8px; }
 footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 4px; }
 footer a { color: var(--accent-ink); }
 .status { color: var(--muted); font-size: 15px; }
@@ -162,6 +185,10 @@ footer a { color: var(--accent-ink); }
       <select id="dates" aria-label="Datum des Standes"></select>
       <button class="btn" id="next" type="button" aria-label="Späterer Stand">›</button>
       <span class="today" id="today"></span>
+      <div class="viewseg" role="group" aria-label="Ansicht">
+        <button type="button" class="segbtn" id="view-liste" aria-pressed="true">Liste</button>
+        <button type="button" class="segbtn" id="view-board" aria-pressed="false">Board</button>
+      </div>
     </div>
   </header>
 
@@ -171,6 +198,7 @@ footer a { color: var(--accent-ink); }
     <section class="news" id="news" style="margin-bottom:36px"></section>
     <section class="group" id="done" style="margin-bottom:36px" hidden></section>
     <div id="groups" style="display:grid;gap:36px"></div>
+    <div id="board" class="board" hidden></div>
   </div>
 
   <footer>
@@ -272,9 +300,10 @@ footer a { color: var(--accent-ink); }
 
   function renderNews(cur, oldDate, old) {
     const el = $('news');
-    if (!old) { el.innerHTML = `<h2>Neu seit …</h2><p class="none">Noch kein früherer Stand zum Vergleichen. Ab morgen steht hier, was sich geändert hat.</p>`; return; }
+    if (!old) { el.innerHTML = `<h2>Die letzten 7 Tage</h2><p class="none">Noch kein früherer Stand zum Vergleichen. Ab morgen steht hier, was sich geändert hat.</p>`; return; }
     const items = diff(cur, old);
-    el.innerHTML = `<h2>Neu seit dem ${fmtDate(oldDate)}</h2>` + (items.length
+    const span = daysBetween(oldDate + 'T12:00:00', cur.date + 'T12:00:00');
+    el.innerHTML = `<h2>Die letzten ${span === 7 ? '7 Tage' : span === 1 ? '24 Stunden' : span + ' Tage'}</h2><p class="sub">Verglichen mit dem Stand vom ${fmtDate(oldDate)}${span < 7 ? ', ein älterer Stand liegt noch nicht vor' : ''}.</p>` + (items.length
       ? `<ul>${items.map((i) => `<li>${i.html}</li>`).join('')}</ul>`
       : `<p class="none">Keine sichtbaren Änderungen in diesem Zeitraum.</p>`);
   }
@@ -334,12 +363,46 @@ footer a { color: var(--accent-ink); }
     else if (t.closedAt) meta.push(`erledigt am ${fmtDate(t.closedAt)}`);
     else meta.push(`aufgenommen am ${fmtDate(t.createdAt)}`);
     const multiple = t.features.length > 1;
-    return `<article class="card">
+    return `<article class="card" id="t-${t.number}">
       <header><h3>${esc(t.title)}</h3><span class="chip ${t.stage}">${CHIP[t.stage] || t.stage}</span></header>
       <p class="meta">${meta.map((m) => `<span>${m}</span>`).join('')}</p>
       ${t.features.map((f) => renderFeature(f, multiple, ref, (f.ticketCount || 1) > 1)).join('')}
       ${(t.merged || []).length ? `<ul class="done">${t.merged.map(doneItem).join('')}</ul>` : ''}
     </article>`;
+  }
+
+  let view = 'liste';
+  try { if (localStorage.getItem('dba-view') === 'board') view = 'board'; } catch { /* kein Speicher */ }
+
+  function setView(v) {
+    view = v;
+    try { localStorage.setItem('dba-view', v); } catch { /* kein Speicher */ }
+    $('view-liste').setAttribute('aria-pressed', String(v === 'liste'));
+    $('view-board').setAttribute('aria-pressed', String(v === 'board'));
+    $('groups').hidden = v !== 'liste';
+    $('board').hidden = v !== 'board';
+  }
+
+  function kcard(t, ref) {
+    const f = t.features[0];
+    const done = t.phasesDone, total = t.phasesTotal;
+    const meta = t.stage === 'live' && t.liveSince ? `live seit ${fmtShort(t.liveSince)}` : t.lastActivity ? `zuletzt ${ago(t.lastActivity, ref)}` : t.closedAt ? `erledigt ${fmtShort(t.closedAt)}` : `seit ${fmtShort(t.createdAt)}`;
+    const bar = f ? `<div class="bar" aria-label="${done} von ${total} Arbeitsschritten fertig">${t.features.flatMap((x) => x.phases).map((p) => `<span class="seg ${p.state}"></span>`).join('')}</div>` : '';
+    return `<button type="button" class="kcard" data-ticket="${t.number}"><span class="kt">${esc(t.title)}</span>${bar}<span class="km"><span>${total ? `${done}/${total} Schritte` : `Ticket #${t.number}`}</span><span>${meta}</span></span></button>`;
+  }
+
+  function renderBoard(s) {
+    const cols = [
+      { key: 'idee', label: 'Ideen', stages: ['idee'] },
+      { key: 'geplant', label: 'Geplant', stages: ['geplant', 'pausiert'] },
+      { key: 'in_arbeit', label: 'In Arbeit', stages: ['in_arbeit'] },
+      { key: 'test', label: 'Wird geprüft', stages: ['test'] },
+      { key: 'live', label: 'Live', stages: ['live', 'erledigt'] },
+    ];
+    $('board').innerHTML = cols.map((c) => {
+      const list = s.tickets.filter((t) => c.stages.includes(t.stage)).sort((a, b) => (b.lastActivity || b.liveSince || '').localeCompare(a.lastActivity || a.liveSince || '') || a.title.localeCompare(b.title, 'de'));
+      return `<section class="col ${c.key}" aria-labelledby="k-${c.key}"><div class="ch"><h2 id="k-${c.key}">${c.label}</h2><span class="count">${list.length}</span></div>${list.length ? list.map((t) => kcard(t, s.date)).join('') : '<p class="empty">nichts</p>'}</section>`;
+    }).join('');
   }
 
   function renderGroups(s) {
@@ -366,7 +429,7 @@ footer a { color: var(--accent-ink); }
     history.replaceState(null, '', `#${date}`);
     const oldDate = compareDate(index.dates, date);
     const old = oldDate ? await loadSnapshot(oldDate) : null;
-    renderTiles(s); renderNews(s, oldDate, old); renderDone(s); renderGroups(s);
+    renderTiles(s); renderNews(s, oldDate, old); renderDone(s); renderGroups(s); renderBoard(s); setView(view);
     $('boardlink').href = s.boardUrl || $('boardlink').href;
     $('status').hidden = true; $('app').hidden = false;
   }
@@ -383,6 +446,14 @@ footer a { color: var(--accent-ink); }
       $('prev').addEventListener('click', () => { const i = index.dates.indexOf(sel.value); if (i > 0) show(index.dates[i - 1]); });
       $('next').addEventListener('click', () => { const i = index.dates.indexOf(sel.value); if (i < index.dates.length - 1) show(index.dates[i + 1]); });
       window.addEventListener('hashchange', () => { const d = location.hash.slice(1); if (index.dates.includes(d)) show(d); });
+      $('view-liste').addEventListener('click', () => setView('liste'));
+      $('view-board').addEventListener('click', () => setView('board'));
+      $('board').addEventListener('click', (e) => {
+        const card = e.target.closest('.kcard'); if (!card) return;
+        setView('liste');
+        const el = $(`t-${card.dataset.ticket}`);
+        if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.querySelector('details')?.setAttribute('open', ''); }
+      });
       $('datebar').hidden = false;
       const fromHash = location.hash.slice(1);
       await show(index.dates.includes(fromHash) ? fromHash : index.latest);
