@@ -186,8 +186,8 @@ footer a { color: var(--accent-ink); }
       <button class="btn" id="next" type="button" aria-label="Späterer Stand">›</button>
       <span class="today" id="today"></span>
       <div class="viewseg" role="group" aria-label="Ansicht">
-        <button type="button" class="segbtn" id="view-liste" aria-pressed="true">Liste</button>
-        <button type="button" class="segbtn" id="view-board" aria-pressed="false">Board</button>
+        <button type="button" class="segbtn" id="view-board" aria-pressed="true">Board</button>
+        <button type="button" class="segbtn" id="view-liste" aria-pressed="false">Liste</button>
       </div>
     </div>
   </header>
@@ -371,8 +371,8 @@ footer a { color: var(--accent-ink); }
     </article>`;
   }
 
-  let view = 'liste';
-  try { if (localStorage.getItem('dba-view') === 'board') view = 'board'; } catch { /* kein Speicher */ }
+  let view = 'board';
+  try { if (localStorage.getItem('dba-view') === 'liste') view = 'liste'; } catch { /* kein Speicher */ }
 
   function setView(v) {
     view = v;
