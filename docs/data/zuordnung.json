@@ -1,10 +1,10 @@
 {
   "pairs": {
     "sales-call-to-offer-speed#18": {
-      "sicherheit": 0.85,
-      "begruendung": "Das Vorhaben verkürzt die Zeit vom Call zum Angebot auf höchstens drei Minuten und macht die Angebotskette zuverlässiger.",
+      "sicherheit": 0.9,
+      "begruendung": "Das Vorhaben reduziert die Zeit vom Call bis zum Angebot gezielt auf höchstens drei Minuten.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "sales-offer-refinements#18": {
@@ -16,16 +16,16 @@
     },
     "curriculum-import#17": {
       "sicherheit": 0.6,
-      "begruendung": "Der Curriculum-Import mit Material ist das Werkzeug, mit dem bestehende Kurse ins LMS migriert werden.",
+      "begruendung": "Der Curriculum-Import mit Material ist das Werkzeug zur Migration bestehender Kurse.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "curriculum-day-bundle#17": {
       "sicherheit": 0.5,
-      "begruendung": "Tagesbündel im Curriculum-Import erweitern den Migrationsweg für tagesstrukturierte Kurse.",
+      "begruendung": "Die Tagesbündel erweitern den Import um Tagesstrukturen für migrierte Kurse.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "curriculum-import-generation#17": {
@@ -37,65 +37,65 @@
     },
     "batch-mode#13": {
       "sicherheit": 0.9,
-      "begruendung": "Der Batch-Modus setzt die Batch-Logik mit Kalender, Plan und Freigaben direkt um.",
+      "begruendung": "Das Vorhaben setzt die Batch-Logik umfassend um: Datenmodell, Plan, Freigabe und Sessions.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "batch-mode#3": {
       "sicherheit": 0.8,
-      "begruendung": "Der Batch-Modus enthält einen eigenen Schritt für Incident-Detektoren im Batch.",
+      "begruendung": "Der Schritt „Incident-Detektoren für den Batch“ erweitert das Incident-System um Batch-Support.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "batch-mode#7": {
-      "sicherheit": 0.55,
-      "begruendung": "Der Batch-Anwesenheitsmodus mit Live-Sessions aus Slots ermöglicht Tracking je Veranstaltungsart.",
+      "sicherheit": 0.5,
+      "begruendung": "Batch-Anwesenheitsmodus und manuelle Live-Erfassung decken das Tracking je Veranstaltungsart ab.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "attendance#7": {
-      "sicherheit": 0.4,
-      "begruendung": "Die Anwesenheitslogik 2.0 liefert die Grundlage für ein differenziertes Anwesenheits-Tracking.",
+      "sicherheit": 0.45,
+      "begruendung": "Die neue Anwesenheitslogik mit Signal-Ledger und Modi trägt das Tracking je Veranstaltungsart.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "batch-mode#4": {
       "sicherheit": 0.45,
-      "begruendung": "Das Soll aus dem Plan-Tag bestimmt, welche Tage Vorlesungen oder Praxisanteile enthalten.",
+      "begruendung": "„Soll aus dem Plan-Tag“ leitet Anwesenheitstage aus den Plan-Tagen mit Vorlesung und Praxisteil ab.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "attendance#4": {
-      "sicherheit": 0.45,
-      "begruendung": "Die Tagesbewertung der Anwesenheitslogik 2.0 betrifft die Bewertung von Tagen mit verschiedenen Veranstaltungen.",
+      "sicherheit": 0.4,
+      "begruendung": "Die Tagesbewertung der Anwesenheitslogik betrifft die Bewertung von Tagen mit Vorlesung und Praxisteil.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "attendance#8": {
-      "sicherheit": 0.55,
-      "begruendung": "Freistellungen und Karenz-Verlängerungen decken das Nachreichen von Entschuldigungen ab.",
+      "sicherheit": 0.6,
+      "begruendung": "Freistellungen und Karenz-Verlängerungen ermöglichen nachgereichte Entschuldigungen.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": true
     },
     "attendance#5": {
-      "sicherheit": 0.5,
-      "begruendung": "Die Freistellungslogik der Anwesenheit 2.0 betrifft Entschuldigungen mit oder ohne Nachweis.",
+      "sicherheit": 0.55,
+      "begruendung": "Die Freistellungslogik der Anwesenheit 2.0 unterscheidet entschuldigte Abwesenheiten.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "attendance#6": {
-      "sicherheit": 0.45,
-      "begruendung": "Die Kandidaten-Unit-Engine und die Tagesbewertung bilden die Grundlage für anteilige Anwesenheitsbewertung.",
+      "sicherheit": 0.5,
+      "begruendung": "Kandidaten-Unit-Engine und Tagesbewertung bilden Teilabwesenheiten ab.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-07T06:37:23.333Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
       "accepted": false
     },
     "sales-offer-and-call-fixes#18": {
@@ -104,8 +104,22 @@
       "firstSeen": "2026-10-07T04:44:53.157Z",
       "lastSeen": "2026-10-07T04:44:53.157Z",
       "accepted": false
+    },
+    "stellenmarkt-betrieb#19": {
+      "sicherheit": 0.55,
+      "begruendung": "Das Vorhaben stellt den zentralen Crawler-Betrieb mit Fastfill zentral und Org-Trennung her.",
+      "firstSeen": "2026-10-07T09:17:01.832Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
+      "accepted": false
+    },
+    "job-market-overhaul#19": {
+      "sicherheit": 0.5,
+      "begruendung": "Der Stellenmarkt-Umbau setzt Teile der geforderten Neuausrichtung des Stellenmarkts um.",
+      "firstSeen": "2026-10-07T09:17:01.832Z",
+      "lastSeen": "2026-10-07T09:17:01.832Z",
+      "accepted": false
     }
   },
-  "lastInputKey": "0676674bc6b9c4242c01",
-  "lastRun": "2026-10-07T06:37:23.333Z"
+  "lastInputKey": "061cf70957456cf4324e",
+  "lastRun": "2026-10-07T09:17:01.832Z"
 }

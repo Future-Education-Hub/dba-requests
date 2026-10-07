@@ -2,340 +2,346 @@
   "prs": {
     "310": {
       "titleHash": "7b76938b",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:28.949Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:21.078Z",
       "pairs": {}
     },
     "312": {
       "titleHash": "0922f351",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:28.949Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:21.078Z",
       "pairs": {}
     },
     "316": {
       "titleHash": "7b95243d",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "317": {
       "titleHash": "fb8f5e38",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "318": {
       "titleHash": "a47e5449",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "319": {
       "titleHash": "bd01d3cf",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "320": {
       "titleHash": "ebe064d7",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "321": {
       "titleHash": "4982e4b3",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "326": {
       "titleHash": "2e8ff8e6",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "333": {
       "titleHash": "094eabd4",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "336": {
       "titleHash": "20113c83",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "337": {
       "titleHash": "061a53fe",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "339": {
       "titleHash": "4f11ca17",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "340": {
       "titleHash": "2ac37b8b",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {
         "17": {
           "sicherheit": 0.35,
-          "begruendung": "Macht die Vorwort-Rekonstruktion für per Curriculum importierte Erst-Drafts verfügbar, was für migrierte Kurse nötig ist.",
+          "begruendung": "Macht den Rekonstruktions-Knopf für importierte Erst-Drafts sichtbar und beseitigt so ein Hindernis bei migrierten Kursen.",
           "accepted": false
         }
       }
     },
     "341": {
       "titleHash": "ca8008ef",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {
         "17": {
           "sicherheit": 0.7,
-          "begruendung": "Der Tagesbündel-Import bildet das Kurskonzept des zweiten Bildungsträgers ab (Vorlesung, Aufgaben, Lösung, Briefing) und ist damit Grundlage der DBA-Kursmigration.",
+          "begruendung": "Der Curriculum-Import bildet das Tagesbündel-Kurskonzept des zweiten Bildungsträgers ab und ist damit Grundlage der DBA-Kursmigration.",
           "accepted": true
         }
       }
     },
     "346": {
       "titleHash": "9b662a5c",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {
         "17": {
-          "sicherheit": 0.35,
-          "begruendung": "Behebt einen Fehler im Struktur-Diff bei importierten Kursen, der die Migration importierter Curricula behindert.",
+          "sicherheit": 0.4,
+          "begruendung": "Behebt einen Fehler im Struktur-Diff, der bei importierten Kursen auftrat, und betrifft damit die Kursmigration.",
           "accepted": false
         }
       }
     },
     "347": {
       "titleHash": "ee5d3b26",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "348": {
       "titleHash": "3f95f809",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "349": {
       "titleHash": "cd278383",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "352": {
       "titleHash": "a1d7b10e",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "353": {
       "titleHash": "7d218f50",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "354": {
       "titleHash": "41560a80",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "355": {
       "titleHash": "99a46c24",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "356": {
       "titleHash": "8cc35333",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "357": {
       "titleHash": "3b15dbee",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "362": {
       "titleHash": "a2b5c302",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "364": {
       "titleHash": "9e6fa6fd",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:18.362Z",
       "pairs": {}
     },
     "381": {
       "titleHash": "81bd305f",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "382": {
       "titleHash": "eed0d547",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "384": {
       "titleHash": "08970082",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "386": {
       "titleHash": "0277cc41",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "387": {
       "titleHash": "864df0d3",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "388": {
       "titleHash": "5006dd73",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "390": {
       "titleHash": "72c6bcc4",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "391": {
       "titleHash": "00e1c078",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "392": {
       "titleHash": "aeafe2e2",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "394": {
       "titleHash": "47d368ee",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "396": {
       "titleHash": "1c3ed067",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "398": {
       "titleHash": "2357fd62",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "399": {
       "titleHash": "474d6e4b",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "400": {
       "titleHash": "fc4fe497",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "401": {
       "titleHash": "27db61ea",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "402": {
       "titleHash": "a35be3d5",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "403": {
       "titleHash": "236611de",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "405": {
       "titleHash": "89c819bf",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "406": {
       "titleHash": "1b788de1",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.85,
-          "begruendung": "Der PR verkürzt die Zeit vom Verkaufsgespräch bis zum fertigen Angebot auf höchstens drei Minuten und setzt damit die geforderte Reduktion der Angebotszeit um.",
+          "sicherheit": 0.7,
+          "begruendung": "Der PR senkt die Zeit vom Call bis zum fertigen Angebot auf höchstens 3 Minuten und setzt damit die Anforderung zur kürzeren Angebotszeit um.",
           "accepted": true
         }
       }
     },
     "407": {
       "titleHash": "21944eee",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
-      "pairs": {}
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
+      "pairs": {
+        "19": {
+          "sicherheit": 0.75,
+          "begruendung": "Der PR ist ausdrücklich Schritt 0 der Stellenmarkt-Neuausrichtung, mit täglichem Lauf, Zuordnung und zentralem Fastfill.",
+          "accepted": true
+        }
+      }
     },
     "408": {
       "titleHash": "c342131b",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "409": {
       "titleHash": "906cce1b",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "410": {
       "titleHash": "836e87cc",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "412": {
       "titleHash": "54a11951",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     },
     "414": {
       "titleHash": "493620b3",
-      "issuesKey": "77adcdab753e",
-      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-07T09:17:11.352Z",
       "pairs": {}
     }
   },
-  "issuesKey": "77adcdab753e"
+  "issuesKey": "f5dcd534a4cd"
 }
