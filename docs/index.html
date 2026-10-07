@@ -141,7 +141,8 @@ ul.done li { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 10p
 ul.done li:first-child { border-top: 0; }
 ul.done .d { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 3px; }
 ul.done .t { color: var(--fg); }
-ul.done .t small { display: block; color: var(--muted); font-size: 13px; }
+ul.done .t small { display: block; color: var(--muted); font-size: 12.5px; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+ul.done .t .chip { font-size: 10px; vertical-align: 2px; margin-left: 4px; text-transform: none; letter-spacing: 0; }
 .card ul.done { padding-top: 6px; border-top: 1px dashed var(--line); }
 .card ul.done li { font-size: 14.5px; }
 .card .done-head { font-size: 14px; color: var(--muted); }
@@ -303,14 +304,14 @@ footer a { color: var(--accent-ink); }
     if (!old) { el.innerHTML = `<h2>Die letzten 7 Tage</h2><p class="none">Noch kein früherer Stand zum Vergleichen. Ab morgen steht hier, was sich geändert hat.</p>`; return; }
     const items = diff(cur, old);
     const span = daysBetween(oldDate + 'T12:00:00', cur.date + 'T12:00:00');
-    el.innerHTML = `<h2>Die letzten ${span === 7 ? '7 Tage' : span === 1 ? '24 Stunden' : span + ' Tage'}</h2><p class="sub">Verglichen mit dem Stand vom ${fmtDate(oldDate)}${span < 7 ? ', ein älterer Stand liegt noch nicht vor' : ''}.</p>` + (items.length
+    el.innerHTML = `<h2>Die letzten 7 Tage</h2><p class="sub">Verglichen mit dem Stand vom ${fmtDate(oldDate)}${span < 7 ? `. Die Seite gibt es erst seit dem ${fmtDate(index.dates[0])}, ältere Stände liegen noch nicht vor` : ''}.</p>` + (items.length
       ? `<ul>${items.map((i) => `<li>${i.html}</li>`).join('')}</ul>`
       : `<p class="none">Keine sichtbaren Änderungen in diesem Zeitraum.</p>`);
   }
 
   const plainTitle = (t) => String(t || '').replace(/^[a-z]+(\([^)]*\))?!?:\s*/i, '');
-  function doneItem(m) {
-    return `<li><span class="d">${fmtShort(m.mergedAt)}</span><span class="t">${esc(m.text || plainTitle(m.title))}</span></li>`;
+  function doneItem(m, ticketTitle, chip) {
+    return `<li><span class="d">${fmtShort(m.mergedAt)}</span><span class="t">${ticketTitle ? `<small>${esc(ticketTitle)}</small>` : ''}${esc(m.text || plainTitle(m.title))}${chip ? ` <span class="chip ${m.release ? 'live' : 'test'}">${m.release ? `live seit ${fmtShort(m.release.publishedAt)}` : 'wird geprüft'}</span>` : ''}</span></li>`;
   }
 
   function renderDone(s) {
@@ -329,7 +330,8 @@ footer a { color: var(--accent-ink); }
     el.innerHTML = `<div class="group-head"><h2 id="g-done">Zuletzt fertig geworden</h2><span class="count">${list.length}</span><span class="hint">Fertige Verbesserungen der letzten Wochen, die zu euren Anforderungen gehören. Ältere Tage sind eingeklappt.</span></div>
       <div class="done-groups">${ordered.map((g) => {
         const head = `<div class="gh"><h3>${g.release ? `Veröffentlicht am ${fmtDate(g.release.publishedAt)}` : 'Fertig, kommt mit der nächsten Veröffentlichung'}</h3><span class="chip ${g.release ? 'live' : 'test'}">${g.release ? 'Live' : 'Wird geprüft'}</span></div>`;
-        const body = `<ul class="done">${g.items.map(doneItem).join('')}</ul>`;
+        const titleOf = (m) => s.tickets.find((t) => t.number === m.ticket)?.title || null;
+        const body = `<ul class="done">${g.items.map((m) => doneItem(m, titleOf(m), false)).join('')}</ul>`;
         return recent(g)
           ? `<div class="done-group">${head}${body}</div>`
           : `<details class="done-group"><summary>${head}<span class="n">${g.items.length === 1 ? '1 Verbesserung' : g.items.length + ' Verbesserungen'}</span></summary>${body}</details>`;
@@ -367,7 +369,7 @@ footer a { color: var(--accent-ink); }
       <header><h3>${esc(t.title)}</h3><span class="chip ${t.stage}">${CHIP[t.stage] || t.stage}</span></header>
       <p class="meta">${meta.map((m) => `<span>${m}</span>`).join('')}</p>
       ${t.features.map((f) => renderFeature(f, multiple, ref, (f.ticketCount || 1) > 1)).join('')}
-      ${(t.merged || []).length ? `<ul class="done">${t.merged.map(doneItem).join('')}</ul>` : ''}
+      ${(t.merged || []).length ? `<ul class="done">${t.merged.map((m) => doneItem(m, null, true)).join('')}</ul>` : ''}
     </article>`;
   }
 

@@ -71,4 +71,5 @@ npm run serve                                                        # http://lo
 
 `--worktree` nimmt zusätzlich die ungepushte Arbeitskopie des LMS-Checkouts mit, `--no-llm`
 lässt Zuordnung und Satz-Erzeugung aus (dann gelten Cache und Konfiguration), `--date YYYY-MM-DD`
-schreibt einen Snapshot unter anderem Datum.
+schreibt einen Snapshot unter anderem Datum, `--remap` erzwingt eine Neubewertung aller Zuordnungen
+(akzeptierte Paare bleiben dabei klebrig).

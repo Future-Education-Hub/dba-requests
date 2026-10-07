@@ -14,7 +14,7 @@ const SYSTEM = [
   'Du ordnest interne Entwicklungsvorhaben eines Lernmanagementsystems den Anforderungs-Tickets eines Kunden (Bildungsträger DBA) zu.',
   'Du bekommst die Liste der Tickets (Nummer, Titel, Beschreibung) und die Liste der Vorhaben (Kennung, Titel, Stand, Arbeitsschritte).',
   'Ein Vorhaben gehört zu einem Ticket, wenn es diese Anforderung ganz oder in wesentlichen Teilen umsetzt. Ein Vorhaben kann zu mehreren Tickets gehören, ein Ticket zu mehreren Vorhaben.',
-  'Sei konservativ: Ordne nur zu, wenn der inhaltliche Zusammenhang klar ist. Allgemeine Plattformarbeit, interne Werkzeuge, Vertrieb, Stellenmarkt oder Dinge, die kein Ticket erkennbar fordert, bekommen keine Zuordnung.',
+  'Sei konservativ: Ordne nur zu, wenn der inhaltliche Zusammenhang klar ist. Allgemeine Plattformarbeit, interne Werkzeuge oder Dinge, die kein Ticket erkennbar fordert, bekommen keine Zuordnung. Fordert ein Ticket ein Thema ausdrücklich, ist das passende Vorhaben zuzuordnen, auch wenn es sonst intern wirkt.',
   'Gib für jedes zugeordnete Paar eine Sicherheit zwischen 0 und 1 an und eine Begründung in einem kurzen Satz.',
 ].join(' ');
 
@@ -108,9 +108,10 @@ function migratePlanCache(cache) {
  * Zuordnungen sind klebrig: Ein einmal akzeptiertes Paar bleibt, bis die API es klar widerlegt
  * (Sicherheit unter DROP_CONFIDENCE) oder Plan bzw. Ticket verschwinden. Ohne API-Key gilt der Cache.
  */
-export async function ordneZu(issues, plans, { cachePath, configPath, apiKey, workspaceId, log }) {
+export async function ordneZu(issues, plans, { cachePath, configPath, apiKey, workspaceId, log, remap = false }) {
   const config = loadJson(configPath, { pin: {}, ausblenden: [] });
   const cache = migratePlanCache(loadJson(cachePath, {}));
+  if (remap) cache.lastInputKey = null;
   const key = inputKey(issues, plans);
   const slugs = new Set(plans.map((p) => p.slug));
   const ticketNumbers = new Set(issues.map((i) => i.number));
@@ -168,7 +169,7 @@ const SYSTEM_PR = [
   'Du ordnest fertiggestellte Änderungen (Pull Requests) an einem Lernmanagementsystem den Anforderungs-Tickets eines Kunden (Bildungsträger DBA) zu.',
   'Du bekommst die Liste der Tickets (Nummer, Titel, Beschreibung) und eine Liste von Änderungen (Nummer, Titel, Beschreibung).',
   'Eine Änderung gehört zu einem Ticket, wenn sie dessen Anforderung ganz oder teilweise umsetzt oder einen für dieses Ticket relevanten Fehler behebt.',
-  'Sei konservativ: Allgemeine Plattformarbeit, interne Werkzeuge, Vertrieb, Stellenmarkt, Dokumentation, Medienproduktion oder Dinge, die kein Ticket erkennbar fordert, bekommen keine Zuordnung. Die meisten Änderungen gehören zu keinem Ticket.',
+  'Sei konservativ: Allgemeine Plattformarbeit, interne Werkzeuge, Dokumentation oder Dinge, die kein Ticket erkennbar fordert, bekommen keine Zuordnung. Die meisten Änderungen gehören zu keinem Ticket. Fordert ein Ticket ein Thema ausdrücklich, gehören die Änderungen dazu, auch wenn das Thema sonst intern wirkt.',
   'Gib für jedes zugeordnete Paar eine Sicherheit zwischen 0 und 1 an und eine Begründung in einem kurzen Satz.',
 ].join(' ');
 
@@ -225,9 +226,10 @@ async function askPrMapping(client, issues, prs) {
  * alle PRs werden angefragt, in Paketen von höchstens 25. Akzeptierte Paare bleiben, bis die API sie
  * klar widerlegt (unter DROP_CONFIDENCE).
  */
-export async function ordnePRsZu(issues, prs, { cachePath, apiKey, workspaceId, log }) {
+export async function ordnePRsZu(issues, prs, { cachePath, apiKey, workspaceId, log, remap = false }) {
   let cache = loadJson(cachePath, {});
   if (!cache.prs) cache = { prs: {}, issuesKey: null }; // alte Form verwerfen (nur ein Tag alt)
+  if (remap) for (const e of Object.values(cache.prs)) e.issuesKey = null;
   const ik = issuesKey(issues);
   const ticketNumbers = new Set(issues.map((i) => i.number));
   const titleHash = (p) => createHash('sha256').update(p.title).digest('hex').slice(0, 8);

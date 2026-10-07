@@ -576,5 +576,124 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-06T15:52:34.468Z",
     "pr": 310
+  },
+  "b97ff5bb51c57f56f419": {
+    "text": "Stellenangebote erhalten einheitliche Angaben zu Ort, Bundesland, Arbeitsform und Beruf, damit sich gezielt im Umkreis und nach Arbeitsform suchen lässt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:09.616Z",
+    "slug": "job-market-overhaul",
+    "phase": 1
+  },
+  "e8e33e2307fa85ea8a43": {
+    "text": "Stellenangebote der Bundesagentur kommen wieder zuverlässig an, mit genauem Ort, Bundesland, Berufsbezeichnung und Angabe zu Homeoffice oder Arbeit vor Ort.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:11.764Z",
+    "slug": "job-market-overhaul",
+    "phase": 2
+  },
+  "668bde2a9d997a769087": {
+    "text": "Im Stellenmarkt lassen sich Stellen jetzt im Umkreis eines Orts oder einer Postleitzahl finden und gezielt nach Arbeitsform filtern.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:16.148Z",
+    "slug": "job-market-overhaul",
+    "phase": 3
+  },
+  "6792552b9b3c04c128b1": {
+    "text": "Eine neue Analyse-Seite zeigt auf einen Blick, woher aktive Stellen stammen, wo und wie gearbeitet wird und welche Berufe und Fähigkeiten gefragt sind.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:20.647Z",
+    "slug": "job-market-overhaul",
+    "phase": 4
+  },
+  "21610743559db2360dbb": {
+    "text": "Fähigkeiten in Stellenanzeigen werden einheitlich benannt, als angegeben oder abgeleitet gekennzeichnet und bei rund 1.300 älteren Stellen nachträglich erkannt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:22.902Z",
+    "slug": "job-market-overhaul",
+    "phase": 5
+  },
+  "65b733b109d9accf16ec": {
+    "text": "Beschreiben Sie frei, wen Sie suchen oder vermitteln möchten, und das System schlägt passende Stellen vor, begründet jeden Vorschlag und sagt klar, wenn nichts passt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:25.236Z",
+    "slug": "job-market-overhaul",
+    "phase": 6
+  },
+  "13406808f0891e416d26": {
+    "text": "Verwaltungskräfte können Stellenwünsche frei eingeben und an echten Stellen prüfen, welche Angebote passen und warum, um die Vorschläge zu verbessern.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:32.380Z",
+    "slug": "job-market-overhaul",
+    "phase": 7
+  },
+  "b137b00c01d43a7fdffa": {
+    "text": "Vorschläge für neue Lernangebote aus Stellenanzeigen erscheinen erst bei genug Belegen, zeigen ihre Stellen und tauchen nach Ablehnung nicht wieder auf.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:36.531Z",
+    "slug": "job-market-overhaul",
+    "phase": 8
+  },
+  "43e95a7fa82a4797c216": {
+    "text": "Der Stellenmarkt aktualisiert sich jetzt jede Woche von selbst mit neuen Stellen, und nicht mehr erreichbare Angebote verschwinden automatisch aus der Suche.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:40.196Z",
+    "slug": "job-market-overhaul",
+    "phase": 9
+  },
+  "858e4a9c27d885d2680c": {
+    "text": "Das Team sichert die Qualität des Stellenmarkt-Umbaus ab, damit Umkreissuche, Auswertungen, Vorschläge und der Schutz fremder Daten zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:42.140Z",
+    "slug": "job-market-overhaul",
+    "phase": 10
+  },
+  "177b8c9656b0245af478": {
+    "text": "Organisationen können nun wählen, ob der Stellenmarkt täglich oder wöchentlich aktualisiert wird, und passende Stellen werden dabei automatisch zugeordnet.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:44.001Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 1
+  },
+  "c4ba3ab9907b5b136a26": {
+    "text": "Wenn der automatische Stellenabruf wegen falscher Einstellungen nicht klappt, zeigt die Zeitplanübersicht jetzt verständlich, welcher Termin ausfiel und warum.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:46.228Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 2
+  },
+  "884bccb6a2c275ce6885": {
+    "text": "Stellenangebote werden nun strikt getrennt pro Organisation verarbeitet, und die Bundesagentur als Quelle ist vorerst abgeschaltet, mit klarem Hinweis beim Startversuch.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:48.526Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 3
+  },
+  "84a7c88b20b15831a55d": {
+    "text": "Stellenangebote im Stellenmarkt laufen nach einer einstellbaren Frist automatisch ab, sodass morgens nur noch aktuelle Stellen angezeigt werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:50.683Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 4
+  },
+  "2e0ee6dcf6c0ce0b142d": {
+    "text": "Der Zugang zur Stellenquelle wird künftig zentral von der Plattform verwaltet und pro Einrichtung freigeschaltet, sodass niemand mehr eigene Zugangsdaten pflegen muss.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:52.614Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 5
+  },
+  "9c63d4116166ee5b3864": {
+    "text": "Plattformverantwortliche steuern die Stellenmarkt-Quellen künftig zentral, und Organisationen sehen klar, welche Quellen für sie freigeschaltet sind.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:54.556Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 6
+  },
+  "33c57091542566990ee4": {
+    "text": "Das Team sichert die Qualität des Stellenmarkt-Betriebs ab, damit Zeitpläne, Freigaben, Quellen und das Auslaufen alter Stellen zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-07T09:19:56.796Z",
+    "slug": "stellenmarkt-betrieb",
+    "phase": 7
   }
 }

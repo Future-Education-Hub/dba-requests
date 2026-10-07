@@ -2,7 +2,7 @@
 /**
  * Erzeugt den Tages-Snapshot der Fortschrittsseite.
  *
- *   node scripts/build.mjs --lms <Pfad zum feh-lms-Checkout> [--date YYYY-MM-DD] [--no-llm]
+ *   node scripts/build.mjs --lms <Pfad zum feh-lms-Checkout> [--date YYYY-MM-DD] [--no-llm] [--remap]
  *
  * Umgebung: GITHUB_TOKEN (Lesen: feh-lms Contents + Pull requests, Org-Projekte),
  *           ANTHROPIC_API_KEY (optional, für die Laiensätze),
@@ -93,7 +93,7 @@ const issues = await listIssues(token, ORG, DBA_REPO);
 const zuordnung = await ordneZu(
   issues,
   [...chosenBySlug.values()].map((c) => c.plan),
-  { cachePath: join(outDir, 'zuordnung.json'), configPath: join(here, '..', 'config', 'zuordnung.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log },
+  { cachePath: join(outDir, 'zuordnung.json'), configPath: join(here, '..', 'config', 'zuordnung.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log, remap: !!args.remap },
 );
 for (const [slug, c] of chosenBySlug) c.plan.dbaTickets = [...(zuordnung.get(slug) || [])];
 
@@ -176,9 +176,11 @@ for (const f of features) for (const p of f.phases) { delete p.items; delete p.d
 const since = new Date(Date.now() - MERGED_WINDOW_DAYS * 86400000).toISOString();
 const planBranches = new Map(features.filter((f) => f.branch).map((f) => [f.branch, f]));
 const mergedRaw = (await listMergedPulls(token, ORG, LMS_REPO, since)).filter((p) => !SKIP_TITLE.test(p.title));
-const prZuordnung = await ordnePRsZu(issues, mergedRaw, { cachePath: join(outDir, 'zuordnung-prs.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log });
+const zuordnungConfig = JSON.parse(readFileSync(join(here, '..', 'config', 'zuordnung.json'), 'utf8'));
+const prZuordnung = await ordnePRsZu(issues, mergedRaw, { cachePath: join(outDir, 'zuordnung-prs.json'), apiKey, workspaceId: process.env.ANTHROPIC_WORKSPACE_ID || null, log, remap: !!args.remap });
 const merged = mergedRaw
   .map((p) => {
+    if ((zuordnungConfig.prAusblenden || []).includes(p.number)) return null;
     const ticketRefs = new Set(prZuordnung.get(p.number) || []);
     const viaPlan = p.branch && planBranches.get(p.branch);
     if (viaPlan) for (const t of viaPlan.dbaTickets) ticketRefs.add(t);
@@ -199,8 +201,11 @@ log(`${issues.length} DBA-Tickets gelesen, Board-Status ${board ? 'verfügbar' :
 const tickets = issues.map((issue) => {
   const linked = features.filter((f) => f.dbaTickets.includes(issue.number));
   const boardStatus = board ? board.get(`${ORG}/${DBA_REPO}#${issue.number}`) ?? null : null;
-  const live = linked.filter((f) => f.release).sort((a, b) => a.release.publishedAt.localeCompare(b.release.publishedAt))[0] || null;
-  const stage = ticketStage(issue, boardStatus, linked);
+  const mergedForTicket = merged.filter((m) => m.tickets.includes(issue.number));
+  const stage = ticketStage(issue, boardStatus, linked, mergedForTicket);
+  // „live seit“: das jüngste Release, das einen Teil dieses Tickets enthält (alle Teile sind dann live)
+  const releaseDates = [...linked.filter((f) => f.release).map((f) => f.release.publishedAt), ...mergedForTicket.filter((m) => m.release).map((m) => m.release.publishedAt)].sort();
+  const live = stage === 'live' && releaseDates.length ? releaseDates.at(-1) : null;
   const lastActivity = linked.map((f) => f.lastActivity).filter(Boolean).sort().at(-1) || null;
   const phasesTotal = linked.reduce((s, f) => s + f.phases.length, 0);
   const phasesDone = linked.reduce((s, f) => s + f.phases.filter((p) => p.state === 'done').length, 0);
@@ -213,13 +218,12 @@ const tickets = issues.map((issue) => {
     closedAt: issue.closedAt,
     boardStatus,
     stage,
-    liveSince: live ? live.release.publishedAt.slice(0, 10) : null,
-    releaseTag: live ? live.release.tag : null,
+    liveSince: live ? live.slice(0, 10) : null,
     lastActivity,
     phasesTotal,
     phasesDone,
     features: linked.map(({ dbaTickets, ...rest }) => ({ ...rest, ticketCount: dbaTickets.length })),
-    merged: merged.filter((m) => m.tickets.includes(issue.number)).map(({ tickets, ...rest }) => rest),
+    merged: mergedForTicket.map(({ tickets, ...rest }) => rest),
   };
 });
 
@@ -253,13 +257,19 @@ function featureStage(plan, pull, release, { declared, onMain, allDone }) {
   return 'geplant';
 }
 
-function ticketStage(issue, boardStatus, linked) {
-  if (linked.some((f) => f.stage === 'live')) return 'live';
-  if (issue.state === 'closed') return 'erledigt';
+/**
+ * Zustand eines Tickets. Maßgeblich ist, was im Repo liegt: Vorhaben zuerst, dann gemergte PRs,
+ * die Board-Spalte nur, wenn beides fehlt. Bei mehreren Vorhaben gilt das am wenigsten weit
+ * gediehene (offene Arbeit schlägt Testphase schlägt Live), weil das Ticket erst fertig ist,
+ * wenn alle Teile fertig sind.
+ */
+function ticketStage(issue, boardStatus, linked, mergedForTicket) {
+  if (issue.state === 'closed') return linked.some((f) => f.stage === 'live') || mergedForTicket.some((m) => m.release) ? 'live' : 'erledigt';
   if (linked.length) {
-    const order = ['test', 'in_arbeit', 'geplant'];
-    for (const s of order) if (linked.some((f) => f.stage === s)) return s;
+    for (const s of ['in_arbeit', 'test', 'geplant']) if (linked.some((f) => f.stage === s)) return s;
+    return 'live';
   }
+  if (mergedForTicket.length) return mergedForTicket.every((m) => m.release) ? 'live' : 'test';
   switch (boardStatus) {
     case 'In progress': return 'in_arbeit';
     case 'Current Sprint':
@@ -281,6 +291,7 @@ function parseArgs(argv) {
     else if (argv[i] === '--date') out.date = argv[++i];
     else if (argv[i] === '--no-llm') out.noLlm = true;
     else if (argv[i] === '--worktree') out.worktree = true;
+    else if (argv[i] === '--remap') out.remap = true;
   }
   return out;
 }

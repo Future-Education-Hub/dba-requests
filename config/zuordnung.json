@@ -1,5 +1,6 @@
 {
-  "_hinweis": "Manuelle Korrekturen der automatischen Zuordnung Plan → DBA-Ticket. pin: Plan-Slug → Ticketnummern (gewinnt immer). ausblenden: Plan-Slugs, die nie erscheinen sollen.",
+  "_hinweis": "Manuelle Korrekturen der automatischen Zuordnung Plan → DBA-Ticket. pin: Plan-Slug → Ticketnummern (gewinnt immer). ausblenden: Plan-Slugs, die nie erscheinen sollen. prAusblenden: PR-Nummern, die nie erscheinen sollen.",
   "pin": {},
-  "ausblenden": []
+  "ausblenden": [],
+  "prAusblenden": []
 }
