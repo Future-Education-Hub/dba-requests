@@ -1,226 +1,341 @@
 {
-  "77adcdab753e|407|21944eee": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|412|54a11951": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|410|836e87cc": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|409|906cce1b": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|408|c342131b": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|406|1b788de1": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": [
-      {
-        "ticket": 18,
-        "sicherheit": 0.6,
-        "begruendung": "Der PR verkürzt die Zeit vom Verkaufsgespräch bis zum fertigen Angebot auf höchstens drei Minuten und setzt damit die geforderte Reduzierung der Angebotszeit um."
+  "prs": {
+    "310": {
+      "titleHash": "7b76938b",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:28.949Z",
+      "pairs": {}
+    },
+    "312": {
+      "titleHash": "0922f351",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:28.949Z",
+      "pairs": {}
+    },
+    "316": {
+      "titleHash": "7b95243d",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "317": {
+      "titleHash": "fb8f5e38",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "318": {
+      "titleHash": "a47e5449",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "319": {
+      "titleHash": "bd01d3cf",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "320": {
+      "titleHash": "ebe064d7",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "321": {
+      "titleHash": "4982e4b3",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "326": {
+      "titleHash": "2e8ff8e6",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "333": {
+      "titleHash": "094eabd4",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "336": {
+      "titleHash": "20113c83",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "337": {
+      "titleHash": "061a53fe",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "339": {
+      "titleHash": "4f11ca17",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "340": {
+      "titleHash": "2ac37b8b",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {
+        "17": {
+          "sicherheit": 0.35,
+          "begruendung": "Macht die Vorwort-Rekonstruktion für per Curriculum importierte Erst-Drafts verfügbar, was für migrierte Kurse nötig ist.",
+          "accepted": false
+        }
       }
-    ]
-  },
-  "77adcdab753e|405|89c819bf": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|403|236611de": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|402|a35be3d5": {
-    "createdAt": "2026-10-06T15:55:02.144Z",
-    "tickets": []
-  },
-  "77adcdab753e|400|fc4fe497": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|401|27db61ea": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|399|474d6e4b": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|398|2357fd62": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|396|1c3ed067": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|394|47d368ee": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|392|aeafe2e2": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|391|00e1c078": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|390|72c6bcc4": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|388|5006dd73": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|387|864df0d3": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|386|0277cc41": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|384|08970082": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|381|81bd305f": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|382|eed0d547": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|364|9e6fa6fd": {
-    "createdAt": "2026-10-06T15:55:02.145Z",
-    "tickets": []
-  },
-  "77adcdab753e|362|a2b5c302": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|357|3b15dbee": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|356|8cc35333": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|355|99a46c24": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|354|41560a80": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|353|7d218f50": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|352|a1d7b10e": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|349|cd278383": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|347|ee5d3b26": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|346|9b662a5c": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|348|3f95f809": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|341|ca8008ef": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": [
-      {
-        "ticket": 17,
-        "sicherheit": 0.7,
-        "begruendung": "Der Tagesbündel-Import bildet das Kurskonzept des zweiten Bildungsträgers ab (Vorlesung, Aufgaben, Lösung, Briefing) und ist damit Grundlage für die DBA-Kursmigration."
+    },
+    "341": {
+      "titleHash": "ca8008ef",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {
+        "17": {
+          "sicherheit": 0.7,
+          "begruendung": "Der Tagesbündel-Import bildet das Kurskonzept des zweiten Bildungsträgers ab (Vorlesung, Aufgaben, Lösung, Briefing) und ist damit Grundlage der DBA-Kursmigration.",
+          "accepted": true
+        }
       }
-    ]
+    },
+    "346": {
+      "titleHash": "9b662a5c",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {
+        "17": {
+          "sicherheit": 0.35,
+          "begruendung": "Behebt einen Fehler im Struktur-Diff bei importierten Kursen, der die Migration importierter Curricula behindert.",
+          "accepted": false
+        }
+      }
+    },
+    "347": {
+      "titleHash": "ee5d3b26",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "348": {
+      "titleHash": "3f95f809",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "349": {
+      "titleHash": "cd278383",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "352": {
+      "titleHash": "a1d7b10e",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "353": {
+      "titleHash": "7d218f50",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "354": {
+      "titleHash": "41560a80",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "355": {
+      "titleHash": "99a46c24",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "356": {
+      "titleHash": "8cc35333",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "357": {
+      "titleHash": "3b15dbee",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "362": {
+      "titleHash": "a2b5c302",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "364": {
+      "titleHash": "9e6fa6fd",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:24.937Z",
+      "pairs": {}
+    },
+    "381": {
+      "titleHash": "81bd305f",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "382": {
+      "titleHash": "eed0d547",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "384": {
+      "titleHash": "08970082",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "386": {
+      "titleHash": "0277cc41",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "387": {
+      "titleHash": "864df0d3",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "388": {
+      "titleHash": "5006dd73",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "390": {
+      "titleHash": "72c6bcc4",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "391": {
+      "titleHash": "00e1c078",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "392": {
+      "titleHash": "aeafe2e2",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "394": {
+      "titleHash": "47d368ee",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "396": {
+      "titleHash": "1c3ed067",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "398": {
+      "titleHash": "2357fd62",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "399": {
+      "titleHash": "474d6e4b",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "400": {
+      "titleHash": "fc4fe497",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "401": {
+      "titleHash": "27db61ea",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "402": {
+      "titleHash": "a35be3d5",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "403": {
+      "titleHash": "236611de",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "405": {
+      "titleHash": "89c819bf",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "406": {
+      "titleHash": "1b788de1",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.85,
+          "begruendung": "Der PR verkürzt die Zeit vom Verkaufsgespräch bis zum fertigen Angebot auf höchstens drei Minuten und setzt damit die geforderte Reduktion der Angebotszeit um.",
+          "accepted": true
+        }
+      }
+    },
+    "407": {
+      "titleHash": "21944eee",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "408": {
+      "titleHash": "c342131b",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "409": {
+      "titleHash": "906cce1b",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "410": {
+      "titleHash": "836e87cc",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "412": {
+      "titleHash": "54a11951",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    },
+    "414": {
+      "titleHash": "493620b3",
+      "issuesKey": "77adcdab753e",
+      "updatedAt": "2026-10-07T06:36:17.666Z",
+      "pairs": {}
+    }
   },
-  "77adcdab753e|339|4f11ca17": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|340|2ac37b8b": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|337|061a53fe": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|336|20113c83": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|333|094eabd4": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|326|2e8ff8e6": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|322|71dd245e": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|321|4982e4b3": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|320|ebe064d7": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|319|bd01d3cf": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|318|a47e5449": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|317|fb8f5e38": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|316|7b95243d": {
-    "createdAt": "2026-10-06T15:55:09.304Z",
-    "tickets": []
-  },
-  "77adcdab753e|312|0922f351": {
-    "createdAt": "2026-10-06T15:55:13.535Z",
-    "tickets": []
-  },
-  "77adcdab753e|310|7b76938b": {
-    "createdAt": "2026-10-06T15:55:13.535Z",
-    "tickets": []
-  },
-  "77adcdab753e|414|493620b3": {
-    "createdAt": "2026-10-07T04:44:57.306Z",
-    "tickets": []
-  }
+  "issuesKey": "77adcdab753e"
 }

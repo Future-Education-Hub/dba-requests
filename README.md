@@ -32,6 +32,12 @@ erst wieder, wenn ein Ticket oder Plan dazukommt oder sich ändert. Korrekturen 
 
 `pin` erzwingt eine Zuordnung, `ausblenden` hält einen Plan dauerhaft von der Seite fern.
 
+Zuordnungen sind **klebrig**: Ein Paar wird ab Sicherheit 0,6 akzeptiert und bleibt dann bestehen,
+auch wenn ein späterer Lauf es knapp darunter bewertet. Gelöst wird es erst, wenn die API es klar
+widerlegt (unter 0,4), Plan oder Ticket verschwinden, oder `ausblenden` greift. So springt kein
+Ticket zwischen „Live“ und „Idee“ hin und her, nur weil ein neues Vorhaben die Neubewertung
+auslöst. Begründungen und Sicherheiten stehen in `docs/data/zuordnung.json` (`pairs`).
+
 Im Bereich „Zuletzt fertig geworden“ erscheinen nur gemergte Pull Requests nach `main`, die die
 Claude API einem DBA-Ticket zuordnet (oder deren Branch zu einem zugeordneten Vorhaben gehört).
 `chore`/`ci`/`docs`/`test`/`refactor`/`build`/`perf` werden vorab ausgefiltert. Cache:

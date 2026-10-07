@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "generatedAt": "2026-10-07T04:44:58.793Z",
+  "generatedAt": "2026-10-07T06:36:30.622Z",
   "boardUrl": "https://github.com/orgs/Future-Education-Hub/projects/3/views/6",
   "tickets": [
     {
@@ -488,13 +488,130 @@
       "createdAt": "2026-09-29T08:41:04Z",
       "closedAt": null,
       "boardStatus": "Backlog",
-      "stage": "idee",
-      "liveSince": null,
-      "releaseTag": null,
-      "lastActivity": null,
-      "phasesTotal": 0,
-      "phasesDone": 0,
-      "features": [],
+      "stage": "live",
+      "liveSince": "2026-07-24",
+      "releaseTag": "v3.4.2",
+      "lastActivity": "2026-07-23T11:04:35+02:00",
+      "phasesTotal": 9,
+      "phasesDone": 9,
+      "features": [
+        {
+          "slug": "attendance",
+          "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
+          "stand": "",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell, Signal-Ledger & individuelle Modus-Einstellung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Permissions, RLS & Modus-Helper",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Kandidaten-Unit-Engine (SQL)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Tagesbewertung (Kaskade §5) & modusbewusster Cron",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Freistellungen & Karenz-Verlängerungen (RPCs)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Kommunikation (Tageserinnerung & Mentor-Frühwarnung)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Frontend Student & Modus-Gating",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Frontend Staff & Org-Konfiguration",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Incident-Regression, Reporting-Grundlage, E2E-Suite & Doku",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        }
+      ],
       "merged": []
     },
     {

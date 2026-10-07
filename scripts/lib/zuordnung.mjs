@@ -80,38 +80,67 @@ async function askMapping(client, issues, plans) {
   try { return JSON.parse(text).zuordnungen; } catch { return null; }
 }
 
+const DROP_CONFIDENCE = 0.4; // darunter wird ein bisher akzeptiertes Paar wieder gelöst
+
+/** Alte Cache-Form (je Eingabestand eine Liste) in die Paar-Form überführen. */
+function migratePlanCache(cache) {
+  if (cache.pairs) return cache;
+  const runs = Object.values(cache).filter((v) => Array.isArray(v?.zuordnungen)).sort((a, b) => (a.createdAt || '').localeCompare(b.createdAt || ''));
+  const pairs = {};
+  for (const run of runs) {
+    for (const z of run.zuordnungen) {
+      const k = `${z.slug}#${z.ticket}`;
+      const prev = pairs[k];
+      pairs[k] = {
+        sicherheit: z.sicherheit,
+        begruendung: z.begruendung,
+        firstSeen: prev?.firstSeen || run.createdAt,
+        lastSeen: run.createdAt,
+        accepted: (prev?.accepted && z.sicherheit >= DROP_CONFIDENCE) || z.sicherheit >= MIN_CONFIDENCE,
+      };
+    }
+  }
+  return { pairs, lastInputKey: null, lastRun: runs.at(-1)?.createdAt || null };
+}
+
 /**
  * Liefert Map slug → Set(Ticketnummern). Pins und Ausblendungen aus der Konfiguration gewinnen.
- * Ohne API-Key gilt nur die Konfiguration (plus der letzte Cache-Stand, falls die Eingaben unverändert sind).
+ * Zuordnungen sind klebrig: Ein einmal akzeptiertes Paar bleibt, bis die API es klar widerlegt
+ * (Sicherheit unter DROP_CONFIDENCE) oder Plan bzw. Ticket verschwinden. Ohne API-Key gilt der Cache.
  */
 export async function ordneZu(issues, plans, { cachePath, configPath, apiKey, workspaceId, log }) {
   const config = loadJson(configPath, { pin: {}, ausblenden: [] });
-  const cache = loadJson(cachePath, {});
+  const cache = migratePlanCache(loadJson(cachePath, {}));
   const key = inputKey(issues, plans);
   const slugs = new Set(plans.map((p) => p.slug));
   const ticketNumbers = new Set(issues.map((i) => i.number));
 
-  let auto = cache[key]?.zuordnungen ?? null;
-  let quelle = auto ? 'cache' : 'keine';
-  if (!auto && apiKey && plans.length && issues.length) {
+  let quelle = 'cache';
+  if (cache.lastInputKey !== key && apiKey && plans.length && issues.length) {
     try {
       const client = new Anthropic({ apiKey, defaultHeaders: workspaceId ? { 'anthropic-workspace-id': workspaceId } : {} });
-      auto = await askMapping(client, issues, plans);
-      if (auto) {
-        // Nur den jüngsten Stand aufbewahren, plus den vorigen als Vergleich
-        const prev = Object.entries(cache).sort((a, b) => (b[1].createdAt || '').localeCompare(a[1].createdAt || ''))[0];
-        const next = { [key]: { createdAt: new Date().toISOString(), model: MODEL, zuordnungen: auto } };
-        if (prev && prev[0] !== key) next[prev[0]] = prev[1];
-        writeFileSync(cachePath, JSON.stringify(next, null, 2) + '\n');
+      const result = await askMapping(client, issues, plans);
+      if (result) {
+        const now = new Date().toISOString();
+        for (const z of result) {
+          const k = `${z.slug}#${z.ticket}`;
+          const prev = cache.pairs[k];
+          cache.pairs[k] = {
+            sicherheit: z.sicherheit,
+            begruendung: z.begruendung,
+            firstSeen: prev?.firstSeen || now,
+            lastSeen: now,
+            accepted: prev?.accepted ? z.sicherheit >= DROP_CONFIDENCE : z.sicherheit >= MIN_CONFIDENCE,
+          };
+        }
+        cache.lastInputKey = key;
+        cache.lastRun = now;
+        writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n');
         quelle = 'api';
       }
     } catch (err) {
       log(`Zuordnung: API-Fehler (${err?.status ?? err?.name ?? 'unbekannt'}), nutze letzten bekannten Stand`);
     }
-  }
-  if (!auto) {
-    const last = Object.values(cache).sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''))[0];
-    if (last) { auto = last.zuordnungen; quelle = 'cache (veraltet)'; }
   }
 
   const map = new Map();
@@ -120,7 +149,11 @@ export async function ordneZu(issues, plans, { cachePath, configPath, apiKey, wo
     if (!map.has(slug)) map.set(slug, new Set());
     map.get(slug).add(ticket);
   };
-  for (const z of auto || []) if (z.sicherheit >= MIN_CONFIDENCE) add(z.slug, z.ticket);
+  for (const [k, pair] of Object.entries(cache.pairs)) {
+    if (!pair.accepted) continue;
+    const [slug, ticket] = k.split('#');
+    add(slug, Number(ticket));
+  }
   for (const [slug, tickets] of Object.entries(config.pin || {})) { map.delete(slug); for (const t of tickets) add(slug, Number(t)); }
   for (const slug of config.ausblenden || []) map.delete(slug);
 
@@ -188,15 +221,20 @@ async function askPrMapping(client, issues, prs) {
 }
 
 /**
- * Liefert Map PR-Nummer → Set(Ticketnummern). Nur PRs ohne Cache-Eintrag (für den aktuellen
- * Ticketstand) werden angefragt, in Paketen von höchstens 25.
+ * Liefert Map PR-Nummer → Set(Ticketnummern). Cache je PR; neue PRs und (bei geändertem Ticketstand)
+ * alle PRs werden angefragt, in Paketen von höchstens 25. Akzeptierte Paare bleiben, bis die API sie
+ * klar widerlegt (unter DROP_CONFIDENCE).
  */
 export async function ordnePRsZu(issues, prs, { cachePath, apiKey, workspaceId, log }) {
-  const cache = loadJson(cachePath, {});
+  let cache = loadJson(cachePath, {});
+  if (!cache.prs) cache = { prs: {}, issuesKey: null }; // alte Form verwerfen (nur ein Tag alt)
   const ik = issuesKey(issues);
-  const keyOf = (p) => `${ik}|${p.number}|${createHash('sha256').update(p.title).digest('hex').slice(0, 8)}`;
   const ticketNumbers = new Set(issues.map((i) => i.number));
-  const pending = prs.filter((p) => !cache[keyOf(p)]);
+  const titleHash = (p) => createHash('sha256').update(p.title).digest('hex').slice(0, 8);
+  const pending = prs.filter((p) => {
+    const e = cache.prs[p.number];
+    return !e || e.titleHash !== titleHash(p) || e.issuesKey !== ik;
+  });
   let asked = 0;
   if (pending.length && apiKey && issues.length) {
     const client = new Anthropic({ apiKey, defaultHeaders: workspaceId ? { 'anthropic-workspace-id': workspaceId } : {} });
@@ -205,9 +243,15 @@ export async function ordnePRsZu(issues, prs, { cachePath, apiKey, workspaceId, 
       try {
         const result = await askPrMapping(client, issues, batch);
         if (!result) continue;
+        const now = new Date().toISOString();
         for (const p of batch) {
-          const hits = result.filter((z) => z.pr === p.number && z.sicherheit >= MIN_CONFIDENCE && ticketNumbers.has(z.ticket)).map((z) => ({ ticket: z.ticket, sicherheit: z.sicherheit, begruendung: z.begruendung }));
-          cache[keyOf(p)] = { createdAt: new Date().toISOString(), tickets: hits };
+          const prev = cache.prs[p.number]?.pairs || {};
+          const pairs = { ...prev };
+          for (const z of result.filter((z) => z.pr === p.number && ticketNumbers.has(z.ticket))) {
+            const before = pairs[z.ticket];
+            pairs[z.ticket] = { sicherheit: z.sicherheit, begruendung: z.begruendung, accepted: before?.accepted ? z.sicherheit >= DROP_CONFIDENCE : z.sicherheit >= MIN_CONFIDENCE };
+          }
+          cache.prs[p.number] = { titleHash: titleHash(p), issuesKey: ik, updatedAt: now, pairs };
         }
         asked += batch.length;
       } catch (err) {
@@ -216,15 +260,16 @@ export async function ordnePRsZu(issues, prs, { cachePath, apiKey, workspaceId, 
       }
     }
     if (asked) {
-      // Nur Einträge zum aktuellen Ticketstand behalten
-      const kept = Object.fromEntries(Object.entries(cache).filter(([k]) => k.startsWith(ik + '|')));
-      writeFileSync(cachePath, JSON.stringify(kept, null, 2) + '\n');
+      cache.issuesKey = ik;
+      const keep = new Set(prs.map((p) => String(p.number)));
+      cache.prs = Object.fromEntries(Object.entries(cache.prs).filter(([n]) => keep.has(n)));
+      writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n');
     }
   }
   const map = new Map();
   for (const p of prs) {
-    const entry = cache[keyOf(p)];
-    if (entry?.tickets?.length) map.set(p.number, new Set(entry.tickets.map((t) => t.ticket)));
+    const tickets = Object.entries(cache.prs[p.number]?.pairs || {}).filter(([t, v]) => v.accepted && ticketNumbers.has(Number(t))).map(([t]) => Number(t));
+    if (tickets.length) map.set(p.number, new Set(tickets));
   }
   log(`Zuordnung PRs: ${prs.length} geprüft, ${asked} neu angefragt, ${map.size} einem Ticket zugeordnet`);
   return map;
