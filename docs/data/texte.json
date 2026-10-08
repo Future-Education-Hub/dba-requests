@@ -695,5 +695,82 @@
     "createdAt": "2026-10-07T09:19:56.796Z",
     "slug": "stellenmarkt-betrieb",
     "phase": 7
+  },
+  "46ab0d0a87fc1ba83759": {
+    "text": "Im Vertrieb heißt die bisherige Stufe für nicht benötigte Angebotsangaben nun Optional, und drei weitere Angaben lassen sich bei Bedarf als Pflicht festlegen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:04.064Z",
+    "slug": "sales-offer-refinements",
+    "phase": 1
+  },
+  "ad7a1f3396632f82e47b": {
+    "text": "Im Angebot werden die Stadt im Briefkopf und der Wohnort des Leads nun getrennt erfasst, und das Gesprächsdatum wird automatisch aus dem letzten Termin übernommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:05.792Z",
+    "slug": "sales-offer-refinements",
+    "phase": 2
+  },
+  "1c7cc9c6c2c70c1993fa": {
+    "text": "Beim Erstellen von Angeboten erscheinen keine gelben Hinweise mehr zu Textlängen, nur noch Hinweise auf fehlende Pflichtangaben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:07.286Z",
+    "slug": "sales-offer-refinements",
+    "phase": 3
+  },
+  "eec6b4c3c81286fe3d4a": {
+    "text": "In Angeboten zeigt die Markierung bei Kompetenzlücken nun farbig, ob die Lücke hoch, mittel oder niedrig ist, sonst erscheint ein neutraler Hinweis.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:12.452Z",
+    "slug": "sales-offer-refinements",
+    "phase": 4
+  },
+  "fbfa09c8b320d25daeff": {
+    "text": "Aufgezeichnete Gespräche erscheinen auch ohne zugeordneten Kontakt nicht mehr doppelt, sondern als ein Eintrag mit vollständiger Mitschrift und echter Dauer.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:19.144Z",
+    "slug": "sales-offer-refinements",
+    "phase": 5
+  },
+  "1e731e0dce5758757cec": {
+    "text": "Bilder zur Anreicherung eines Interessenten lassen sich jetzt im Profil und im Assistenten einfach per Ziehen und Ablegen hochladen, der Dateidialog bleibt erhalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:21.706Z",
+    "slug": "sales-offer-refinements",
+    "phase": 6
+  },
+  "b26da596da33a9bfb4dc": {
+    "text": "Das Team sichert die Qualität der Verbesserungen an Angeboten und Gesprächsübersichten ab, damit im Vertriebsalltag alles zuverlässig funktioniert.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:23.348Z",
+    "slug": "sales-offer-refinements",
+    "phase": 7
+  },
+  "a0d95ca076bbf85240be": {
+    "text": "Die Anwesenheit in Online-Sitzungen wird automatisch erfasst und als Live-Anteil berechnet, unbekannte Namen lassen sich dabei einfach Teilnehmenden zuordnen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:29.102Z",
+    "slug": "batch-mode",
+    "phase": 10
+  },
+  "cc33bcacf82ff3195d69": {
+    "text": "Nach Zoom-Sitzungen wird die Anwesenheit automatisch übernommen und nur für die Zeit gewertet, in der eine Lehrkraft da war, auch bei freiwilligen Terminen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:33.977Z",
+    "slug": "batch-mode",
+    "phase": 11
+  },
+  "ecd0cb4b5a226c53affa": {
+    "text": "Lehrkräfte und Verantwortliche sehen Anwesenheit, Freigaben und Dozentenzeiten ihrer Kursgruppen auf einen Blick, auch im Dashboard, und finden alles im Handbuch erklärt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:36.625Z",
+    "slug": "batch-mode",
+    "phase": 14
+  },
+  "9878b08b7f2970773595": {
+    "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kurspläne, Freigaben, Anwesenheit und Fortschritt im Alltag zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-08T04:46:38.715Z",
+    "slug": "batch-mode",
+    "phase": 15
   }
 }

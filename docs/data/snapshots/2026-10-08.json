@@ -1,0 +1,1899 @@
+{
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T04:46:43.105Z",
+  "boardUrl": "https://github.com/orgs/Future-Education-Hub/projects/3/views/6",
+  "tickets": [
+    {
+      "number": 1,
+      "title": "Termine: Wiederholung bi-weekly / monthly",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/1",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:29Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 2,
+      "title": "Org-Setting: Intervall für TN-Dokumentation",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/2",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:34Z",
+      "closedAt": null,
+      "boardStatus": "In progress",
+      "stage": "in_arbeit",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 3,
+      "title": "Incident-System: Batch-Support",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/3",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:38Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "in_arbeit",
+      "liveSince": null,
+      "lastActivity": "2026-10-07T18:58:34+02:00",
+      "phasesTotal": 15,
+      "phasesDone": 15,
+      "features": [
+        {
+          "slug": "batch-mode",
+          "title": "Batch-Modus",
+          "stand": "In Arbeit (Phase 15/15)",
+          "branch": "feat/batch-mode",
+          "lastActivity": "2026-10-07T18:58:34+02:00",
+          "pull": null,
+          "release": null,
+          "stage": "in_arbeit",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell Batch, Kalender, Slot-Vorlagen und Rechte",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-10-01",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können künftig feste Lerngruppen mit Kalender, Live-Terminen und Tagesplan anlegen, wobei jede Rolle genau die passenden Rechte erhält.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Content-Erweiterungen: Vorlesung (Merkmal), Bearbeitungsfenster, Bindung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrtexte lassen sich als Vorlesung kennzeichnen, mit einer Bearbeitungszeit in Kurstagen versehen und mit passenden Praxisaufgaben verknüpfen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Linearisierung und Erstplan-Berechnung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jede Gruppe entsteht automatisch ein Kursplan mit Lerninhalten in sinnvoller Reihenfolge, verteilt auf Kurstage ohne Feiertage und mit berechnetem Enddatum.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Organisationseinstellungen und Batch-Anlage (Assistent)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können Lerngruppen mit Tagesplan per Assistent anlegen, Teilnehmende und Lehrkräfte zuordnen und Abläufe sowie Regeln selbst einstellen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Plan ändern: Verschieben, Streichen, Zusammenlegen, Ausfall, Kopie",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Planende können den Gruppenplan anpassen, Inhalte verschieben, streichen oder Tage zusammenlegen, und Teilnehmende erfahren rechtzeitig von Ausfällen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Zeitgesteuerte Freigabe, serverseitige Zugriffslogik, Abschluss aus dem Plan",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Inhalte und Lösungen einer Gruppe werden nach Plan oder durch die Lehrkraft freigeschaltet, und Abschlüsse ergeben sich automatisch aus dem Fortschritt im Plan.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Teilnehmersicht: Wochenansicht und „Heute“",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Teilnehmende sehen ihre Kurswoche mit Terminen, Lerneinheiten und deren Freigabestand sowie auf der Startseite alles für den heutigen Tag auf einen Blick.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Live-Sessions aus Slots (eigene Batch-Sessions)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jeden Kurstag entstehen automatisch Live-Termine der Gruppe mit Raum-Link, Lehrkraft und Vertretung, die sich bei Verschiebungen oder Ausfällen mit anpassen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Batch-Anwesenheitsmodus und manuelle Live-Erfassung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrkräfte können die Live-Teilnahme je Person erfassen und korrigieren, und Teilnehmende sehen täglich ihren Anwesenheitswert aus Live-Zeit und Inhalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 10,
+              "title": "Sitzungsprotokoll, Zuordnung und AOS-Bewertung",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Die Anwesenheit in Online-Sitzungen wird automatisch erfasst und als Live-Anteil berechnet, unbekannte Namen lassen sich dabei einfach Teilnehmenden zuordnen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 11,
+              "title": "Zoom-Adapter, Abruf, Webhook und freiwillige Veranstaltungen",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-07",
+              "text": "Nach Zoom-Sitzungen wird die Anwesenheit automatisch übernommen und nur für die Zeit gewertet, in der eine Lehrkraft da war, auch bei freiwilligen Terminen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 12,
+              "title": "Soll aus dem Plan-Tag",
+              "state": "done",
+              "done": 3,
+              "total": 3,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Teilnehmende einer Lerngruppe sehen auf Startseite und Fortschrittsseite, wie viele Lerneinheiten sie laut gemeinsamem Gruppenplan im Rückstand sind.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 13,
+              "title": "Incident-Detektoren für den Batch",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Bei Teilnehmenden einer Gruppe meldet das System künftig automatisch, wenn sie über mehrere Kurstage wenig live dabei sind, nichts erledigen oder beim Nachholen zurückliegen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 14,
+              "title": "Batch-Übersicht, Dashboard-Widget, Berichte, Handbuch",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Lehrkräfte und Verantwortliche sehen Anwesenheit, Freigaben und Dozentenzeiten ihrer Kursgruppen auf einen Blick, auch im Dashboard, und finden alles im Handbuch erklärt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 15,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 21,
+              "total": 21,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kurspläne, Freigaben, Anwesenheit und Fortschritt im Alltag zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 3
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 4,
+      "title": "Anwesenheit: Tage mit VL + PT",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/4",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:43Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 5,
+      "title": "Anwesenheit: Entschuldigt mit / ohne Dokument",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/5",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:48Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "live",
+      "liveSince": "2026-07-24",
+      "lastActivity": "2026-07-23T11:04:35+02:00",
+      "phasesTotal": 9,
+      "phasesDone": 9,
+      "features": [
+        {
+          "slug": "attendance",
+          "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
+          "stand": "",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell, Signal-Ledger & individuelle Modus-Einstellung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Permissions, RLS & Modus-Helper",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Kandidaten-Unit-Engine (SQL)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Tagesbewertung (Kaskade §5) & modusbewusster Cron",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Freistellungen & Karenz-Verlängerungen (RPCs)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Kommunikation (Tageserinnerung & Mentor-Frühwarnung)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Frontend Student & Modus-Gating",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Frontend Staff & Org-Konfiguration",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Incident-Regression, Reporting-Grundlage, E2E-Suite & Doku",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 4
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 6,
+      "title": "Anwesenheit: Teilabwesenheiten prozentual",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/6",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:54Z",
+      "closedAt": null,
+      "boardStatus": null,
+      "stage": "live",
+      "liveSince": "2026-07-24",
+      "lastActivity": "2026-07-23T11:04:35+02:00",
+      "phasesTotal": 9,
+      "phasesDone": 9,
+      "features": [
+        {
+          "slug": "attendance",
+          "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
+          "stand": "",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell, Signal-Ledger & individuelle Modus-Einstellung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Permissions, RLS & Modus-Helper",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Kandidaten-Unit-Engine (SQL)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Tagesbewertung (Kaskade §5) & modusbewusster Cron",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Freistellungen & Karenz-Verlängerungen (RPCs)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Kommunikation (Tageserinnerung & Mentor-Frühwarnung)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Frontend Student & Modus-Gating",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Frontend Staff & Org-Konfiguration",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Incident-Regression, Reporting-Grundlage, E2E-Suite & Doku",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 4
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 7,
+      "title": "Anwesenheit: Tracking für VL, Tut I, Tut II",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/7",
+      "state": "open",
+      "createdAt": "2026-09-29T08:40:58Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "in_arbeit",
+      "liveSince": null,
+      "lastActivity": "2026-10-07T18:58:34+02:00",
+      "phasesTotal": 24,
+      "phasesDone": 24,
+      "features": [
+        {
+          "slug": "attendance",
+          "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
+          "stand": "",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell, Signal-Ledger & individuelle Modus-Einstellung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Permissions, RLS & Modus-Helper",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Kandidaten-Unit-Engine (SQL)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Tagesbewertung (Kaskade §5) & modusbewusster Cron",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Freistellungen & Karenz-Verlängerungen (RPCs)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Kommunikation (Tageserinnerung & Mentor-Frühwarnung)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Frontend Student & Modus-Gating",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Frontend Staff & Org-Konfiguration",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Incident-Regression, Reporting-Grundlage, E2E-Suite & Doku",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 4
+        },
+        {
+          "slug": "batch-mode",
+          "title": "Batch-Modus",
+          "stand": "In Arbeit (Phase 15/15)",
+          "branch": "feat/batch-mode",
+          "lastActivity": "2026-10-07T18:58:34+02:00",
+          "pull": null,
+          "release": null,
+          "stage": "in_arbeit",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell Batch, Kalender, Slot-Vorlagen und Rechte",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-10-01",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können künftig feste Lerngruppen mit Kalender, Live-Terminen und Tagesplan anlegen, wobei jede Rolle genau die passenden Rechte erhält.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Content-Erweiterungen: Vorlesung (Merkmal), Bearbeitungsfenster, Bindung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrtexte lassen sich als Vorlesung kennzeichnen, mit einer Bearbeitungszeit in Kurstagen versehen und mit passenden Praxisaufgaben verknüpfen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Linearisierung und Erstplan-Berechnung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jede Gruppe entsteht automatisch ein Kursplan mit Lerninhalten in sinnvoller Reihenfolge, verteilt auf Kurstage ohne Feiertage und mit berechnetem Enddatum.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Organisationseinstellungen und Batch-Anlage (Assistent)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können Lerngruppen mit Tagesplan per Assistent anlegen, Teilnehmende und Lehrkräfte zuordnen und Abläufe sowie Regeln selbst einstellen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Plan ändern: Verschieben, Streichen, Zusammenlegen, Ausfall, Kopie",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Planende können den Gruppenplan anpassen, Inhalte verschieben, streichen oder Tage zusammenlegen, und Teilnehmende erfahren rechtzeitig von Ausfällen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Zeitgesteuerte Freigabe, serverseitige Zugriffslogik, Abschluss aus dem Plan",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Inhalte und Lösungen einer Gruppe werden nach Plan oder durch die Lehrkraft freigeschaltet, und Abschlüsse ergeben sich automatisch aus dem Fortschritt im Plan.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Teilnehmersicht: Wochenansicht und „Heute“",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Teilnehmende sehen ihre Kurswoche mit Terminen, Lerneinheiten und deren Freigabestand sowie auf der Startseite alles für den heutigen Tag auf einen Blick.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Live-Sessions aus Slots (eigene Batch-Sessions)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jeden Kurstag entstehen automatisch Live-Termine der Gruppe mit Raum-Link, Lehrkraft und Vertretung, die sich bei Verschiebungen oder Ausfällen mit anpassen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Batch-Anwesenheitsmodus und manuelle Live-Erfassung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrkräfte können die Live-Teilnahme je Person erfassen und korrigieren, und Teilnehmende sehen täglich ihren Anwesenheitswert aus Live-Zeit und Inhalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 10,
+              "title": "Sitzungsprotokoll, Zuordnung und AOS-Bewertung",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Die Anwesenheit in Online-Sitzungen wird automatisch erfasst und als Live-Anteil berechnet, unbekannte Namen lassen sich dabei einfach Teilnehmenden zuordnen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 11,
+              "title": "Zoom-Adapter, Abruf, Webhook und freiwillige Veranstaltungen",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-07",
+              "text": "Nach Zoom-Sitzungen wird die Anwesenheit automatisch übernommen und nur für die Zeit gewertet, in der eine Lehrkraft da war, auch bei freiwilligen Terminen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 12,
+              "title": "Soll aus dem Plan-Tag",
+              "state": "done",
+              "done": 3,
+              "total": 3,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Teilnehmende einer Lerngruppe sehen auf Startseite und Fortschrittsseite, wie viele Lerneinheiten sie laut gemeinsamem Gruppenplan im Rückstand sind.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 13,
+              "title": "Incident-Detektoren für den Batch",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Bei Teilnehmenden einer Gruppe meldet das System künftig automatisch, wenn sie über mehrere Kurstage wenig live dabei sind, nichts erledigen oder beim Nachholen zurückliegen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 14,
+              "title": "Batch-Übersicht, Dashboard-Widget, Berichte, Handbuch",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Lehrkräfte und Verantwortliche sehen Anwesenheit, Freigaben und Dozentenzeiten ihrer Kursgruppen auf einen Blick, auch im Dashboard, und finden alles im Handbuch erklärt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 15,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 21,
+              "total": 21,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kurspläne, Freigaben, Anwesenheit und Fortschritt im Alltag zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 3
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 8,
+      "title": "Anwesenheit: Entschuldigungen nachreichen",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/8",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:04Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "live",
+      "liveSince": "2026-07-24",
+      "lastActivity": "2026-07-23T11:04:35+02:00",
+      "phasesTotal": 9,
+      "phasesDone": 9,
+      "features": [
+        {
+          "slug": "attendance",
+          "title": "Anwesenheitslogik 2.0 — Implementierungsplan",
+          "stand": "",
+          "branch": "main",
+          "lastActivity": "2026-07-23T11:04:35+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.4.2",
+            "publishedAt": "2026-07-24T12:12:55Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.4.2"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell, Signal-Ledger & individuelle Modus-Einstellung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Legt die Grundlage, damit Anwesenheit aus Lernaktivitäten entsteht, mit Kulanzfristen, Befreiungen, Erinnerungen und eigenem Modus je Teilnehmendem.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Permissions, RLS & Modus-Helper",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Mitarbeitende können künftig Freistellungen und Kulanzfristen verwalten, während Teilnehmende nur noch ihre eigene Anwesenheit sehen und nicht rückwirkend entschuldigen können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Kandidaten-Unit-Engine (SQL)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Für die Anwesenheit wird nun ermittelt, welche Lerneinheiten jemand gerade bearbeiten kann, welche auf Prüfung oder einen Termin warten, auch rückwirkend für einen Stichtag.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Tagesbewertung (Kaskade §5) & modusbewusster Cron",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Jeder Kurstag wird nun automatisch und nachvollziehbar als anwesend, freigestellt, abwartend oder abwesend bewertet, und alle sehen schon heute die voraussichtliche Wertung.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Freistellungen & Karenz-Verlängerungen (RPCs)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Berechtigte Mitarbeitende können Teilnehmende freistellen oder ihre Schonfrist verlängern, wobei bereits erfasste Fehltage automatisch angepasst und nachvollziehbar protokolliert werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Kommunikation (Tageserinnerung & Mentor-Frühwarnung)",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende werden erinnert, wenn sie an einem Kurstag noch fehlen, und Mentoren erhalten rechtzeitig eine Warnung, bevor die Kulanzfrist abläuft.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Frontend Student & Modus-Gating",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Teilnehmende sehen auf einen Blick, ob ihre Anwesenheit heute schon erfüllt ist, und erhalten zwei verständlich erklärte Quoten zu ihrer Anwesenheit.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Frontend Staff & Org-Konfiguration",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Verantwortliche können die neue Anwesenheitsregelung pro Einrichtung und Teilnehmer einstellen sowie Freistellungen, Nachfristen und Korrekturen übersichtlich verwalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Incident-Regression, Reporting-Grundlage, E2E-Suite & Doku",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-07-23",
+              "doneAt": "2026-07-23",
+              "text": "Statistiken und Exporte weisen neutrale Gründe künftig getrennt aus, Befreite zählen als anwesend, und Abwesenheitswarnungen berücksichtigen beides korrekt.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 4
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 9,
+      "title": "TN-Dokumentation: Custom Templates",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/9",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:09Z",
+      "closedAt": null,
+      "boardStatus": "In progress",
+      "stage": "in_arbeit",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 10,
+      "title": "Terminbuchung: Aufforderung an TN / Batches",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/10",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:14Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 11,
+      "title": "Mentoring-Sessions generalisieren",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/11",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:19Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 12,
+      "title": "Umfragen: Wiederkehrende Trigger + Batch-Auswertung",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/12",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:24Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 13,
+      "title": "Batch-Logik",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/13",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:28Z",
+      "closedAt": null,
+      "boardStatus": "In progress",
+      "stage": "in_arbeit",
+      "liveSince": null,
+      "lastActivity": "2026-10-07T18:58:34+02:00",
+      "phasesTotal": 15,
+      "phasesDone": 15,
+      "features": [
+        {
+          "slug": "batch-mode",
+          "title": "Batch-Modus",
+          "stand": "In Arbeit (Phase 15/15)",
+          "branch": "feat/batch-mode",
+          "lastActivity": "2026-10-07T18:58:34+02:00",
+          "pull": null,
+          "release": null,
+          "stage": "in_arbeit",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell Batch, Kalender, Slot-Vorlagen und Rechte",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-10-01",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können künftig feste Lerngruppen mit Kalender, Live-Terminen und Tagesplan anlegen, wobei jede Rolle genau die passenden Rechte erhält.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Content-Erweiterungen: Vorlesung (Merkmal), Bearbeitungsfenster, Bindung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrtexte lassen sich als Vorlesung kennzeichnen, mit einer Bearbeitungszeit in Kurstagen versehen und mit passenden Praxisaufgaben verknüpfen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Linearisierung und Erstplan-Berechnung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jede Gruppe entsteht automatisch ein Kursplan mit Lerninhalten in sinnvoller Reihenfolge, verteilt auf Kurstage ohne Feiertage und mit berechnetem Enddatum.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Organisationseinstellungen und Batch-Anlage (Assistent)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Organisationen können Lerngruppen mit Tagesplan per Assistent anlegen, Teilnehmende und Lehrkräfte zuordnen und Abläufe sowie Regeln selbst einstellen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Plan ändern: Verschieben, Streichen, Zusammenlegen, Ausfall, Kopie",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Planende können den Gruppenplan anpassen, Inhalte verschieben, streichen oder Tage zusammenlegen, und Teilnehmende erfahren rechtzeitig von Ausfällen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Zeitgesteuerte Freigabe, serverseitige Zugriffslogik, Abschluss aus dem Plan",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Inhalte und Lösungen einer Gruppe werden nach Plan oder durch die Lehrkraft freigeschaltet, und Abschlüsse ergeben sich automatisch aus dem Fortschritt im Plan.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Teilnehmersicht: Wochenansicht und „Heute“",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Teilnehmende sehen ihre Kurswoche mit Terminen, Lerneinheiten und deren Freigabestand sowie auf der Startseite alles für den heutigen Tag auf einen Blick.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Live-Sessions aus Slots (eigene Batch-Sessions)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Für jeden Kurstag entstehen automatisch Live-Termine der Gruppe mit Raum-Link, Lehrkraft und Vertretung, die sich bei Verschiebungen oder Ausfällen mit anpassen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Batch-Anwesenheitsmodus und manuelle Live-Erfassung",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Lehrkräfte können die Live-Teilnahme je Person erfassen und korrigieren, und Teilnehmende sehen täglich ihren Anwesenheitswert aus Live-Zeit und Inhalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 10,
+              "title": "Sitzungsprotokoll, Zuordnung und AOS-Bewertung",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-06",
+              "text": "Die Anwesenheit in Online-Sitzungen wird automatisch erfasst und als Live-Anteil berechnet, unbekannte Namen lassen sich dabei einfach Teilnehmenden zuordnen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 11,
+              "title": "Zoom-Adapter, Abruf, Webhook und freiwillige Veranstaltungen",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-10-06",
+              "doneAt": "2026-10-07",
+              "text": "Nach Zoom-Sitzungen wird die Anwesenheit automatisch übernommen und nur für die Zeit gewertet, in der eine Lehrkraft da war, auch bei freiwilligen Terminen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 12,
+              "title": "Soll aus dem Plan-Tag",
+              "state": "done",
+              "done": 3,
+              "total": 3,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Teilnehmende einer Lerngruppe sehen auf Startseite und Fortschrittsseite, wie viele Lerneinheiten sie laut gemeinsamem Gruppenplan im Rückstand sind.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 13,
+              "title": "Incident-Detektoren für den Batch",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Bei Teilnehmenden einer Gruppe meldet das System künftig automatisch, wenn sie über mehrere Kurstage wenig live dabei sind, nichts erledigen oder beim Nachholen zurückliegen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 14,
+              "title": "Batch-Übersicht, Dashboard-Widget, Berichte, Handbuch",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Lehrkräfte und Verantwortliche sehen Anwesenheit, Freigaben und Dozentenzeiten ihrer Kursgruppen auf einen Blick, auch im Dashboard, und finden alles im Handbuch erklärt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 15,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 21,
+              "total": 21,
+              "startedAt": "2026-10-07",
+              "doneAt": "2026-10-07",
+              "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Kurspläne, Freigaben, Anwesenheit und Fortschritt im Alltag zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 3
+        }
+      ],
+      "merged": []
+    },
+    {
+      "number": 14,
+      "title": "Wochendigest für Vorlesungen",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/14",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:33Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 15,
+      "title": "Schichtplanung Tutoren",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/15",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:38Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 16,
+      "title": "Google Meet direkt im LMS erstellen",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/16",
+      "state": "open",
+      "createdAt": "2026-09-29T08:41:44Z",
+      "closedAt": null,
+      "boardStatus": "Backlog",
+      "stage": "idee",
+      "liveSince": null,
+      "lastActivity": null,
+      "phasesTotal": 0,
+      "phasesDone": 0,
+      "features": [],
+      "merged": []
+    },
+    {
+      "number": 17,
+      "title": "DBA Kursmigration",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/17",
+      "state": "closed",
+      "createdAt": "2026-09-30T12:57:02Z",
+      "closedAt": "2026-10-06T15:35:08Z",
+      "boardStatus": "Done",
+      "stage": "live",
+      "liveSince": "2026-09-25",
+      "lastActivity": "2026-09-16T21:05:23+02:00",
+      "phasesTotal": 6,
+      "phasesDone": 6,
+      "features": [
+        {
+          "slug": "curriculum-import",
+          "title": "Curriculum-Import mit Material",
+          "stand": "Abgeschlossen",
+          "branch": "main",
+          "lastActivity": "2026-09-16T21:05:23+02:00",
+          "pull": {
+            "number": 331,
+            "state": "merged",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/pull/331",
+            "mergedAt": "2026-09-21T13:21:05Z"
+          },
+          "release": {
+            "tag": "v3.7.0",
+            "publishedAt": "2026-09-25T15:39:44Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.7.0"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Schema, Storage und RPCs",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-09-15",
+              "doneAt": "2026-09-15",
+              "text": "Mitarbeitende können einen Lehrplan aus einer Datei samt Modulen, Kapiteln und Lektionen übernehmen und Lektionen Material anhängen, das Teilnehmende nur passend sehen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Parser, Spaltenerkennung, Strukturbaum, Validierung",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-09-15",
+              "doneAt": "2026-09-15",
+              "text": "Hochgeladene Excel- oder CSV-Lehrpläne werden automatisch in Module, Kapitel und Lektionen gegliedert, auf Fehler geprüft und Materialien passend zugeordnet.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Import-Modal (Schritte 1–5) und Einstieg",
+              "state": "done",
+              "done": 9,
+              "total": 9,
+              "startedAt": "2026-09-15",
+              "doneAt": "2026-09-16",
+              "text": "Ihr könnt ein Curriculum aus einer Excel-Datei Schritt für Schritt importieren, Struktur und Hinweise vorab prüfen und daraus eine neue Journey anlegen oder aktualisieren.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Material: Upload, Schritt 6, Studio-Panel, Viewer-Block",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-09-16",
+              "doneAt": "2026-09-16",
+              "text": "Lehrende können Folien, Aufgabenblätter und Begleitmaterial zu Lektionen hochladen und zuordnen, Lernende sehen es direkt in der Lektion zum Öffnen oder Herunterladen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Handbook, Beispieldatei als Fixture, Export-Abgleich",
+              "state": "done",
+              "done": 3,
+              "total": 3,
+              "startedAt": "2026-09-16",
+              "doneAt": "2026-09-16",
+              "text": "Eine neue Anleitung erklärt den Import von Lehrplänen mit Material Schritt für Schritt, und exportierte Lehrpläne lassen sich direkt wieder einlesen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 12,
+              "total": 12,
+              "startedAt": "2026-09-16",
+              "doneAt": "2026-09-16",
+              "text": "Das Team sichert die Qualität des Curriculum-Imports mit Material umfassend ab, damit Import, Zuordnung von Unterlagen und Zugriffsrechte zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        }
+      ],
+      "merged": [
+        {
+          "number": 341,
+          "title": "feat(curriculum-import): Tagesbündel — Vorlesung, Aufgaben, Lösung, Briefing",
+          "mergedAt": "2026-09-23T20:48:49Z",
+          "release": {
+            "tag": "v3.7.0",
+            "publishedAt": "2026-09-25T15:39:44Z"
+          },
+          "text": "Beim Importieren eines Kurses entsteht jeder Kurstag nun mit Vorlesung und Aufgaben, Lösungen sehen Teilnehmende erst nach Abschluss, Tutoren bekommen ihr Briefing."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Angebotszeit reduzieren + Qualität erhöhen",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/18",
+      "state": "closed",
+      "createdAt": "2026-09-30T12:57:22Z",
+      "closedAt": "2026-10-06T17:51:47Z",
+      "boardStatus": "Done",
+      "stage": "live",
+      "liveSince": "2026-10-05",
+      "lastActivity": "2026-10-02T19:01:22+02:00",
+      "phasesTotal": 15,
+      "phasesDone": 15,
+      "features": [
+        {
+          "slug": "sales-offer-refinements",
+          "title": "Sales-Angebots- & Call-Verfeinerungen (Batch)",
+          "stand": "Abgeschlossen",
+          "branch": "main",
+          "lastActivity": "2026-08-07T09:57:31+02:00",
+          "pull": {
+            "number": 265,
+            "state": "merged",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/pull/265",
+            "mergedAt": "2026-08-07T13:03:08Z"
+          },
+          "release": {
+            "tag": "v3.5.0",
+            "publishedAt": "2026-08-10T12:12:54Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.5.0"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Pflichtfelder-Modell erweitern (Settings + Migration)",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Im Vertrieb heißt die bisherige Stufe für nicht benötigte Angebotsangaben nun Optional, und drei weitere Angaben lassen sich bei Bedarf als Pflicht festlegen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Stammdaten: Stadt/Wohnort trennen + Meeting-Datum dynamisch",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Im Angebot werden die Stadt im Briefkopf und der Wohnort des Leads nun getrennt erfasst, und das Gesprächsdatum wird automatisch aus dem letzten Termin übernommen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Amber-Längen-Warnungen entfernen",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Beim Erstellen von Angeboten erscheinen keine gelben Hinweise mehr zu Textlängen, nur noch Hinweise auf fehlende Pflichtangaben.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Skill-Gap-Pille = Diskrepanz (Prompt + Template + Engine)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "In Angeboten zeigt die Markierung bei Kompetenzlücken nun farbig, ob die Lücke hoch, mittel oder niedrig ist, sonst erscheint ein neutraler Hinweis.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Granola-Call-Dedup-Lücke schließen (Migration)",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Aufgezeichnete Gespräche erscheinen auch ohne zugeordneten Kontakt nicht mehr doppelt, sondern als ein Eintrag mit vollständiger Mitschrift und echter Dauer.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Drag & Drop für Enrichment-Bilder",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Bilder zur Anreicherung eines Interessenten lassen sich jetzt im Profil und im Assistenten einfach per Ziehen und Ablegen hochladen, der Dateidialog bleibt erhalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Das Team sichert die Qualität der Verbesserungen an Angeboten und Gesprächsübersichten ab, damit im Vertriebsalltag alles zuverlässig funktioniert.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        },
+        {
+          "slug": "sales-call-to-offer-speed",
+          "title": "Call → Angebot in ≤ 3 Minuten",
+          "stand": "Abgeschlossen",
+          "branch": "feat/sales-call-to-offer-speed",
+          "lastActivity": "2026-10-02T19:01:22+02:00",
+          "pull": {
+            "number": 406,
+            "state": "merged",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/pull/406",
+            "mergedAt": "2026-10-02T17:42:17Z"
+          },
+          "release": {
+            "tag": "v3.9.0",
+            "publishedAt": "2026-10-05T15:41:41Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.9.0"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Ausgangslage messen und Teilzeiten erfassen",
+              "state": "done",
+              "done": 2,
+              "total": 2,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Ab jetzt wird bei jedem neuen Angebot festgehalten, wie lange die einzelnen Schritte vom Gespräch bis zum fertigen Angebot dauern.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Sofort-Analyse und verlässliche Call-Zuordnung",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Gespräche werden sofort nach dem Telefonat ausgewertet und zuverlässig dem richtigen Kunden zugeordnet, unklare Fälle lassen sich von Hand einem Auftrag zuweisen.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Auslöser und zuverlässige Angebotskette",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Nach einem Erstgespräch oder einem Phasenwechsel entsteht sofort genau ein Angebot je Verkaufschance, das auch bei Störungen zuverlässig fertiggestellt wird.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "KI-Kette parallel, Anrede ohne Wartezeit, Fortschritt sichtbar",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Angebote entstehen nach dem Gespräch schneller, da mehrere Schritte gleichzeitig laufen, die Anrede sofort steht und der Fortschritt sichtbar ist.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Modelle: Opus 5.5 und Schnell-Modus",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Angebote nach einem Gespräch entstehen jetzt mit einem neueren KI-Modell, und Admins können für schnellere Ergebnisse gegen Aufpreis einen Schnell-Modus einschalten.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "HubSpot-Echtzeitanbindung",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Neue und geänderte Kontakte und Deals aus HubSpot erscheinen jetzt sofort im System, sodass Angebote direkt nach dem Gespräch erstellt werden können.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Täglicher Job-Pool",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Der Vertrieb erhält täglich eine vorbereitete Auswahl passender Stellen je Spezialisierung, die er pflegen und direkt ins Angebot übernehmen kann.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 14,
+              "total": 14,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Das Team sichert die Qualität des Vorhabens ab, damit Angebote nach einem Gespräch zuverlässig, schnell und ohne Fehler entstehen.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        }
+      ],
+      "merged": [
+        {
+          "number": 406,
+          "title": "feat(sales): Call → Angebot in ≤ 3 min — Auslöser, Call-Zuordnung, parallele Kette, Opus 5.5 Fast, HubSpot-Webhooks, Job-Pool",
+          "mergedAt": "2026-10-02T17:42:17Z",
+          "release": {
+            "tag": "v3.9.0",
+            "publishedAt": "2026-10-05T15:41:41Z"
+          },
+          "text": "Nach einem Verkaufsgespräch liegt das passende Angebot jetzt innerhalb von höchstens drei Minuten vor, und Gespräche lassen sich zuverlässig dem richtigen Kunden zuordnen."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Stellenmarkt-Umbau: Neuausrichtung (zentraler Crawler, Markt-Katalog, Kurs-Anbindung)",
+      "url": "https://github.com/Future-Education-Hub/dba-requests/issues/19",
+      "state": "open",
+      "createdAt": "2026-10-07T09:08:24Z",
+      "closedAt": null,
+      "boardStatus": "In progress",
+      "stage": "test",
+      "liveSince": null,
+      "lastActivity": "2026-10-06T17:05:15+02:00",
+      "phasesTotal": 17,
+      "phasesDone": 17,
+      "features": [
+        {
+          "slug": "job-market-overhaul",
+          "title": "Stellenmarkt-Umbau",
+          "stand": "Abgeschlossen",
+          "branch": "main",
+          "lastActivity": "2026-08-05T16:25:25+02:00",
+          "pull": null,
+          "release": {
+            "tag": "v3.5.0",
+            "publishedAt": "2026-08-10T12:12:54Z",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/releases/tag/v3.5.0"
+          },
+          "stage": "live",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Datenmodell: Ortsangaben, Arbeitsform, Rolle",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-08-03",
+              "doneAt": "2026-08-03",
+              "text": "Stellenangebote erhalten einheitliche Angaben zu Ort, Bundesland, Arbeitsform und Beruf, damit sich gezielt im Umkreis und nach Arbeitsform suchen lässt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Ingest: v6-Umstieg und Ortsangaben erhalten (Repo `lms-workflows`)",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-08-03",
+              "doneAt": "2026-08-04",
+              "text": "Stellenangebote der Bundesagentur kommen wieder zuverlässig an, mit genauem Ort, Bundesland, Berufsbezeichnung und Angabe zu Homeoffice oder Arbeit vor Ort.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Stellenmarkt: Umkreissuche und Arbeitsform-Filter",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Im Stellenmarkt lassen sich Stellen jetzt im Umkreis eines Orts oder einer Postleitzahl finden und gezielt nach Arbeitsform filtern.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Analyse-Seite",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Eine neue Analyse-Seite zeigt auf einen Blick, woher aktive Stellen stammen, wo und wie gearbeitet wird und welche Berufe und Fähigkeiten gefragt sind.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Fähigkeiten: Vokabular härten, Altbestand nachziehen",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Fähigkeiten in Stellenanzeigen werden einheitlich benannt, als angegeben oder abgeleitet gekennzeichnet und bei rund 1.300 älteren Stellen nachträglich erkannt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Persona-Zuordnung als allgemeines Feature",
+              "state": "done",
+              "done": 11,
+              "total": 11,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Beschreiben Sie frei, wen Sie suchen oder vermitteln möchten, und das System schlägt passende Stellen vor, begründet jeden Vorschlag und sagt klar, wenn nichts passt.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "Erprobungsansicht",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Verwaltungskräfte können Stellenwünsche frei eingeben und an echten Stellen prüfen, welche Angebote passen und warum, um die Vorschläge zu verbessern.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 8,
+              "title": "Vorschlagswesen: Schwelle und Entkopplung",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-04",
+              "text": "Vorschläge für neue Lernangebote aus Stellenanzeigen erscheinen erst bei genug Belegen, zeigen ihre Stellen und tauchen nach Ablehnung nicht wieder auf.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 9,
+              "title": "Wöchentlicher Takt",
+              "state": "done",
+              "done": 8,
+              "total": 8,
+              "startedAt": "2026-08-04",
+              "doneAt": "2026-08-05",
+              "text": "Der Stellenmarkt aktualisiert sich jetzt jede Woche von selbst mit neuen Stellen, und nicht mehr erreichbare Angebote verschwinden automatisch aus der Suche.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 10,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 19,
+              "total": 19,
+              "startedAt": "2026-08-05",
+              "doneAt": "2026-08-05",
+              "text": "Das Team sichert die Qualität des Stellenmarkt-Umbaus ab, damit Umkreissuche, Auswertungen, Vorschläge und der Schutz fremder Daten zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        },
+        {
+          "slug": "stellenmarkt-betrieb",
+          "title": "Stellenmarkt-Betrieb herstellen",
+          "stand": "Abgeschlossen",
+          "branch": "feat/stellenmarkt-betrieb",
+          "lastActivity": "2026-10-06T17:05:15+02:00",
+          "pull": {
+            "number": 407,
+            "state": "merged",
+            "url": "https://github.com/Future-Education-Hub/feh-lms/pull/407",
+            "mergedAt": "2026-10-06T15:34:12Z"
+          },
+          "release": null,
+          "stage": "test",
+          "phases": [
+            {
+              "n": 1,
+              "title": "Rhythmus und Lauf-Stufen",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Organisationen können nun wählen, ob der Stellenmarkt täglich oder wöchentlich aktualisiert wird, und passende Stellen werden dabei automatisch zugeordnet.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 2,
+              "title": "Fehlkonfiguration sichtbar",
+              "state": "done",
+              "done": 4,
+              "total": 4,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Wenn der automatische Stellenabruf wegen falscher Einstellungen nicht klappt, zeigt die Zeitplanübersicht jetzt verständlich, welcher Termin ausfiel und warum.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 3,
+              "title": "Org-Trennung und Bundesagentur inaktiv",
+              "state": "done",
+              "done": 6,
+              "total": 6,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Stellenangebote werden nun strikt getrennt pro Organisation verarbeitet, und die Bundesagentur als Quelle ist vorerst abgeschaltet, mit klarem Hinweis beim Startversuch.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 4,
+              "title": "Ablauf nach Alter",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Stellenangebote im Stellenmarkt laufen nach einer einstellbaren Frist automatisch ab, sodass morgens nur noch aktuelle Stellen angezeigt werden.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 5,
+              "title": "Fastfill zentral (Backend)",
+              "state": "done",
+              "done": 7,
+              "total": 7,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Der Zugang zur Stellenquelle wird künftig zentral von der Plattform verwaltet und pro Einrichtung freigeschaltet, sodass niemand mehr eigene Zugangsdaten pflegen muss.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 6,
+              "title": "Oberfläche: Plattform-Seite und Org-Anzeigen",
+              "state": "done",
+              "done": 5,
+              "total": 5,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Plattformverantwortliche steuern die Stellenmarkt-Quellen künftig zentral, und Organisationen sehen klar, welche Quellen für sie freigeschaltet sind.",
+              "textSource": "generiert"
+            },
+            {
+              "n": 7,
+              "title": "E2E-Testplan (Pflichtphase)",
+              "state": "done",
+              "done": 10,
+              "total": 10,
+              "startedAt": "2026-10-02",
+              "doneAt": "2026-10-02",
+              "text": "Das Team sichert die Qualität des Stellenmarkt-Betriebs ab, damit Zeitpläne, Freigaben, Quellen und das Auslaufen alter Stellen zuverlässig funktionieren.",
+              "textSource": "generiert"
+            }
+          ],
+          "ticketCount": 1
+        }
+      ],
+      "merged": [
+        {
+          "number": 407,
+          "title": "feat(stellenmarkt): Betrieb herstellen — täglicher Lauf mit Zuordnung, Ablauf nach Alter, Fastfill zentral",
+          "mergedAt": "2026-10-06T15:34:12Z",
+          "release": null,
+          "text": "Der Stellenmarkt versorgt Kurse jetzt täglich automatisch mit aktuellen Stellen, ordnet sie passenden Spezialisierungen zu und entfernt veraltete Angebote."
+        }
+      ]
+    }
+  ],
+  "merged": [
+    {
+      "number": 407,
+      "title": "feat(stellenmarkt): Betrieb herstellen — täglicher Lauf mit Zuordnung, Ablauf nach Alter, Fastfill zentral",
+      "mergedAt": "2026-10-06T15:34:12Z",
+      "release": null,
+      "text": "Der Stellenmarkt versorgt Kurse jetzt täglich automatisch mit aktuellen Stellen, ordnet sie passenden Spezialisierungen zu und entfernt veraltete Angebote.",
+      "ticket": 19
+    },
+    {
+      "number": 406,
+      "title": "feat(sales): Call → Angebot in ≤ 3 min — Auslöser, Call-Zuordnung, parallele Kette, Opus 5.5 Fast, HubSpot-Webhooks, Job-Pool",
+      "mergedAt": "2026-10-02T17:42:17Z",
+      "release": {
+        "tag": "v3.9.0",
+        "publishedAt": "2026-10-05T15:41:41Z"
+      },
+      "text": "Nach einem Verkaufsgespräch liegt das passende Angebot jetzt innerhalb von höchstens drei Minuten vor, und Gespräche lassen sich zuverlässig dem richtigen Kunden zuordnen.",
+      "ticket": 18
+    },
+    {
+      "number": 341,
+      "title": "feat(curriculum-import): Tagesbündel — Vorlesung, Aufgaben, Lösung, Briefing",
+      "mergedAt": "2026-09-23T20:48:49Z",
+      "release": {
+        "tag": "v3.7.0",
+        "publishedAt": "2026-09-25T15:39:44Z"
+      },
+      "text": "Beim Importieren eines Kurses entsteht jeder Kurstag nun mit Vorlesung und Aufgaben, Lösungen sehen Teilnehmende erst nach Abschluss, Tutoren bekommen ihr Briefing.",
+      "ticket": 17
+    }
+  ]
+}
