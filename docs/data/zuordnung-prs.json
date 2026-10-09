@@ -12,32 +12,14 @@
       "updatedAt": "2026-10-07T09:20:15.450Z",
       "pairs": {}
     },
-    "316": {
-      "titleHash": "7b95243d",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "317": {
       "titleHash": "fb8f5e38",
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
     },
-    "318": {
-      "titleHash": "a47e5449",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "319": {
       "titleHash": "bd01d3cf",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
-    "320": {
-      "titleHash": "ebe064d7",
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
@@ -347,6 +329,60 @@
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-08T04:46:41.309Z",
       "pairs": {}
+    },
+    "416": {
+      "titleHash": "b8a0a45a",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {}
+    },
+    "417": {
+      "titleHash": "92dd3f24",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {}
+    },
+    "418": {
+      "titleHash": "b7b3788d",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {}
+    },
+    "420": {
+      "titleHash": "070886c0",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {}
+    },
+    "422": {
+      "titleHash": "5e78f26f",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.7,
+          "begruendung": "Die blockierte Call-Analyse startet wieder, und damit läuft die gesamte Angebotskette erneut, was die Angebotszeit direkt betrifft.",
+          "accepted": true
+        }
+      }
+    },
+    "423": {
+      "titleHash": "c510c80a",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {}
+    },
+    "424": {
+      "titleHash": "4777c804",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-09T04:46:33.924Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.7,
+          "begruendung": "Der Maßnahmebeginn wird aus dem HubSpot-Batch abgeleitet, damit er in Angeboten nicht mehr fehlt; das erhöht die Angebotsqualität.",
+          "accepted": true
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"
