@@ -784,5 +784,17 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-09T04:46:37.452Z",
     "pr": 422
+  },
+  "pr:f1d6c82d2c40cc2a309e": {
+    "text": "Angebote zeigen jetzt die Kursdauer, Kompetenzen werden automatisch vorbefüllt und der Stellenpool enthält keine Senior- und Leitungsstellen mehr.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-10T04:44:05.084Z",
+    "pr": 426
+  },
+  "pr:061ac0d8782022146b6c": {
+    "text": "Organisationen legen im Stellenmarkt nun selbst bis zu 20 Suchbegriffe fest, sehen den Suchstatus und können ihren Stellenpool selbst neu aufbauen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-10T04:44:09.377Z",
+    "pr": 425
   }
 }

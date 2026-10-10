@@ -1,11 +1,5 @@
 {
   "prs": {
-    "310": {
-      "titleHash": "7b76938b",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:15.450Z",
-      "pairs": {}
-    },
     "312": {
       "titleHash": "0922f351",
       "issuesKey": "f5dcd534a4cd",
@@ -18,20 +12,8 @@
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
     },
-    "319": {
-      "titleHash": "bd01d3cf",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "321": {
       "titleHash": "4982e4b3",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
-    "326": {
-      "titleHash": "2e8ff8e6",
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
@@ -380,6 +362,30 @@
         "18": {
           "sicherheit": 0.7,
           "begruendung": "Der Maßnahmebeginn wird aus dem HubSpot-Batch abgeleitet, damit er in Angeboten nicht mehr fehlt; das erhöht die Angebotsqualität.",
+          "accepted": true
+        }
+      }
+    },
+    "425": {
+      "titleHash": "e37be16e",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-10T04:43:59.911Z",
+      "pairs": {
+        "19": {
+          "sicherheit": 0.75,
+          "begruendung": "Die Übergangslösung teilt den Stellenmarkt in zentralen Betrieb und org-eigene Suchbegriffe auf und ist damit ein Schritt zur Neuausrichtung mit zentralem Crawler.",
+          "accepted": true
+        }
+      }
+    },
+    "426": {
+      "titleHash": "d6fc5879",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-10T04:43:59.911Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.8,
+          "begruendung": "Die Ergänzungen im Angebotsprozess (Kursdauer, Matrix-Befüllung in der KI-Kette, bereinigter Job-Pool) beschleunigen die Angebotserstellung und verbessern deren Qualität.",
           "accepted": true
         }
       }
