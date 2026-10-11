@@ -24,12 +24,6 @@
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
     },
-    "336": {
-      "titleHash": "20113c83",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "337": {
       "titleHash": "061a53fe",
       "issuesKey": "f5dcd534a4cd",
@@ -389,6 +383,12 @@
           "accepted": true
         }
       }
+    },
+    "428": {
+      "titleHash": "6db14d62",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-11T04:45:17.525Z",
+      "pairs": {}
     }
   },
   "issuesKey": "f5dcd534a4cd"
