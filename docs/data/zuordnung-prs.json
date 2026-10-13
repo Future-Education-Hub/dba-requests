@@ -1,11 +1,5 @@
 {
   "prs": {
-    "312": {
-      "titleHash": "0922f351",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:15.450Z",
-      "pairs": {}
-    },
     "317": {
       "titleHash": "fb8f5e38",
       "issuesKey": "f5dcd534a4cd",
@@ -384,11 +378,68 @@
         }
       }
     },
+    "427": {
+      "titleHash": "29d2c2aa",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-13T04:49:57.513Z",
+      "pairs": {}
+    },
     "428": {
       "titleHash": "6db14d62",
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-11T04:45:17.525Z",
       "pairs": {}
+    },
+    "429": {
+      "titleHash": "de2fbb4f",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-13T04:49:57.513Z",
+      "pairs": {
+        "2": {
+          "sicherheit": 0.85,
+          "begruendung": "Die KW-Abdeckung („alle N Wochen“) ist ein org-weites Intervall für die TN-Dokumentation.",
+          "accepted": true
+        },
+        "9": {
+          "sicherheit": 0.9,
+          "begruendung": "Der PR führt pro Organisation eigene Gesprächs-Templates für die Teilnehmer-Dokumentation ein.",
+          "accepted": true
+        },
+        "11": {
+          "sicherheit": 0.5,
+          "begruendung": "Das Mentoring-Reporting wird zum umbenennbaren, erweiterbaren Standard-Template und damit verallgemeinert.",
+          "accepted": false
+        }
+      }
+    },
+    "430": {
+      "titleHash": "dffc25c7",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-13T04:49:57.513Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.5,
+          "begruendung": "Einstellbare Job-Pool-Filter verhindern einseitige Remote-Stellen in Angeboten und verbessern deren Qualität.",
+          "accepted": false
+        },
+        "19": {
+          "sicherheit": 0.35,
+          "begruendung": "Die Filter für den aus Stellenquellen gespeisten Job-Pool berühren den Stellenmarkt-Bereich.",
+          "accepted": false
+        }
+      }
+    },
+    "431": {
+      "titleHash": "8207789d",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-13T04:49:57.513Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.5,
+          "begruendung": "Eine manuelle Kursdauer pro Zertifizierung macht die Angaben im Angebot korrekter und verbessert so die Angebotsqualität.",
+          "accepted": false
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"

@@ -796,5 +796,88 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-10T04:44:09.377Z",
     "pr": 425
+  },
+  "b46f751443a7a6071f1a": {
+    "text": "Dieser Schritt legt die Grundlage, damit jede Einrichtung eigene Gesprächsvorlagen mit Feldern und Auswahlmöglichkeiten anlegen und ihre Dokumentationsregeln selbst einstellen kann.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:21.636Z",
+    "slug": "org-conversation-templates",
+    "phase": 1
+  },
+  "f232cf7963c0e60396fd": {
+    "text": "Mitarbeitende können Gespräche jetzt anhand einer Vorlage dokumentieren, die Antworten später bearbeiten und die Einträge im Verlauf der Teilnehmenden sehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:24.596Z",
+    "slug": "org-conversation-templates",
+    "phase": 2
+  },
+  "fee810e0553b3839ed40": {
+    "text": "Die Gesprächsabdeckung wird nun je Einrichtung nach deren eingestelltem Rhythmus berechnet, und abgeschaltete Abdeckung erzeugt keine Warnungen oder Aufgaben mehr.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:27.723Z",
+    "slug": "org-conversation-templates",
+    "phase": 3
+  },
+  "c070dd3f23a2bf6032e4": {
+    "text": "In den Organisationseinstellungen gibt es einen neuen Bereich Dokumentation, in dem Berechtigte Gesprächsvorlagen anlegen, bearbeiten, sortieren und archivieren können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:29.707Z",
+    "slug": "org-conversation-templates",
+    "phase": 4
+  },
+  "564a524d737ddf2f666f": {
+    "text": "Mitarbeitende können Gespräche jetzt anhand fester Vorlagen dokumentieren, später bearbeiten und alle Einträge übersichtlich im Verlauf der Teilnehmenden sehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:31.726Z",
+    "slug": "org-conversation-templates",
+    "phase": 5
+  },
+  "e8e23c4ad174fa2d9952": {
+    "text": "Die Übersicht zeigt fehlende Dokumentation nun in Zeiträumen aus mehreren Wochen und blendet die Anzeige ganz aus, wenn die Organisation sie abgeschaltet hat.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:33.821Z",
+    "slug": "org-conversation-templates",
+    "phase": 6
+  },
+  "57f61d1cdbc8b48d9b6b": {
+    "text": "Das Team prüft gründlich, dass Gesprächsvorlagen und die einstellbare Wochenabdeckung im Alltag zuverlässig funktionieren, und sichert so die Qualität ab.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:35.801Z",
+    "slug": "org-conversation-templates",
+    "phase": 7
+  },
+  "a16298f2599292e5097e": {
+    "text": "Jede Organisation erhält eine Standardvorlage für Mentoring-Berichte, die mit Kalenderterminen verknüpft wird, korrekt bei den offenen Sessions zählt und Folgeschritte auslöst.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:38.189Z",
+    "slug": "org-conversation-templates",
+    "phase": 8
+  },
+  "6af07a278439b21ffae4": {
+    "text": "Mitarbeitende können Gesprächsberichte direkt aus einem Kalendertermin mit passenden Vorlagen erstellen und sehen sie mit Gesprächsdatum in Übersicht und Verlaufsbericht.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:40.302Z",
+    "slug": "org-conversation-templates",
+    "phase": 9
+  },
+  "a4afcf0666f2fcad1ec6": {
+    "text": "Allgemeine Notizen sollten sich bequem mit Formatierungsknöpfen statt mit Sonderzeichen schreiben lassen, dieser Schritt wurde jedoch wieder zurückgenommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:44.898Z",
+    "slug": "org-conversation-templates",
+    "phase": 10
+  },
+  "b09e23772a19cc5d9309": {
+    "text": "Das Team sichert die Qualität des Vorhabens ab und prüft, dass Reportings, Mentoring-Sessions und Notizen mit den neuen Gesprächsvorlagen zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:46.965Z",
+    "slug": "org-conversation-templates",
+    "phase": 11
+  },
+  "pr:75c531dca048fc89ae3e": {
+    "text": "Jede Organisation kann jetzt eigene Gesprächsvorlagen anlegen und festlegen, wie oft Teilnehmende dokumentiert sein müssen, und Berichte als gesichtet abhaken.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-13T04:49:59.816Z",
+    "pr": 429
   }
 }
