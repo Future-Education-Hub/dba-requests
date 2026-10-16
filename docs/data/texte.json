@@ -879,5 +879,11 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-13T04:49:59.816Z",
     "pr": 429
+  },
+  "pr:6c8b15923f31d3084104": {
+    "text": "Angebote enthalten automatisch passende Stellen mit vollständigen Begründungen und echtem Portal, die Kursdauer lässt sich anpassen und die Anrede stimmt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-16T04:42:40.588Z",
+    "pr": 432
   }
 }

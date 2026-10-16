@@ -1,11 +1,5 @@
 {
   "prs": {
-    "317": {
-      "titleHash": "fb8f5e38",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "321": {
       "titleHash": "4982e4b3",
       "issuesKey": "f5dcd534a4cd",
@@ -437,6 +431,30 @@
         "18": {
           "sicherheit": 0.5,
           "begruendung": "Eine manuelle Kursdauer pro Zertifizierung macht die Angaben im Angebot korrekter und verbessert so die Angebotsqualität.",
+          "accepted": false
+        }
+      }
+    },
+    "432": {
+      "titleHash": "0ca34caa",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-16T04:42:33.604Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.8,
+          "begruendung": "Die Änderung verbessert die Angebotsqualität mit vollständigen Begründungen und korrekter Anrede und beschleunigt die Erstellung, weil Job-Picks automatisch übernommen werden.",
+          "accepted": true
+        }
+      }
+    },
+    "433": {
+      "titleHash": "0a6984ba",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-16T04:42:33.604Z",
+      "pairs": {
+        "9": {
+          "sicherheit": 0.45,
+          "begruendung": "Der neue Workflow-Baustein legt TN-Dokumentation nach Gesprächs-Templates an und berührt damit teilweise die Template-basierte TN-Dokumentation.",
           "accepted": false
         }
       }
