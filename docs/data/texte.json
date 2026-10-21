@@ -885,5 +885,166 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-16T04:42:40.588Z",
     "pr": 432
+  },
+  "3ad1d3728265ed4cce91": {
+    "text": "Die Verbindungsprüfung nennt fehlende Berechtigungen, überschneidende Pflichttermine werden verhindert und Anwesenheitsänderungen sind je Person nachvollziehbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:03.382Z",
+    "slug": "batch-mode",
+    "phase": 16
+  },
+  "080678adc59c75519987": {
+    "text": "Die Teilnehmenden eines Batches werden automatisch in den Online-Raum eingeladen und über ihre E-Mail-Adresse erkannt, damit ihre Anwesenheitszeiten zuverlässig erfasst werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:05.771Z",
+    "slug": "batch-mode",
+    "phase": 17
+  },
+  "2e972e6f2f1ed541be5c": {
+    "text": "Unbekannte Namen ordnen Sie jetzt je Sitzung einer Person zu, wobei sich überschneidende Anwesenheitszeiten derselben Person nur einmal zählen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:11.339Z",
+    "slug": "batch-mode",
+    "phase": 18
+  },
+  "c3baf6edc8a287c1106c": {
+    "text": "Lehrkräfte sehen nun den ganzen Kurstag im Online-Raum, auch Treffen außerhalb der Pflichtzeit und Wartezeiten, ohne dass diese bei der Anwesenheit mitzählen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:13.360Z",
+    "slug": "batch-mode",
+    "phase": 19
+  },
+  "76965fe39fab6ea2be04": {
+    "text": "Entschuldigungen werden an einer Stelle mit Grund und Nachweis gepflegt, und nur berechtigte Rollen dürfen sie einsehen oder setzen, streng je Organisation getrennt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:15.314Z",
+    "slug": "batch-mode",
+    "phase": 20
+  },
+  "74a09ec55dcd4650296e": {
+    "text": "Lehrkräfte können Zeiten als anwesend gutschreiben, und jeder Kurstag zeigt nun aufgeschlüsselt, welche Zeit anwesend, entschuldigt oder unentschuldigt war.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:19.961Z",
+    "slug": "batch-mode",
+    "phase": 21
+  },
+  "562ee8ca9d06352ff579": {
+    "text": "Eine Zeitleiste zeigt je Kurstag und Person, wer wann anwesend war, und erlaubt, Lücken direkt als anwesend oder entschuldigt zu werten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:24.055Z",
+    "slug": "batch-mode",
+    "phase": 22
+  },
+  "c0ffcbc9ef8519800720": {
+    "text": "Teilnehmende können künftig ihre eigene Tageszeitleiste mit Anwesenheit und Entschuldigungen einsehen, sofern die Einrichtung dies erlaubt, und das Handbuch erklärt alles.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:26.802Z",
+    "slug": "batch-mode",
+    "phase": 23
+  },
+  "6fb1b99ccbb4a1a81b3f": {
+    "text": "Lernabschnitte eines Kurstags werden gestaffelt erst nach der jeweiligen Veranstaltung freigeschaltet, und Teilnehmende sehen vorab, wann sie kommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:28.861Z",
+    "slug": "batch-mode",
+    "phase": 24
+  },
+  "5343b7fc98060a317046": {
+    "text": "Das Team sichert die Qualität des Batch-Modus ab, damit Anwesenheitszeiten, Entschuldigungen, Rechte und Freigaben im Alltag verlässlich stimmen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:30.919Z",
+    "slug": "batch-mode",
+    "phase": 25
+  },
+  "da99188beaf811603a30": {
+    "text": "Die Anwesenheitsübersicht im Batch-Modus wird klarer und verlässlicher, und Berichte zu Lernenden berücksichtigen nun auch ihre Anwesenheit im Batch.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:32.936Z",
+    "slug": "batch-mode",
+    "phase": 26
+  },
+  "1d8c8e439964ed42eff5": {
+    "text": "Lehrkräfte sehen gehaltene und abgesagte Stunden genauer, ausgefallene Kurstage lassen sich nachtragen, und lange Kurspläne werden vollständig angezeigt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:34.720Z",
+    "slug": "batch-mode",
+    "phase": 27
+  },
+  "f639d430d3658d694a63": {
+    "text": "Der Erstplan eines Durchgangs verteilt Lerneinheiten jetzt nach ihren Unterrichtseinheiten auf Kurstage, und lange Einheiten laufen automatisch über mehrere Tage.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:36.847Z",
+    "slug": "batch-mode",
+    "phase": 28
+  },
+  "529f5d4bc6d87c07778a": {
+    "text": "Im Kursaufbau lassen sich Unterrichtseinheiten je Lektion eintragen, und beim Anlegen eines Kurses zeigt eine Übersicht Kurstage, Umfang und Enddatum.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:39.065Z",
+    "slug": "batch-mode",
+    "phase": 29
+  },
+  "60a90f2995f3b8ba8294": {
+    "text": "Teilnehmende können einer Gruppe mit eigenem Eintrittsdatum und geplantem Ende zugeordnet werden, etwa passend zur Bewilligung, und scheiden dann automatisch aus.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:41.239Z",
+    "slug": "batch-mode",
+    "phase": 30
+  },
+  "a1a95fad84c194bc1933": {
+    "text": "Beim Anlegen einer Person lässt sie sich direkt einer Gruppe zuordnen, mit passendem Eintritts- und Enddatum, auch für Nachrücker und kürzere Bewilligungen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:42.968Z",
+    "slug": "batch-mode",
+    "phase": 31
+  },
+  "b3353b048781d9d43127": {
+    "text": "Bestehende Organisationen, die ihren Tageswert nie selbst angepasst haben, erhalten automatisch den neuen Standard von 10 statt 8, eigene Einstellungen bleiben erhalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:45.454Z",
+    "slug": "batch-mode",
+    "phase": 32
+  },
+  "eff324bb1848f5a7c8a3": {
+    "text": "Wer Batches verwaltet, kann einen Batch ohne Teilnehmende und ohne freigegebene Tage samt Kursplan wieder löschen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:49.548Z",
+    "slug": "batch-mode",
+    "phase": 33
+  },
+  "10418dfed11b596600b1": {
+    "text": "Lehrkräfte sehen den Kursplan einer Gruppe jetzt auch als Monatskalender mit Lektionen, Feiertagen und freien Tagen und springen per Klick zum jeweiligen Tag.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:51.286Z",
+    "slug": "batch-mode",
+    "phase": 34
+  },
+  "42a90de8287f83b7ccc8": {
+    "text": "Bei Terminen sehen Sie nun, seit wann sie auf den Abruf warten, und erhalten nach zehn Minuten Stillstand einen Hinweis, was Sie tun können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:53.385Z",
+    "slug": "batch-mode",
+    "phase": 35
+  },
+  "74cf008fe71fe9caedb9": {
+    "text": "Pro Termin lassen sich mehrere Vertretungen eintragen, und das Teilnehmerprofil zeigt den Batch, während klarere Hinweise Missverständnisse im Kursplan vermeiden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:55.371Z",
+    "slug": "batch-mode",
+    "phase": 36
+  },
+  "7b167c1ecc527940d4ca": {
+    "text": "Austritte aus einer Lerngruppe werden einheitlich mit Datum und Grund eingetragen, auch bei Maßnahmeabbruch, und der Kurszugang danach ist wählbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:43:57.140Z",
+    "slug": "batch-mode",
+    "phase": 37
+  },
+  "bdf521a5a0f5fba3afe0": {
+    "text": "Teilnehmende sehen ihren Kursplan auch als Monat, vergleichen ihren Fortschritt mit der Gruppe und bearbeiten freigegebene Einheiten je nach Einstellung frei.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T04:44:02.906Z",
+    "slug": "batch-mode",
+    "phase": 38
   }
 }

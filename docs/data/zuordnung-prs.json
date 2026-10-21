@@ -464,6 +464,42 @@
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-20T04:42:19.001Z",
       "pairs": {}
+    },
+    "436": {
+      "titleHash": "90b83f19",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-21T04:44:09.472Z",
+      "pairs": {}
+    },
+    "437": {
+      "titleHash": "5081a8c7",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-21T04:44:09.472Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.5,
+          "begruendung": "Die Änderung behebt Fehler im Angebots-Wizard (fehlender Maßnahmebeginn, Seller-Schreibrechte), die die Angebotserstellung verzögern und die Qualität mindern.",
+          "accepted": false
+        }
+      }
+    },
+    "438": {
+      "titleHash": "c29e637f",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-21T04:44:09.472Z",
+      "pairs": {}
+    },
+    "439": {
+      "titleHash": "3e33784f",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-21T04:44:09.472Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.5,
+          "begruendung": "Die Änderung verbessert Angebotstexte (Anrede pro Träger) und belegt die hochgeladene Vorlage vor, was Qualität und Erstellungszeit der Angebote betrifft.",
+          "accepted": false
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"
