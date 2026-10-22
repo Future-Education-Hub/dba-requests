@@ -1046,5 +1046,18 @@
     "createdAt": "2026-10-21T04:44:02.906Z",
     "slug": "batch-mode",
     "phase": 38
+  },
+  "2f31042f20724296cb0f": {
+    "text": "Im Kursplan lassen sich Lektionen nun per Ziehen verschieben, Themenwechsel im Monat erkennen, Ausfalltage samt Inhalten streichen und Lehrkraftzeiten verstehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T04:42:41.353Z",
+    "slug": "batch-mode",
+    "phase": 39
+  },
+  "pr:71ebd1e511ebb827da6a": {
+    "text": "Neu erzeugte KI-Texte erscheinen jetzt wirklich im Angebot, ein später eingetroffenes Gespräch aktualisiert es automatisch, und von Hand geänderte Texte bleiben erhalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T04:42:53.448Z",
+    "pr": 446
   }
 }

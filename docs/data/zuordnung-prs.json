@@ -6,18 +6,6 @@
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
     },
-    "333": {
-      "titleHash": "094eabd4",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
-    "337": {
-      "titleHash": "061a53fe",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "339": {
       "titleHash": "4f11ca17",
       "issuesKey": "f5dcd534a4cd",
@@ -498,6 +486,54 @@
           "sicherheit": 0.5,
           "begruendung": "Die Änderung verbessert Angebotstexte (Anrede pro Träger) und belegt die hochgeladene Vorlage vor, was Qualität und Erstellungszeit der Angebote betrifft.",
           "accepted": false
+        }
+      }
+    },
+    "440": {
+      "titleHash": "e34628c8",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "441": {
+      "titleHash": "015bc3b9",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "442": {
+      "titleHash": "d8d37917",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "443": {
+      "titleHash": "7ee1c8de",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "444": {
+      "titleHash": "6dc98a71",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "445": {
+      "titleHash": "4cfe3a80",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {}
+    },
+    "446": {
+      "titleHash": "5306c4c0",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-22T04:42:50.117Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.6,
+          "begruendung": "Behebt, dass neu generierte KI-Texte nicht im Angebot ankamen, und verbessert damit direkt die Angebotsqualität.",
+          "accepted": true
         }
       }
     }
