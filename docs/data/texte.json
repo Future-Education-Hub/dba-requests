@@ -1059,5 +1059,40 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-22T04:42:53.448Z",
     "pr": 446
+  },
+  "55a57e4640234a95f784": {
+    "text": "Beim Lehrplan-Import erhält jede Lektion auf Wunsch eine Aufgabeneinheit, deren Lösung Lernende erst nach Abschluss sehen und Tutorenhinweise nie.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-23T04:43:25.805Z",
+    "slug": "curriculum-day-bundle",
+    "phase": 1
+  },
+  "c742b3519045c6fa506e": {
+    "text": "Beim Einlesen eines Lehrplans legen Sie künftig je Lektion fest, ob neben dem Unterricht Aufgaben dazugehören, und sehen sofort, was neu angelegt oder übernommen wird.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-23T04:43:27.754Z",
+    "slug": "curriculum-day-bundle",
+    "phase": 2
+  },
+  "e55d964d8f85972f84ff": {
+    "text": "Beim Import werden Lösungen und Dozentenhinweise jetzt erkannt und richtig zugeordnet, und Teilnehmende sehen Lösungen erst nach Abschluss ihrer Aufgabe.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-23T04:43:29.592Z",
+    "slug": "curriculum-day-bundle",
+    "phase": 3
+  },
+  "7934a155f3f7a8eec4ed": {
+    "text": "Das Handbuch erklärt nun, wie Tagesbündel beim Lehrplan-Import funktionieren, wer welche Unterlagen sieht und wie Dateien zu benennen sind.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-23T04:43:35.003Z",
+    "slug": "curriculum-day-bundle",
+    "phase": 4
+  },
+  "2b9ae9aa4e4e562c5a80": {
+    "text": "Das Team sichert die Qualität der neuen Tagesbündel ab, damit Vorlesungen, Aufgaben und Lösungen beim Import zuverlässig richtig ankommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-23T04:43:37.589Z",
+    "slug": "curriculum-day-bundle",
+    "phase": 5
   }
 }
