@@ -1094,5 +1094,11 @@
     "createdAt": "2026-10-23T04:43:37.589Z",
     "slug": "curriculum-day-bundle",
     "phase": 5
+  },
+  "pr:32a9be21ce97d58d4ad4": {
+    "text": "Ausgefallene oder nicht wahrgenommene Termine ohne Text lassen sich in der Teilnehmer-Akte jetzt wieder aufklappen und zeigen Keine Angaben statt endlos zu laden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-24T04:41:03.858Z",
+    "pr": 451
   }
 }

@@ -554,6 +554,18 @@
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-23T04:43:42.342Z",
       "pairs": {}
+    },
+    "451": {
+      "titleHash": "3458ced3",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-24T04:41:01.398Z",
+      "pairs": {
+        "9": {
+          "sicherheit": 0.6,
+          "begruendung": "Der Fix behebt einen Ladefehler bei Template-Antworten in der Teilnehmer-Dokumentation und betrifft damit die Custom-Templates-Funktion.",
+          "accepted": true
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"
