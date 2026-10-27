@@ -12,18 +12,6 @@
       "updatedAt": "2026-10-07T09:20:09.151Z",
       "pairs": {}
     },
-    "340": {
-      "titleHash": "2ac37b8b",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {
-        "17": {
-          "sicherheit": 0.4,
-          "begruendung": "Macht den Rekonstruktions-Knopf im importierten Erst-Draft sichtbar, damit importierte Kurse Vorwörter erhalten können.",
-          "accepted": false
-        }
-      }
-    },
     "341": {
       "titleHash": "ca8008ef",
       "issuesKey": "f5dcd534a4cd",
@@ -566,6 +554,18 @@
           "accepted": true
         }
       }
+    },
+    "452": {
+      "titleHash": "e8502b20",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-27T04:44:11.685Z",
+      "pairs": {}
+    },
+    "453": {
+      "titleHash": "38f91f90",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-27T04:44:11.685Z",
+      "pairs": {}
     }
   },
   "issuesKey": "f5dcd534a4cd"
