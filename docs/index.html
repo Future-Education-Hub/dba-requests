@@ -100,7 +100,9 @@ section.group { display: grid; gap: 14px; }
 .feature .ftitle { font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .feature .ftitle b { color: var(--fg); font-weight: 600; }
 .bar { display: flex; gap: 2px; height: 14px; }
-.seg { flex: 1; background: var(--surface-2); border-radius: 3px; min-width: 4px; position: relative; overflow: hidden; }
+.seg { flex: 1; background: var(--surface-2); border-radius: 3px; min-width: 0; position: relative; overflow: hidden; }
+.bar { max-width: 100%; }
+.bar.dense { gap: 1px; } .bar.dense .seg { border-radius: 1px; }
 .seg.done { background: var(--accent); }
 .seg.active { background: repeating-linear-gradient(135deg, var(--accent) 0 4px, var(--accent-soft) 4px 8px); }
 .bar-label { font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -159,10 +161,12 @@ ul.done .t .chip { font-size: 10px; vertical-align: 2px; margin-left: 4px; text-
 .col { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px; display: grid; gap: 8px; align-content: start; min-width: 0; border-top: 3px solid var(--plan); }
 .col.in_arbeit { border-top-color: var(--work); } .col.test { border-top-color: var(--test); } .col.live { border-top-color: var(--live); }
 .col .ch { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 2px 4px 4px; }
-.col .ch h2 { font-size: 15px; }
+.col .ch h2 { font-size: 15px; min-width: 0; }
 .col .ch .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
 .col .empty { font-size: 13px; color: var(--muted); padding: 8px 4px; }
-.kcard { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 6px; min-width: 0; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+.kcard { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 6px; min-width: 0; max-width: 100%; overflow: hidden; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+.kcard > * { min-width: 0; }
+.kcard .kt, .col .ch h2, .card h3, .phase .ttl { overflow-wrap: anywhere; }
 .kcard:hover, .kcard:focus-visible { border-color: var(--accent); outline: none; }
 .kcard .kt { font-weight: 600; font-size: 14.5px; line-height: 1.3; }
 .kcard .km { font-size: 12.5px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
@@ -351,7 +355,7 @@ footer a { color: var(--accent-ink); }
     const right = f.release ? `live seit ${fmtDate(f.release.publishedAt)}` : f.pull?.state === 'merged' ? 'auf der Testumgebung' : f.pull?.state === 'open' ? 'in der Abschlussprüfung' : multiple && f.lastActivity ? `zuletzt gearbeitet ${ago(f.lastActivity, ref)}` : '';
     return `<div class="feature">
       ${multiple || shared ? `<div class="ftitle"><b>${esc(f.title)}</b>${shared && !multiple ? '<span>gemeinsames Vorhaben mit anderen Anforderungen</span>' : ''}</div>` : ''}
-      <div class="bar" role="img" aria-label="${done} von ${f.phases.length} Arbeitsschritten fertig">${segs}</div>
+      <div class="bar${f.phases.length > 24 ? ' dense' : ''}" role="img" aria-label="${done} von ${f.phases.length} Arbeitsschritten fertig">${segs}</div>
       <div class="bar-label"><span><b>${done} von ${f.phases.length}</b> Arbeitsschritten fertig${next ? ` · gerade: ${esc(next.title)}` : ''}</span><span>${right}</span></div>
       <details><summary>Alle Arbeitsschritte</summary><ol class="phases">${f.phases.map(renderPhase).join('')}</ol></details>
     </div>`;
@@ -389,7 +393,7 @@ footer a { color: var(--accent-ink); }
     const f = t.features[0];
     const done = t.phasesDone, total = t.phasesTotal;
     const meta = t.stage === 'live' && t.liveSince ? `live seit ${fmtShort(t.liveSince)}` : t.lastActivity ? `zuletzt ${ago(t.lastActivity, ref)}` : t.closedAt ? `erledigt ${fmtShort(t.closedAt)}` : `seit ${fmtShort(t.createdAt)}`;
-    const bar = f ? `<div class="bar" aria-label="${done} von ${total} Arbeitsschritten fertig">${t.features.flatMap((x) => x.phases).map((p) => `<span class="seg ${p.state}"></span>`).join('')}</div>` : '';
+    const bar = f ? `<div class="bar${total > 24 ? ' dense' : ''}" aria-label="${done} von ${total} Arbeitsschritten fertig">${t.features.flatMap((x) => x.phases).map((p) => `<span class="seg ${p.state}"></span>`).join('')}</div>` : '';
     return `<button type="button" class="kcard" data-ticket="${t.number}"><span class="kt">${esc(t.title)}</span>${bar}<span class="km"><span>${total ? `${done}/${total} Schritte` : `Ticket #${t.number}`}</span><span>${meta}</span></span></button>`;
   }
 
