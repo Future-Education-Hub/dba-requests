@@ -1100,5 +1100,158 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-24T04:41:03.858Z",
     "pr": 451
+  },
+  "3c4b0d8c45c5aeb838dd": {
+    "text": "Die Lehrkräfte-Statistik zeigt gehaltene, geplante und abgesagte Termine, Ausfälle lassen sich nachtragen und lange Kurspläne erscheinen vollständig.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:33.412Z",
+    "slug": "batch-mode",
+    "phase": 27
+  },
+  "9e3e2768ddebd7e42a65": {
+    "text": "Der erste Kursplan verteilt Lerneinheiten jetzt nach ihren Unterrichtseinheiten auf Kurstage, lange Einheiten erhalten automatisch Fortsetzungstage.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:37.885Z",
+    "slug": "batch-mode",
+    "phase": 28
+  },
+  "0ca6b464ce744090ffbf": {
+    "text": "Beim Anlegen von Teilnehmenden lässt sich direkt ein Kursdurchgang mit passendem Eintritts- und Enddatum wählen, auch für Nachrücker und kürzere Bewilligungen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:39.880Z",
+    "slug": "batch-mode",
+    "phase": 31
+  },
+  "0da561fcb36f3171cf76": {
+    "text": "Organisationen, die den Tageswert für Batches nie angepasst haben, erhalten automatisch den neuen Standard von 10, eigene Einstellungen bleiben erhalten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:43.367Z",
+    "slug": "batch-mode",
+    "phase": 32
+  },
+  "809f1c90056a65c6f918": {
+    "text": "Mehrere Vertretungen pro Kurstermin sind möglich, das Teilnehmerprofil zeigt die Batch-Zugehörigkeit und klarere Hinweise erklären Kursplan und Freigaben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:46.831Z",
+    "slug": "batch-mode",
+    "phase": 36
+  },
+  "730b3f4fa62c9525a20a": {
+    "text": "Austritte aus einem Batch werden einheitlich mit Datum und Grund eingetragen, und Sie legen fest, ob Ehemalige ihre Kursinhalte danach noch lesen können.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:50.549Z",
+    "slug": "batch-mode",
+    "phase": 37
+  },
+  "7f68eb6f8a898ce63362": {
+    "text": "Im Kursplan lassen sich Inhalte jetzt per Ziehen auf offene Tage verschieben, der Monatskalender zeigt Themenwechsel und die Dozentenübersicht wird verständlicher.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:52.475Z",
+    "slug": "batch-mode",
+    "phase": 39
+  },
+  "915b848df618a6fcbada": {
+    "text": "Lehrkräfte und Verwaltung können nun pro Termin sehen, wer wann teilgenommen hat, und die Anwesenheit wird als Minuten von insgesamt angezeigt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:54.433Z",
+    "slug": "batch-mode",
+    "phase": 40
+  },
+  "58649c99151569920db7": {
+    "text": "Viele kleine Verbesserungen: klarere Texte und Hinweise, E-Mails per Klick kopieren, Link zur Dozenten-Statistik und verständlichere Fortschrittsanzeigen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:36:56.316Z",
+    "slug": "batch-mode",
+    "phase": 41
+  },
+  "b59e0b367d0d6b15bfc8": {
+    "text": "Alle internen Mitarbeitenden sind als Lehrkraft wählbar, Rücknahmen stellen den alten Stand her, Fortschritte je Person sind sichtbar, Inhalte laden schneller.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:02.465Z",
+    "slug": "batch-mode",
+    "phase": 42
+  },
+  "48a9ac9aa0cac6030453": {
+    "text": "Zoom-Anwesenheiten kommen zuverlässiger an, auch bei offenen Meetings, der Videoraum lässt sich korrigieren und parallele Kurse bleiben getrennt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:08.127Z",
+    "slug": "batch-mode",
+    "phase": 43
+  },
+  "fbd04f200302d338d5c8": {
+    "text": "Teilnehmende sehen ihren Kursnamen und die Kalenderwoche, Kursanlage und Sitzungsübersicht werden übersichtlicher, und Hinweise zu laufenden Meetings werden genauer.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:10.255Z",
+    "slug": "batch-mode",
+    "phase": 44
+  },
+  "cfc70d494bf768656d62": {
+    "text": "Im Profil erscheint die Karte zum Verbinden des GitHub-Kontos nur noch, wenn die eigene Learning Journey tatsächlich Aufgaben enthält, die über GitHub abgegeben werden.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:12.138Z",
+    "slug": "batch-mode",
+    "phase": 45
+  },
+  "7e082dd3ed25c3d4b566": {
+    "text": "Aus dem Kursplan gestrichene Lektionen sehen Teilnehmende nicht mehr, bereits erledigte bleiben als erledigt sichtbar und ein alter Link führt zu einem klaren Hinweis.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:14.038Z",
+    "slug": "batch-mode",
+    "phase": 46
+  },
+  "af5dd43249ef9b691f14": {
+    "text": "Im Kursplan klappt automatisch der heutige Tag auf, die gewählte Wochen- oder Monatsansicht bleibt gemerkt, und Lehrende springen per Knopf zur heutigen Sitzung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:15.736Z",
+    "slug": "batch-mode",
+    "phase": 47
+  },
+  "21f0da838dab0dc8ff82": {
+    "text": "Wenn ein Zoom-Raum noch offen ist, sehen Nutzende jetzt, seit wann, und das System prüft alle 5 Minuten neu, sodass die Daten schneller ankommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:17.503Z",
+    "slug": "batch-mode",
+    "phase": 48
+  },
+  "b8e52c71032dabcfc882": {
+    "text": "Am laufenden Kurstag zeigt die Zeitleiste klar die bisherigen Live-Minuten an und erklärt, dass der Tageswert erst nach Ende des Kurstags feststeht.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:19.576Z",
+    "slug": "batch-mode",
+    "phase": 49
+  },
+  "d34ea84e233cde104b39": {
+    "text": "Im Reiter Mitglieder lassen sich Zertifikate jetzt für mehrere Teilnehmende auf einmal ausstellen, inklusive Kursname, Zeitraum, Anwesenheit und Lektionen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:22.783Z",
+    "slug": "batch-mode",
+    "phase": 50
+  },
+  "e97a0d95f6bdb1808b7f": {
+    "text": "Lehrkräfte mit Mentorenrolle sehen und bearbeiten jetzt auch die Vorfälle der aktiven Mitglieder ihrer eigenen Gruppe, fremde Gruppen bleiben verborgen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:24.649Z",
+    "slug": "batch-mode",
+    "phase": 51
+  },
+  "eab9acfbc87d7a53d058": {
+    "text": "Abgabefristen gelten jetzt bis zu einer festen Uhrzeit statt bis Tagesende, einstellbar für Organisation, Gruppe oder einzelne Lektion, und werden überall mit Uhrzeit angezeigt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:26.762Z",
+    "slug": "batch-mode",
+    "phase": 52
+  },
+  "09eb1423b782d2ae15f3": {
+    "text": "Lehrende legen fest, ob alle, nur fristgerechte oder keine Abgaben bewertet werden, und Lernende sehen den Bewertungsstatus und verfügbare Musterlösungen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:28.057Z",
+    "slug": "batch-mode",
+    "phase": 53
+  },
+  "pr:422bc06a3acf1190ffc1": {
+    "text": "Auf Wunsch können Organisationen feste Kursgruppen mit gemeinsamem Kursplan und täglicher Zoom-Sitzung führen, deren Anwesenheit automatisch erfasst wird.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-28T04:37:39.146Z",
+    "pr": 454
   }
 }

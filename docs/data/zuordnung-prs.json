@@ -1,11 +1,5 @@
 {
   "prs": {
-    "321": {
-      "titleHash": "4982e4b3",
-      "issuesKey": "f5dcd534a4cd",
-      "updatedAt": "2026-10-07T09:20:09.151Z",
-      "pairs": {}
-    },
     "339": {
       "titleHash": "4f11ca17",
       "issuesKey": "f5dcd534a4cd",
@@ -566,6 +560,23 @@
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-27T04:44:11.685Z",
       "pairs": {}
+    },
+    "454": {
+      "titleHash": "a1b39b99",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-28T04:37:34.098Z",
+      "pairs": {
+        "6": {
+          "sicherheit": 0.4,
+          "begruendung": "Die Anwesenheit wird aus gemessenen Live-Minuten und Inhalte-Anteil zu einem Tageswert verrechnet, was teilweise eine prozentuale Erfassung von Teilabwesenheiten darstellt.",
+          "accepted": false
+        },
+        "13": {
+          "sicherheit": 0.9,
+          "begruendung": "Der PR führt den Batch-Modus mit Kohorten, Kursplan und gemeinsamer Laufzeit ein und setzt damit die Batch-Logik direkt um.",
+          "accepted": true
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"
