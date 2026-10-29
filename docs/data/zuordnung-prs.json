@@ -577,6 +577,34 @@
           "accepted": true
         }
       }
+    },
+    "455": {
+      "titleHash": "9573c062",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-29T04:37:32.340Z",
+      "pairs": {
+        "6": {
+          "sicherheit": 0.45,
+          "begruendung": "Der neue Zustand „teilweise anwesend“ geht teilweise auf die Erfassung von Teilabwesenheiten ein.",
+          "accepted": false
+        },
+        "8": {
+          "sicherheit": 0.35,
+          "begruendung": "Batch-Mitglieder können Abwesenheiten selbst melden, was dem Nachreichen von Entschuldigungen nahekommt.",
+          "accepted": false
+        },
+        "13": {
+          "sicherheit": 0.9,
+          "begruendung": "Die Feedback-Runde erweitert den Batch-Modus direkt um Tageswerte, Austritte, Zusatz-Units und Batch-Filter.",
+          "accepted": true
+        }
+      }
+    },
+    "456": {
+      "titleHash": "acd01b24",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-29T04:37:32.340Z",
+      "pairs": {}
     }
   },
   "issuesKey": "f5dcd534a4cd"

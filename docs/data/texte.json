@@ -1253,5 +1253,116 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-28T04:37:39.146Z",
     "pr": 454
+  },
+  "7cfb9060d158821c1658": {
+    "text": "Mitarbeitende mit dem Recht zur Tagesfreigabe können Batch-Tage jetzt freigeben, ohne den Plan ändern zu dürfen, und das Handbuch erklärt die Zoom-Einrichtung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:36:48.895Z",
+    "slug": "batch-mode-feedback",
+    "phase": 1
+  },
+  "42beb935074ebefe92c4": {
+    "text": "Jeder Kurstag zeigt jetzt getrennt, ob jemand anwesend, teilweise anwesend oder abwesend war und ob die Abgaben erledigt sind, mit einstellbaren Schwellen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:36:50.960Z",
+    "slug": "batch-mode-feedback",
+    "phase": 2
+  },
+  "ff25b37f3156ec21f2ed": {
+    "text": "Teilnehmende und Mitarbeitende sehen je Kurstag Anwesenheit und Abgaben getrennt, inklusive des neuen Zustands teilweise anwesend in Kalender und Übersichten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:36:52.459Z",
+    "slug": "batch-mode-feedback",
+    "phase": 3
+  },
+  "1a8ba52b33b8511d63ff": {
+    "text": "Das System meldet künftig, wenn Teilnehmende im Batch-Modus mehrere Kurstage in Folge zu wenig abgeben, und nimmt die Meldung zurück, sobald sie nachholen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:36:57.162Z",
+    "slug": "batch-mode-feedback",
+    "phase": 4
+  },
+  "a685c8a614e685238e1c": {
+    "text": "Teilnehmende können sich im Batch-Modus jetzt selbst für einen Zeitraum entschuldigen und die Meldung zurücknehmen, solange der Tag noch nicht begonnen hat.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:36:59.510Z",
+    "slug": "batch-mode-feedback",
+    "phase": 5
+  },
+  "5c8607ce162b67078f5a": {
+    "text": "Teilnehmende im Batch können sich jetzt selbst für einen ganzen Tag oder einen Zeitraum abwesend melden, ihre Meldungen einsehen und vor Tagesbeginn wieder zurücknehmen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:01.038Z",
+    "slug": "batch-mode-feedback",
+    "phase": 6
+  },
+  "905fc3c279c6b7896855": {
+    "text": "Beim Austritt aus einer Gruppe wählen Sie die Art, einen Grund aus Ihrer selbst gepflegten Liste und eine Notiz, die später in Liste und Akte sichtbar sind.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:05.072Z",
+    "slug": "batch-mode-feedback",
+    "phase": 7
+  },
+  "794cc3ca213cfbadc0da": {
+    "text": "Lehrkräfte sehen ihre laufenden Teilnehmenden wie Mentees, finden offene Abgaben je Person in der Gruppenübersicht und springen direkt zur Bewertung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:06.959Z",
+    "slug": "batch-mode-feedback",
+    "phase": 8
+  },
+  "2fcdc834ec5a7fa6f01b": {
+    "text": "Lehrkräfte können dem Kursplan eigene Zusatzeinheiten mit Text und Dateien hinzufügen, die mit dem jeweiligen Kurstag freigegeben werden und bei Abgaben mitzählen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:14.298Z",
+    "slug": "batch-mode-feedback",
+    "phase": 9
+  },
+  "68a913eb2e8e83427f27": {
+    "text": "Lehrende können an künftigen Kurstagen eigene Zusatz-Einheiten mit Text und Dateianhängen anlegen, die Teilnehmende direkt im Kursplan sehen und bearbeiten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:15.854Z",
+    "slug": "batch-mode-feedback",
+    "phase": 10
+  },
+  "2ccb64af084d3038f349": {
+    "text": "Teilnehmende können künftig zu jeder Aufgabe und Teilaufgabe eigene Antworten mit Dateien als Entwurf speichern und einreichen, Pflichtteile werden dabei geprüft.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:17.938Z",
+    "slug": "batch-mode-feedback",
+    "phase": 11
+  },
+  "b81e079216210b81a13e": {
+    "text": "Teilnehmende können unter jeder Aufgabe direkt antworten und Dateien anhängen, ihre Entwürfe werden automatisch gespeichert und bei Überarbeitungen wieder geladen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:19.840Z",
+    "slug": "batch-mode-feedback",
+    "phase": 12
+  },
+  "dd64d880389c29417db2": {
+    "text": "Korrektoren sehen nun zu jeder Aufgabe die Antwort samt Dateien und Gesamtanmerkung, auch in der Teilnehmerakte und bei Abgaben ohne Bewertungspflicht.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:21.748Z",
+    "slug": "batch-mode-feedback",
+    "phase": 13
+  },
+  "539023e20d4a81bd9c8a": {
+    "text": "Das Handbuch beschreibt jetzt verständlich und aktuell alle Neuerungen im Batch-Modus, etwa Tageswert, Selbstmeldung, Austritt, Zusatz-Units und Abgaben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:23.284Z",
+    "slug": "batch-mode-feedback",
+    "phase": 14
+  },
+  "d90aa58108143cd367e7": {
+    "text": "Das Team prüft alle Neuerungen der Feedback-Runde gründlich in echten Abläufen, damit Anwesenheit, Abmeldungen, Austritte und Abgaben zuverlässig funktionieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:25.749Z",
+    "slug": "batch-mode-feedback",
+    "phase": 15
+  },
+  "pr:9643a88f55a3f9923597": {
+    "text": "Teilnehmende melden Abwesenheiten selbst und antworten direkt je Aufgabe, und jeder Kurstag zeigt Anwesenheit und Abgaben jetzt getrennt an.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-29T04:37:35.678Z",
+    "pr": 455
   }
 }
