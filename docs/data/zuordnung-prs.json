@@ -605,6 +605,23 @@
       "issuesKey": "f5dcd534a4cd",
       "updatedAt": "2026-10-29T04:37:32.340Z",
       "pairs": {}
+    },
+    "457": {
+      "titleHash": "000a14f6",
+      "issuesKey": "f5dcd534a4cd",
+      "updatedAt": "2026-10-30T04:36:01.857Z",
+      "pairs": {
+        "13": {
+          "sicherheit": 0.8,
+          "begruendung": "Die Datenbank verhindert jetzt, dass der Batch-Modus bei geplanten oder aktiven Batches abgeschaltet wird; das behebt einen Fehler in der Batch-Logik.",
+          "accepted": true
+        },
+        "18": {
+          "sicherheit": 0.3,
+          "begruendung": "Der Sales-Fix, durch den Eingaben in Schritt 2 ein Neuladen überleben, könnte den Angebotsprozess betreffen; die Beschreibung ist dazu aber unvollständig.",
+          "accepted": false
+        }
+      }
     }
   },
   "issuesKey": "f5dcd534a4cd"

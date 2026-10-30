@@ -1364,5 +1364,11 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-29T04:37:35.678Z",
     "pr": 455
+  },
+  "pr:115b1851ddef17be952c": {
+    "text": "Der Batch-Modus lässt sich nicht mehr versehentlich abschalten, solange ein Batch läuft, und Eingaben im Angebotsassistenten gehen nicht mehr verloren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-30T04:36:07.105Z",
+    "pr": 457
   }
 }
