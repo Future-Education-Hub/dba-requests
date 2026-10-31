@@ -2,72 +2,72 @@
   "pairs": {
     "sales-call-to-offer-speed#18": {
       "sicherheit": 0.9,
-      "begruendung": "Zielt direkt darauf, die Zeit vom Call zum Angebot auf höchstens drei Minuten zu senken.",
+      "begruendung": "Zielt direkt auf die Verkürzung der Zeit vom Call zum Angebot.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "sales-offer-refinements#18": {
-      "sicherheit": 0.55,
-      "begruendung": "Verfeinert die Angebotsqualität (Pflichtfelder, Skill-Gap, Dedup).",
+      "sicherheit": 0.6,
+      "begruendung": "Verbessert Angebotsqualität durch Pflichtfelder, Skill-Gap-Logik und Enrichment.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "curriculum-import#17": {
       "sicherheit": 0.7,
-      "begruendung": "Der Curriculum-Import mit Material ist das Werkzeug für die Kursmigration.",
+      "begruendung": "Curriculum-Import mit Material ermöglicht die Migration der DBA-Kurse.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "curriculum-day-bundle#17": {
       "sicherheit": 0.55,
-      "begruendung": "Erweitert den Import um Tagesbündel für die Migration bestehender Kurse.",
+      "begruendung": "Erweitert den Import um Tagesstrukturen für die Kursmigration.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "curriculum-import-generation#17": {
-      "sicherheit": 0.45,
-      "begruendung": "Ermöglicht die Weiterverarbeitung importierter Curricula nach der Migration.",
+      "sicherheit": 0.5,
+      "begruendung": "Ergänzt importierte Curricula um Generierung, unterstützt die Kursmigration.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "batch-mode#13": {
       "sicherheit": 0.9,
-      "begruendung": "Setzt die Batch-Logik mit Kalender, Plan und Freigaben umfassend um.",
+      "begruendung": "Implementiert die Batch-Logik mit Kalender, Plan und Freigabe.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode#3": {
       "sicherheit": 0.85,
       "begruendung": "Enthält Incident-Detektoren für den Batch.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode#7": {
       "sicherheit": 0.6,
-      "begruendung": "Erfasst die Anwesenheit je Live-Session aus Slots (Vorlesung, Tutorien) im Batch.",
+      "begruendung": "Live-Sessions aus Slots und Batch-Anwesenheit erfassen Anwesenheit je Veranstaltung.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "attendance#7": {
-      "sicherheit": 0.4,
-      "begruendung": "Erneuert die Anwesenheitslogik mit Modi als Grundlage für das Tracking je Veranstaltungsart.",
+      "sicherheit": 0.45,
+      "begruendung": "Anwesenheitslogik 2.0 bildet die Grundlage für veranstaltungsbezogenes Tracking.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode#4": {
-      "sicherheit": 0.5,
-      "begruendung": "Leitet das Anwesenheits-Soll aus dem Plan-Tag mit Vorlesungen und Sessions ab.",
+      "sicherheit": 0.45,
+      "begruendung": "Soll aus dem Plan-Tag mit Vorlesungs-Merkmal.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "attendance#4": {
@@ -78,17 +78,17 @@
       "accepted": false
     },
     "attendance#8": {
-      "sicherheit": 0.45,
-      "begruendung": "Bildet Freistellungen und Karenz-Verlängerungen in der Anwesenheitslogik ab.",
+      "sicherheit": 0.6,
+      "begruendung": "Freistellungen und Karenz-Verlängerungen decken nachgereichte Entschuldigungen ab.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "attendance#5": {
-      "sicherheit": 0.4,
-      "begruendung": "Erfasst Freistellungen in der Anwesenheitslogik, was entschuldigte Abwesenheit betrifft.",
+      "sicherheit": 0.5,
+      "begruendung": "Freistellungs-RPCs unterscheiden Entschuldigungsarten in der Anwesenheit.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "attendance#6": {
@@ -100,30 +100,30 @@
     },
     "sales-offer-and-call-fixes#18": {
       "sicherheit": 0.55,
-      "begruendung": "Korrigiert den Angebotsprozess und die Call-Daten zugunsten der Angebotsqualität.",
+      "begruendung": "Korrigiert den Angebotsprozess und die Call-Zuordnung für bessere Angebote.",
       "firstSeen": "2026-10-07T04:44:53.157Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "stellenmarkt-betrieb#19": {
       "sicherheit": 0.75,
-      "begruendung": "Zentralisiert den Crawler-Betrieb (Fastfill zentral, Org-Trennung) als Teil der Neuausrichtung.",
+      "begruendung": "Zentralisiert den Crawler-Betrieb (Fastfill zentral, Org-Trennung, Plattform-Seite).",
       "firstSeen": "2026-10-07T09:17:01.832Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "job-market-overhaul#19": {
       "sicherheit": 0.8,
-      "begruendung": "Setzt den Stellenmarkt-Umbau mit Datenmodell, Ingest und wöchentlichem Takt um.",
+      "begruendung": "Setzt den Stellenmarkt-Umbau mit neuem Datenmodell, Ingest und wöchentlichem Takt um.",
       "firstSeen": "2026-10-07T09:17:01.832Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "fastfill-job-source#19": {
       "sicherheit": 0.5,
-      "begruendung": "Erweitert den Crawler um eine weitere Quelle und trägt so zum Crawler-Umbau bei.",
+      "begruendung": "Erweitert den Crawler um eine weitere Quelle als Teil der Stellenmarkt-Neuausrichtung.",
       "firstSeen": "2026-10-07T09:19:00.967Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "incident-system#3": {
@@ -149,16 +149,16 @@
     },
     "org-conversation-templates#9": {
       "sicherheit": 0.85,
-      "begruendung": "Führt Gesprächs-Templates pro Organisation für die TN-Dokumentation ein.",
+      "begruendung": "Führt Gesprächs-Templates für die TN-Dokumentation pro Org ein.",
       "firstSeen": "2026-10-13T04:49:14.597Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "org-conversation-templates#2": {
       "sicherheit": 0.85,
-      "begruendung": "Macht die KW-Abdeckung, also das Dokumentationsintervall, pro Organisation einstellbar.",
+      "begruendung": "Macht die KW-Abdeckung der Dokumentation pro Org einstellbar.",
       "firstSeen": "2026-10-13T04:49:14.597Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "org-conversation-templates#11": {
@@ -170,61 +170,61 @@
     },
     "workflow-tn-dokumentation#9": {
       "sicherheit": 0.45,
-      "begruendung": "Ergänzt das Dokumentieren nach Template in der TN-Akte.",
+      "begruendung": "Ermöglicht Dokumentation nach Template aus Workflows in der TN-Akte.",
       "firstSeen": "2026-10-16T04:42:20.758Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "batch-mode#8": {
       "sicherheit": 0.5,
-      "begruendung": "Enthält Entschuldigungen mit einheitlicher Quelle und neuen Rechten im Batch-Anwesenheitsmodus.",
+      "begruendung": "Enthält Schritt zu Entschuldigungen mit einer Quelle und neuen Rechten.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode#6": {
       "sicherheit": 0.5,
-      "begruendung": "Wertet Lehrkraft-Intervalle aus und schlüsselt die Bewertung auf, also Teilabwesenheiten.",
+      "begruendung": "Abruf des Kurstags mit Intervallen ermöglicht anteilige Anwesenheitsbewertung.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "batch-mode#5": {
       "sicherheit": 0.45,
-      "begruendung": "Überarbeitet Entschuldigungen in der Anwesenheitsbewertung des Batches.",
+      "begruendung": "Entschuldigungen und Umwertungen in der Batch-Anwesenheit.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "batch-mode-feedback#13": {
       "sicherheit": 0.8,
-      "begruendung": "Liefert die Feedback-Runde zur Batch-Logik.",
+      "begruendung": "Feedback-Runde zur Batch-Logik.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode-feedback#3": {
-      "sicherheit": 0.75,
-      "begruendung": "Erweitert die Incident-Detektoren und den Checkpoint für Batches.",
+      "sicherheit": 0.7,
+      "begruendung": "Überarbeitet Incident-Detektoren und Checkpoint im Batch.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     },
     "batch-mode-feedback#6": {
-      "sicherheit": 0.55,
-      "begruendung": "Führt Tageswerte mit Schwellen ein, die anteilige Anwesenheit bewerten.",
+      "sicherheit": 0.5,
+      "begruendung": "Tageswert-Modell mit Schwellen bewertet Teilanwesenheiten.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": false
     },
     "batch-mode-feedback#4": {
       "sicherheit": 0.6,
-      "begruendung": "Führt zwei Tageswerte für Tage mit mehreren Veranstaltungsarten ein.",
+      "begruendung": "Zwei Tageswerte modellieren Tage mit Vorlesung und Praxisteil.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-10-30T04:35:48.440Z",
+      "lastSeen": "2026-10-31T04:35:12.407Z",
       "accepted": true
     }
   },
-  "lastInputKey": "6abbb35d5e8bdebd6f49",
-  "lastRun": "2026-10-30T04:35:48.440Z"
+  "lastInputKey": "74813817b7202586eca3",
+  "lastRun": "2026-10-31T04:35:12.407Z"
 }
