@@ -1370,5 +1370,17 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-30T04:36:07.105Z",
     "pr": 457
+  },
+  "pr:af531776f9f43a13a7c8": {
+    "text": "In den Einstellungen lässt sich pro Zertifizierung jetzt eine feste Kursdauer in Monaten eintragen, die dann so im Angebot erscheint.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-04T04:36:19.384Z",
+    "pr": 431
+  },
+  "pr:493f5ea844d31eae80c3": {
+    "text": "Im Vertrieb lassen sich die Filter für den Stellen-Pool jetzt selbst einstellen, etwa nach Erfahrungsstufe, Arbeitsform, Remote-Anteil, Alter und Größe.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-04T04:36:21.756Z",
+    "pr": 430
   }
 }
