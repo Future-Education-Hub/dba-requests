@@ -1,23 +1,5 @@
 {
   "prs": {
-    "339": {
-      "titleHash": "4f11ca17",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:16.572Z",
-      "pairs": {}
-    },
-    "341": {
-      "titleHash": "ca8008ef",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:16.572Z",
-      "pairs": {
-        "17": {
-          "sicherheit": 0.6,
-          "begruendung": "Der Curriculum-Import bildet das Kurskonzept des zweiten Bildungsträgers als Tagesbündel ab und dient damit der Migration der DBA-Kurse.",
-          "accepted": true
-        }
-      }
-    },
     "346": {
       "titleHash": "9b662a5c",
       "issuesKey": "8dccab8750b8",
@@ -638,6 +620,36 @@
       "titleHash": "4274a3ab",
       "issuesKey": "8dccab8750b8",
       "updatedAt": "2026-11-04T04:35:53.323Z",
+      "pairs": {}
+    },
+    "465": {
+      "titleHash": "cb1d241b",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-05T04:35:09.092Z",
+      "pairs": {}
+    },
+    "467": {
+      "titleHash": "34f9642b",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-05T04:35:09.092Z",
+      "pairs": {
+        "17": {
+          "sicherheit": 0.4,
+          "begruendung": "Die Änderung blendet Platzhalter-Abgaben aus der Altsystem-Datenmigration aus und behebt damit einen Folgefehler der Kursmigration.",
+          "accepted": false
+        }
+      }
+    },
+    "470": {
+      "titleHash": "e633b1b8",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-05T04:35:09.092Z",
+      "pairs": {}
+    },
+    "472": {
+      "titleHash": "a9d2f687",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-05T04:35:09.092Z",
       "pairs": {}
     }
   },
