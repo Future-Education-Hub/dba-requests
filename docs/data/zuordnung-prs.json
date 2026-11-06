@@ -1,35 +1,5 @@
 {
   "prs": {
-    "346": {
-      "titleHash": "9b662a5c",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:16.572Z",
-      "pairs": {
-        "17": {
-          "sicherheit": 0.35,
-          "begruendung": "Der Fix behebt eine fehlerhafte Diff-Anzeige bei importierten Kursen und betrifft damit möglicherweise den Migrationsweg.",
-          "accepted": false
-        }
-      }
-    },
-    "347": {
-      "titleHash": "ee5d3b26",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:16.572Z",
-      "pairs": {}
-    },
-    "348": {
-      "titleHash": "3f95f809",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:16.572Z",
-      "pairs": {}
-    },
-    "349": {
-      "titleHash": "cd278383",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
     "352": {
       "titleHash": "a1d7b10e",
       "issuesKey": "8dccab8750b8",
@@ -640,6 +610,18 @@
         }
       }
     },
+    "468": {
+      "titleHash": "8b2f81e9",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-06T04:35:31.497Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.6,
+          "begruendung": "Die Änderung behebt Fehler in der Angebotserstellung (Erstellung ohne Call, korrekte Kompetenzmatrix, Kurzprofil). Das verbessert Qualität und Ablauf der Angebote, wie Ticket #18 es fordert.",
+          "accepted": true
+        }
+      }
+    },
     "470": {
       "titleHash": "e633b1b8",
       "issuesKey": "8dccab8750b8",
@@ -650,6 +632,18 @@
       "titleHash": "a9d2f687",
       "issuesKey": "8dccab8750b8",
       "updatedAt": "2026-11-05T04:35:09.092Z",
+      "pairs": {}
+    },
+    "475": {
+      "titleHash": "146157b3",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-06T04:35:31.497Z",
+      "pairs": {}
+    },
+    "476": {
+      "titleHash": "63e6a2dd",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-06T04:35:31.497Z",
       "pairs": {}
     }
   },
