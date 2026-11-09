@@ -2,30 +2,30 @@
   "pairs": {
     "sales-call-to-offer-speed#18": {
       "sicherheit": 0.9,
-      "begruendung": "Es verkürzt direkt die Zeit vom Call zum Angebot auf höchstens drei Minuten.",
+      "begruendung": "Es reduziert die Zeit von Call zu Angebot auf maximal 3 Minuten.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "sales-offer-refinements#18": {
-      "sicherheit": 0.5,
-      "begruendung": "Die Verfeinerungen am Angebotsprozess erhöhen dessen Qualität.",
+      "sicherheit": 0.45,
+      "begruendung": "Die Verfeinerungen am Angebotsprozess erhöhen die Angebotsqualität.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "curriculum-import#17": {
-      "sicherheit": 0.7,
-      "begruendung": "Der Curriculum-Import mit Material ist das Werkzeug zur Migration der DBA-Kurse.",
+      "sicherheit": 0.6,
+      "begruendung": "Der Curriculum-Import mit Material ermöglicht die Migration bestehender Kurse.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "curriculum-day-bundle#17": {
-      "sicherheit": 0.55,
-      "begruendung": "Es erweitert den Import um Tagesbündel für die Kursmigration.",
+      "sicherheit": 0.45,
+      "begruendung": "Es erweitert den Curriculum-Import um Tagesbündel für die Kursübernahme.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "curriculum-import-generation#17": {
@@ -37,23 +37,23 @@
     },
     "batch-mode#13": {
       "sicherheit": 0.9,
-      "begruendung": "Der Batch-Modus setzt die geforderte Batch-Logik umfassend um.",
+      "begruendung": "Der Batch-Modus setzt die Batch-Logik umfassend um.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode#3": {
       "sicherheit": 0.8,
-      "begruendung": "Es enthält einen eigenen Schritt für Incident-Detektoren im Batch.",
+      "begruendung": "Es enthält Incident-Detektoren für den Batch.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode#7": {
-      "sicherheit": 0.6,
-      "begruendung": "Live-Sessions aus Slots und der Batch-Anwesenheitsmodus erfassen Anwesenheit je Veranstaltungstyp.",
+      "sicherheit": 0.5,
+      "begruendung": "Live-Sessions aus Slots und die Batch-Anwesenheitserfassung ermöglichen ein Tracking je Veranstaltungsart.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "attendance#7": {
@@ -78,10 +78,10 @@
       "accepted": false
     },
     "attendance#8": {
-      "sicherheit": 0.55,
-      "begruendung": "Freistellungen und Karenz-Verlängerungen erlauben nachträgliche Entschuldigungen.",
+      "sicherheit": 0.5,
+      "begruendung": "Die Anwesenheitslogik 2.0 umfasst Freistellungen und Karenz-Verlängerungen.",
       "firstSeen": "2026-10-06T15:45:55.284Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "attendance#5": {
@@ -107,16 +107,16 @@
     },
     "stellenmarkt-betrieb#19": {
       "sicherheit": 0.6,
-      "begruendung": "Zentraler Fastfill-Crawler, Org-Trennung und Plattform-Seite gehören zur Neuausrichtung des Stellenmarkts.",
+      "begruendung": "Es zentralisiert den Crawler-Betrieb (Fastfill zentral, Plattform-Seite) als Teil der Neuausrichtung.",
       "firstSeen": "2026-10-07T09:17:01.832Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "job-market-overhaul#19": {
-      "sicherheit": 0.75,
-      "begruendung": "Das Vorhaben setzt den Stellenmarkt-Umbau mit Ingest, Suche, Analyse und Vorschlagswesen um.",
+      "sicherheit": 0.8,
+      "begruendung": "Das Vorhaben setzt den Stellenmarkt-Umbau direkt um.",
       "firstSeen": "2026-10-07T09:17:01.832Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "fastfill-job-source#19": {
@@ -149,65 +149,65 @@
     },
     "org-conversation-templates#9": {
       "sicherheit": 0.85,
-      "begruendung": "Es führt Gesprächs-Templates für die TN-Dokumentation je Organisation ein.",
+      "begruendung": "Es führt Gesprächs-Templates pro Organisation für die TN-Dokumentation ein.",
       "firstSeen": "2026-10-13T04:49:14.597Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "org-conversation-templates#2": {
-      "sicherheit": 0.85,
-      "begruendung": "Es macht die KW-Abdeckung der Dokumentation pro Organisation einstellbar.",
+      "sicherheit": 0.8,
+      "begruendung": "Es führt eine pro Organisation einstellbare KW-Abdeckung als Dokumentationsintervall ein.",
       "firstSeen": "2026-10-13T04:49:14.597Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "org-conversation-templates#11": {
-      "sicherheit": 0.4,
-      "begruendung": "Es enthält Reporting über Templates samt Mentoring-Sessions-Sicht.",
+      "sicherheit": 0.5,
+      "begruendung": "Gesprächs-Templates und die Mentoring-Sessions-Sicht verallgemeinern die Mentoring-Dokumentation.",
       "firstSeen": "2026-10-13T04:49:14.597Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": false
     },
     "workflow-tn-dokumentation#9": {
       "sicherheit": 0.45,
-      "begruendung": "Es ergänzt einen Feldtyp „Dokumentation nach Template“ für die TN-Akte.",
+      "begruendung": "Es bietet den Feldtyp „Dokumentation nach Template“ in der TN-Akte.",
       "firstSeen": "2026-10-16T04:42:20.758Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": false
     },
     "batch-mode#8": {
       "sicherheit": 0.5,
-      "begruendung": "Es enthält einen Schritt zu Entschuldigungen mit eigenen Rechten.",
+      "begruendung": "Der Batch-Modus enthält Entschuldigungen aus einer Quelle und Umwertungen.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode#6": {
-      "sicherheit": 0.5,
-      "begruendung": "Lehrkraft-Intervalle, Umwertungen und Aufschlüsselung ermöglichen anteilige Anwesenheit.",
+      "sicherheit": 0.45,
+      "begruendung": "Lehrkraft-Intervalle und die Aufschlüsselung in der Bewertung bilden Teilabwesenheiten ab.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": false
     },
     "batch-mode#5": {
       "sicherheit": 0.45,
-      "begruendung": "Die Entschuldigungen im Batch werden als eine Quelle mit eigenen Rechten modelliert.",
+      "begruendung": "Die Entschuldigungen mit eigener Quelle und eigenen Rechten betreffen den Status „entschuldigt“.",
       "firstSeen": "2026-10-21T04:42:56.372Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": false
     },
     "batch-mode-feedback#13": {
-      "sicherheit": 0.8,
-      "begruendung": "Die Feedback-Runde erweitert und verfeinert die Batch-Logik.",
+      "sicherheit": 0.75,
+      "begruendung": "Es enthält die Feedback-Runde zur Batch-Logik.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode-feedback#3": {
-      "sicherheit": 0.65,
-      "begruendung": "Es passt die Incident-Detektoren für den Batch an.",
+      "sicherheit": 0.6,
+      "begruendung": "Es passt die Incident-Detektoren an den Batch-Modus an.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode-feedback#6": {
@@ -219,26 +219,26 @@
     },
     "batch-mode-feedback#4": {
       "sicherheit": 0.6,
-      "begruendung": "Zwei Tageswerte mit Schwellen und Anzeige bilden Tage mit Vorlesung und Praxis ab.",
+      "begruendung": "Zwei Tageswerte mit Schwellen bilden Tage mit Vorlesung und Praxisteil ab.",
       "firstSeen": "2026-10-29T04:36:39.880Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "batch-mode#22": {
-      "sicherheit": 0.45,
-      "begruendung": "Es enthält Batch-Übersicht und Zeitleiste in Batch-Ansicht.",
+      "sicherheit": 0.55,
+      "begruendung": "Batch-Modus enthält Batch-Übersicht und Zeitleiste in Batch-Ansicht, die den Plan im Überblick zeigen.",
       "firstSeen": "2026-11-03T04:35:22.253Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": true
     },
     "tn-onboarding#21": {
       "sicherheit": 0.45,
-      "begruendung": "Der Einladungs-Step mit E-Mail-Vorlage betrifft die Willkommens-Mail für neue Teilnehmer.",
+      "begruendung": "Das Onboarding enthält einen Einladungs-Step mit Mail-Vorlage für neue Teilnehmer.",
       "firstSeen": "2026-11-03T04:35:22.253Z",
-      "lastSeen": "2026-11-06T04:35:20.167Z",
+      "lastSeen": "2026-11-09T04:34:57.976Z",
       "accepted": false
     }
   },
-  "lastInputKey": "76a8070db1cf5e61b740",
-  "lastRun": "2026-11-06T04:35:20.167Z"
+  "lastInputKey": "02d6fe3bf1dd1e41c192",
+  "lastRun": "2026-11-09T04:34:57.976Z"
 }

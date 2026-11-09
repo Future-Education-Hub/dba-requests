@@ -1,41 +1,5 @@
 {
   "prs": {
-    "352": {
-      "titleHash": "a1d7b10e",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
-    "353": {
-      "titleHash": "7d218f50",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
-    "354": {
-      "titleHash": "41560a80",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
-    "355": {
-      "titleHash": "99a46c24",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
-    "356": {
-      "titleHash": "8cc35333",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
-    "357": {
-      "titleHash": "3b15dbee",
-      "issuesKey": "8dccab8750b8",
-      "updatedAt": "2026-11-04T04:36:11.984Z",
-      "pairs": {}
-    },
     "362": {
       "titleHash": "a2b5c302",
       "issuesKey": "8dccab8750b8",
@@ -645,6 +609,18 @@
       "issuesKey": "8dccab8750b8",
       "updatedAt": "2026-11-06T04:35:31.497Z",
       "pairs": {}
+    },
+    "479": {
+      "titleHash": "bb299944",
+      "issuesKey": "8dccab8750b8",
+      "updatedAt": "2026-11-09T04:35:08.321Z",
+      "pairs": {
+        "13": {
+          "sicherheit": 0.4,
+          "begruendung": "Der konsolidierte Modus bildet Selbstlerner als simulierte Batches mit Kohorten und Kursplan ab und berührt damit die Batch-Logik.",
+          "accepted": false
+        }
+      }
     }
   },
   "issuesKey": "8dccab8750b8"
