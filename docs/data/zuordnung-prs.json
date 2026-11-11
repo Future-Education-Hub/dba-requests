@@ -1,65 +1,5 @@
 {
   "prs": {
-    "364": {
-      "titleHash": "9e6fa6fd",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:48.860Z",
-      "pairs": {}
-    },
-    "381": {
-      "titleHash": "81bd305f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:48.860Z",
-      "pairs": {}
-    },
-    "382": {
-      "titleHash": "eed0d547",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:48.860Z",
-      "pairs": {}
-    },
-    "384": {
-      "titleHash": "08970082",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:48.860Z",
-      "pairs": {}
-    },
-    "386": {
-      "titleHash": "0277cc41",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:48.860Z",
-      "pairs": {}
-    },
-    "387": {
-      "titleHash": "864df0d3",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "388": {
-      "titleHash": "5006dd73",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "390": {
-      "titleHash": "72c6bcc4",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "391": {
-      "titleHash": "00e1c078",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "392": {
-      "titleHash": "aeafe2e2",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
     "394": {
       "titleHash": "47d368ee",
       "issuesKey": "973b7a1f6c9b",
@@ -656,6 +596,30 @@
       "titleHash": "973c20a9",
       "issuesKey": "973b7a1f6c9b",
       "updatedAt": "2026-11-10T04:35:22.736Z",
+      "pairs": {}
+    },
+    "485": {
+      "titleHash": "e449a06b",
+      "issuesKey": "973b7a1f6c9b",
+      "updatedAt": "2026-11-11T04:35:37.093Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.6,
+          "begruendung": "Die Änderung verbessert die Darstellung der Stellen im Angebotsdokument und erhöht damit die Angebotsqualität.",
+          "accepted": true
+        }
+      }
+    },
+    "486": {
+      "titleHash": "8aba1cbe",
+      "issuesKey": "973b7a1f6c9b",
+      "updatedAt": "2026-11-11T04:35:37.093Z",
+      "pairs": {}
+    },
+    "487": {
+      "titleHash": "2b75aa2f",
+      "issuesKey": "973b7a1f6c9b",
+      "updatedAt": "2026-11-11T04:35:37.093Z",
       "pairs": {}
     }
   },

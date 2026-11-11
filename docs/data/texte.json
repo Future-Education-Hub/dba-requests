@@ -1388,5 +1388,102 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-11-06T04:35:33.625Z",
     "pr": 468
+  },
+  "e732340e5c6d738d2177": {
+    "text": "Organisationen können jetzt festlegen, wie viele Kurstage Teilnehmende Entschuldigungen nachreichen dürfen, standardmäßig drei, und Teilnehmende sehen ihre Frist.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:34:56.912Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 1
+  },
+  "5dff0bdc2fccaf938a13": {
+    "text": "Alle Teilnehmenden können Fehlzeiten nun innerhalb der Nachreichfrist auch rückwirkend und stundenweise selbst entschuldigen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:34:59.910Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 2
+  },
+  "cb09183af8fc94c1dff7": {
+    "text": "Berechtigte Mitarbeitende können Entschuldigungen jetzt mit Pflichtbegründung aberkennen, der Tag wird sofort neu bewertet und der Verlauf bleibt nachvollziehbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:01.293Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 3
+  },
+  "244a29db57b826949030": {
+    "text": "Teilnehmende und berechtigte Mitarbeitende sehen künftig alle Abwesenheitszeiten samt Wertung an einem Ort, inklusive versäumter oder abgesagter Mentoring-Termine.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:02.606Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 4
+  },
+  "2f1e83c3e7ee3e9c1463": {
+    "text": "Wer die Anwesend-Schwelle ohne seine entschuldigte Zeit erreicht, gilt als anwesend, und Anwesenheitsquoten zählen nur tatsächlich bewertete Kurstage.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:04.412Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 5
+  },
+  "c882b73bbb45ab38b3ed": {
+    "text": "Verpasste Abgaben an entschuldigten Tagen werden nun als entschuldigt versäumt gekennzeichnet und führen nicht mehr zu Hinweisen auf wiederholt fehlende Abgaben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:07.626Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 6
+  },
+  "cbfd3648b860e3f5763b": {
+    "text": "Teilnehmende und Mentoren werden automatisch über aberkannte Entschuldigungen, verpasste Termine und ablaufende Fristen informiert, abschaltbar je Einrichtung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:13.693Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 7
+  },
+  "b50d036660a58e4b2e22": {
+    "text": "Im Anwesenheitskalender sehen alle nun Teilabwesenheiten, Nachweise und aberkannte Entschuldigungen auf einen Blick und können per Klick jeden Tag im Detail ansehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:15.030Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 8
+  },
+  "8eacf2ec0b1312e8822b": {
+    "text": "Teilnehmende können Abwesenheiten selbst ganztägig oder stundenweise melden, Nachweise jederzeit nachreichen und sehen klar, bis wann eine Meldung möglich ist.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:16.895Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 9
+  },
+  "2e12c74c751fe2c22541": {
+    "text": "Berechtigte Mitarbeitende können Entschuldigungen mit Begründung aberkennen, Teilnehmende werden benachrichtigt und der Verlauf bleibt einsehbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:22.985Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 10
+  },
+  "1016936efe1841a2c045": {
+    "text": "Kalender, Übersicht, Zeitleiste und Akte zeigen jetzt, ob Abgaben erfüllt, versäumt oder entschuldigt versäumt wurden und wo ein Nachweis fehlt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:27.499Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 11
+  },
+  "67b442d526db798b8cc0": {
+    "text": "Im Verlaufsbericht stehen jetzt entschuldigte Teilabwesenheiten mit Datum, Uhrzeit und Grund, und versäumte Abgaben werden nach entschuldigt und unentschuldigt getrennt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:28.837Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 12
+  },
+  "9cb7bc94667e166ce2ba": {
+    "text": "Das Team prüft alle Abläufe rund um Entschuldigungen und Teilabwesenheit gründlich, damit das Vorhaben im Alltag zuverlässig funktioniert.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:31.407Z",
+    "slug": "attendance-excuses-rework",
+    "phase": 13
+  },
+  "pr:0d09fbba8e52487f7e7b": {
+    "text": "Passende Stellen im Angebot zeigen jetzt nur Fähigkeiten aus Kurs und Vorwissen farbig markiert, bei Remote keinen Ort und alle Orte auf Deutsch.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-11T04:35:38.802Z",
+    "pr": 485
   }
 }
