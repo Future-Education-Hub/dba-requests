@@ -1,37 +1,7 @@
 {
   "prs": {
-    "394": {
-      "titleHash": "47d368ee",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "396": {
-      "titleHash": "1c3ed067",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "398": {
-      "titleHash": "2357fd62",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "399": {
-      "titleHash": "474d6e4b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
     "400": {
       "titleHash": "fc4fe497",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "401": {
-      "titleHash": "27db61ea",
       "issuesKey": "973b7a1f6c9b",
       "updatedAt": "2026-11-10T04:35:47.260Z",
       "pairs": {}
@@ -621,6 +591,28 @@
       "issuesKey": "973b7a1f6c9b",
       "updatedAt": "2026-11-11T04:35:37.093Z",
       "pairs": {}
+    },
+    "488": {
+      "titleHash": "e27e2088",
+      "issuesKey": "973b7a1f6c9b",
+      "updatedAt": "2026-11-12T04:35:29.384Z",
+      "pairs": {
+        "6": {
+          "sicherheit": 0.7,
+          "begruendung": "Die Änderung führt Teilabwesenheiten als Zeiträume mit Markierung „mit Teilabwesenheit“ ein.",
+          "accepted": true
+        },
+        "8": {
+          "sicherheit": 0.85,
+          "begruendung": "Teilnehmer können Entschuldigungen innerhalb einer Frist rückwirkend nachreichen.",
+          "accepted": true
+        },
+        "24": {
+          "sicherheit": 0.85,
+          "begruendung": "Versäumte Abgaben an entschuldigten Tagen werden im Batch getrennt als „versäumt, entschuldigt“ geführt.",
+          "accepted": true
+        }
+      }
     }
   },
   "issuesKey": "973b7a1f6c9b"
