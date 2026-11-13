@@ -1,135 +1,117 @@
 {
   "prs": {
-    "400": {
-      "titleHash": "fc4fe497",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "402": {
-      "titleHash": "a35be3d5",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
-    "403": {
-      "titleHash": "236611de",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
-      "pairs": {}
-    },
     "405": {
       "titleHash": "89c819bf",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "406": {
       "titleHash": "1b788de1",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "18": {
           "sicherheit": 0.9,
-          "begruendung": "Der PR verkürzt die Zeit vom Call bis zum fertigen Angebot auf höchstens 3 Minuten und verbessert die Call-Zuordnung, also die Angebotszeit und die Qualität.",
+          "begruendung": "Verkürzt die Zeit vom Call bis zum fertigen Angebot auf höchstens drei Minuten.",
           "accepted": true
         }
       }
     },
     "407": {
       "titleHash": "21944eee",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "19": {
-          "sicherheit": 0.92,
-          "begruendung": "Der PR ist ausdrücklich Schritt 0 der Stellenmarkt-Neuausrichtung: Er bringt den täglichen Lauf, die Zuordnung, den Ablauf nach Alter und Fastfill zentral.",
+          "sicherheit": 0.85,
+          "begruendung": "Setzt Schritt 0 der Stellenmarkt-Neuausrichtung mit zentralem Betrieb und täglichem Lauf um.",
           "accepted": true
         }
       }
     },
     "408": {
       "titleHash": "c342131b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "409": {
       "titleHash": "906cce1b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "410": {
       "titleHash": "836e87cc",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "412": {
       "titleHash": "54a11951",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "414": {
       "titleHash": "493620b3",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "415": {
       "titleHash": "18cf762b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "416": {
       "titleHash": "b8a0a45a",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "417": {
       "titleHash": "92dd3f24",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "418": {
       "titleHash": "b7b3788d",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:47.260Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "420": {
       "titleHash": "070886c0",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "422": {
       "titleHash": "5e78f26f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.5,
-          "begruendung": "Startet die blockierte Call-Analyse wieder, darunter 120 wartende DBA-Calls, und entsperrt so die Angebotskette.",
+          "sicherheit": 0.55,
+          "begruendung": "Behebt den Stillstand der Call-Analyse, die die Angebots-Kette blockierte.",
           "accepted": true
         }
       }
     },
     "423": {
       "titleHash": "c510c80a",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "424": {
       "titleHash": "4777c804",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "18": {
           "sicherheit": 0.35,
@@ -140,66 +122,66 @@
     },
     "425": {
       "titleHash": "e37be16e",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "19": {
-          "sicherheit": 0.45,
-          "begruendung": "Übergangsschritt zur Stellenmarkt-Neuausrichtung: Betrieb wird zentralisiert und Suchbegriffe werden auf Org-Ebene gepflegt.",
+          "sicherheit": 0.6,
+          "begruendung": "Teilt den Stellenmarkt als Übergang zur Neuausrichtung in zentralen Betrieb und Org-Suchbegriffe auf.",
           "accepted": true
         }
       }
     },
     "426": {
       "titleHash": "d6fc5879",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.45,
-          "begruendung": "Ergänzt die KI-Kette um eine automatische Befüllung der Kompetenz-Matrix und zeigt die Kursdauer an, was Angebote schneller und vollständiger macht.",
+          "sicherheit": 0.7,
+          "begruendung": "Verbessert die Angebotsqualität durch Kursdauer, Matrix-Befüllung in der KI-Kette und einen bereinigten Job-Pool.",
           "accepted": true
         }
       }
     },
     "427": {
       "titleHash": "29d2c2aa",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "428": {
       "titleHash": "6db14d62",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {}
     },
     "429": {
       "titleHash": "de2fbb4f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:59.493Z",
       "pairs": {
         "2": {
-          "sicherheit": 0.85,
-          "begruendung": "Macht die KW-Abdeckung pro Organisation als Intervall „alle N Wochen“ einstellbar.",
+          "sicherheit": 0.8,
+          "begruendung": "Macht die KW-Abdeckung, also das Dokumentationsintervall, pro Organisation einstellbar.",
           "accepted": true
         },
         "9": {
-          "sicherheit": 0.9,
-          "begruendung": "Führt organisationseigene Gesprächs-Templates mit Freitext-, Auswahl- und Pflichtfeldern für die TN-Dokumentation ein.",
+          "sicherheit": 0.85,
+          "begruendung": "Führt org-eigene Gesprächs-Templates für die Teilnehmer-Dokumentation ein.",
           "accepted": true
         },
         "11": {
           "sicherheit": 0.5,
-          "begruendung": "Überführt das Mentoring-Reporting in ein allgemeines, anpassbares Standard-Template.",
+          "begruendung": "Überführt das Mentoring-Reporting in ein generisches, anpassbares Standard-Template.",
           "accepted": false
         }
       }
     },
     "430": {
       "titleHash": "dffc25c7",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
           "sicherheit": 0.6,
@@ -215,8 +197,8 @@
     },
     "431": {
       "titleHash": "8207789d",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
           "sicherheit": 0.6,
@@ -227,20 +209,20 @@
     },
     "432": {
       "titleHash": "0ca34caa",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
           "sicherheit": 0.45,
-          "begruendung": "Übernimmt Job-Picks automatisch ins Angebot und korrigiert abgeschnittene Begründungstexte, was Zeit spart und die Qualität erhöht.",
+          "begruendung": "Job-Picks kommen automatisch ins Angebot und Texte werden korrigiert, was Zeit spart und die Qualität erhöht.",
           "accepted": true
         }
       }
     },
     "433": {
       "titleHash": "0a6984ba",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "9": {
           "sicherheit": 0.4,
@@ -251,20 +233,20 @@
     },
     "435": {
       "titleHash": "0831b910",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "436": {
       "titleHash": "90b83f19",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "437": {
       "titleHash": "5081a8c7",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
           "sicherheit": 0.45,
@@ -275,14 +257,14 @@
     },
     "438": {
       "titleHash": "c29e637f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "439": {
       "titleHash": "3e33784f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
           "sicherheit": 0.5,
@@ -293,102 +275,102 @@
     },
     "440": {
       "titleHash": "e34628c8",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "441": {
       "titleHash": "015bc3b9",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "442": {
       "titleHash": "d8d37917",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "443": {
       "titleHash": "7ee1c8de",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "444": {
       "titleHash": "6dc98a71",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "445": {
       "titleHash": "4cfe3a80",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "446": {
       "titleHash": "5306c4c0",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:39.558Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.55,
-          "begruendung": "Behebt, dass neu generierte KI-Texte verworfen wurden, und verbessert damit direkt die Angebotsqualität.",
+          "sicherheit": 0.45,
+          "begruendung": "Neu generierte KI-Texte kommen jetzt im Angebot an, was die Angebotsqualität erhöht.",
           "accepted": true
         }
       }
     },
     "447": {
       "titleHash": "fd6594cf",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "448": {
       "titleHash": "ad7f9cec",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "449": {
       "titleHash": "7182fb0b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "451": {
       "titleHash": "3458ced3",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "9": {
           "sicherheit": 0.35,
-          "begruendung": "Behebt einen Ladefehler bei vorlagenbasierten Dokumentationseinträgen in der Teilnehmer-Akte.",
+          "begruendung": "Behebt einen Ladefehler bei der Anzeige von Template-Antworten in der TN-Dokumentation.",
           "accepted": false
         }
       }
     },
     "452": {
       "titleHash": "e8502b20",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "453": {
       "titleHash": "38f91f90",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "454": {
       "titleHash": "a1b39b99",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "6": {
           "sicherheit": 0.4,
-          "begruendung": "Die Anwesenheit wird aus gemessenen Live-Minuten und Inhalte-Anteil zu einem Tageswert verrechnet, was teilweise eine prozentuale Erfassung von Teilabwesenheiten darstellt.",
+          "begruendung": "Die Anwesenheit wird aus gemessenen Live-Minuten anteilig berechnet, was prozentuale Teilabwesenheiten teilweise abdeckt.",
           "accepted": false
         },
         "7": {
@@ -397,48 +379,53 @@
           "accepted": false
         },
         "13": {
-          "sicherheit": 0.85,
-          "begruendung": "Führt den Batch-Modus mit Kohorten, Kursplan und Tageswert ein und setzt damit die Batch-Logik um.",
+          "sicherheit": 0.9,
+          "begruendung": "Führt den Batch-Modus mit Kohorten, Kursplan und Batch-Anwesenheit ein und setzt damit die Batch-Logik um.",
           "accepted": true
         }
       }
     },
     "455": {
       "titleHash": "9573c062",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {
         "6": {
-          "sicherheit": 0.35,
-          "begruendung": "Führt den Zustand „teilweise anwesend“ ein und berührt damit Teilabwesenheiten.",
+          "sicherheit": 0.45,
+          "begruendung": "Führt den Zustand „teilweise anwesend“ mit eigenen Schwellen ein.",
           "accepted": false
         },
         "8": {
-          "sicherheit": 0.35,
-          "begruendung": "Batch-Mitglieder können Abwesenheiten selbst melden, was dem Nachreichen von Entschuldigungen nahekommt.",
+          "sicherheit": 0.4,
+          "begruendung": "Batch-Mitglieder können Abwesenheiten selbst melden, auch für einen Zeitraum.",
           "accepted": false
         },
         "13": {
-          "sicherheit": 0.8,
-          "begruendung": "Die erste Feedback-Runde erweitert die Batch-Logik um Tageswerte, Austritte und Zusatz-Units.",
+          "sicherheit": 0.85,
+          "begruendung": "Die Feedback-Runde erweitert die Batch-Logik um Tageswerte, Austritte und Zusatz-Units.",
           "accepted": true
+        },
+        "24": {
+          "sicherheit": 0.5,
+          "begruendung": "Getrennte Tageswerte für Abgaben und Anwesenheit sowie Abwesenheitsmeldungen betreffen versäumte Abgaben im Batch.",
+          "accepted": false
         }
       }
     },
     "456": {
       "titleHash": "acd01b24",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:48.653Z",
       "pairs": {}
     },
     "457": {
       "titleHash": "000a14f6",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "13": {
-          "sicherheit": 0.6,
-          "begruendung": "Sichert die Batch-Logik ab, indem der Batch-Modus bei laufendem Batch nicht mehr ausgeschaltet werden kann.",
+          "sicherheit": 0.5,
+          "begruendung": "Der Fix sichert die Batch-Logik ab, indem der Batch-Modus bei laufenden Batches nicht abschaltbar ist.",
           "accepted": true
         },
         "18": {
@@ -450,74 +437,74 @@
     },
     "458": {
       "titleHash": "8f054c50",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "461": {
       "titleHash": "4274a3ab",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "465": {
       "titleHash": "cb1d241b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "467": {
       "titleHash": "34f9642b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "17": {
           "sicherheit": 0.35,
-          "begruendung": "Behebt eine Anzeige von Platzhaltern aus der Datenmigration des Altsystems.",
+          "begruendung": "Platzhalter aus der Altsystem-Migration werden nicht mehr fälschlich als Abgaben angezeigt.",
           "accepted": false
         }
       }
     },
     "468": {
       "titleHash": "8b2f81e9",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "18": {
           "sicherheit": 0.4,
-          "begruendung": "Behebt Fehler in der Angebotserstellung, die Qualität und Ablauf der Angebote beeinträchtigten.",
+          "begruendung": "Der Fix ermöglicht Angebote ohne Call und korrigiert die Inhalte, was Zeit und Qualität betrifft.",
           "accepted": true
         }
       }
     },
     "470": {
       "titleHash": "e633b1b8",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "472": {
       "titleHash": "a9d2f687",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "475": {
       "titleHash": "146157b3",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "476": {
       "titleHash": "63e6a2dd",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "479": {
       "titleHash": "bb299944",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "13": {
           "sicherheit": 0.4,
@@ -528,92 +515,122 @@
     },
     "480": {
       "titleHash": "2f89ccef",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.45,
-          "begruendung": "Die neue Jobauswahl im Angebots-Wizard soll die Qualität der Angebote erhöhen.",
+          "sicherheit": 0.5,
+          "begruendung": "Die individuelle Jobauswahl im Angebot erhöht die Angebotsqualität.",
           "accepted": false
         }
       }
     },
     "481": {
       "titleHash": "a042031a",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "482": {
       "titleHash": "9f23ad3e",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.45,
-          "begruendung": "Die Standard-Modulauswahl je Zertifizierung verkürzt die Erstellung von Angeboten.",
+          "sicherheit": 0.5,
+          "begruendung": "Die Standard-Modulauswahl je Zertifizierung beschleunigt das Erstellen von Angeboten.",
           "accepted": false
         }
       }
     },
     "483": {
       "titleHash": "eaca4c3c",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "484": {
       "titleHash": "973c20a9",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-10T04:35:22.736Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "485": {
       "titleHash": "e449a06b",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-11T04:35:37.093Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "18": {
-          "sicherheit": 0.6,
-          "begruendung": "Die Änderung verbessert die Darstellung der Stellen im Angebotsdokument und erhöht damit die Angebotsqualität.",
+          "sicherheit": 0.45,
+          "begruendung": "Die Stellenkarten im Angebot werden gezielter und lesbarer, was die Angebotsqualität verbessert.",
           "accepted": true
         }
       }
     },
     "486": {
       "titleHash": "8aba1cbe",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-11T04:35:37.093Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "487": {
       "titleHash": "2b75aa2f",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-11T04:35:37.093Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {}
     },
     "488": {
       "titleHash": "e27e2088",
-      "issuesKey": "973b7a1f6c9b",
-      "updatedAt": "2026-11-12T04:35:29.384Z",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
       "pairs": {
         "6": {
-          "sicherheit": 0.7,
-          "begruendung": "Die Änderung führt Teilabwesenheiten als Zeiträume mit Markierung „mit Teilabwesenheit“ ein.",
+          "sicherheit": 0.55,
+          "begruendung": "Entschuldigungen als Zeiträume mit Uhrzeit führen eine Markierung für Teilabwesenheiten ein.",
           "accepted": true
         },
         "8": {
           "sicherheit": 0.85,
-          "begruendung": "Teilnehmer können Entschuldigungen innerhalb einer Frist rückwirkend nachreichen.",
+          "begruendung": "Teilnehmer können Entschuldigungen innerhalb einer Frist rückwirkend melden.",
           "accepted": true
         },
         "24": {
-          "sicherheit": 0.85,
+          "sicherheit": 0.9,
           "begruendung": "Versäumte Abgaben an entschuldigten Tagen werden im Batch getrennt als „versäumt, entschuldigt“ geführt.",
           "accepted": true
         }
       }
+    },
+    "490": {
+      "titleHash": "010fbacd",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
+    },
+    "491": {
+      "titleHash": "1ffd80a5",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
+    },
+    "492": {
+      "titleHash": "ee3e6922",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
+    },
+    "495": {
+      "titleHash": "244aab0b",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
+    },
+    "496": {
+      "titleHash": "4e2de23d",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
     }
   },
-  "issuesKey": "973b7a1f6c9b"
+  "issuesKey": "f4dd7e68937d"
 }
