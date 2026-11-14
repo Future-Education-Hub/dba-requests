@@ -1,23 +1,5 @@
 {
   "prs": {
-    "405": {
-      "titleHash": "89c819bf",
-      "issuesKey": "f4dd7e68937d",
-      "updatedAt": "2026-11-13T04:35:59.493Z",
-      "pairs": {}
-    },
-    "406": {
-      "titleHash": "1b788de1",
-      "issuesKey": "f4dd7e68937d",
-      "updatedAt": "2026-11-13T04:35:59.493Z",
-      "pairs": {
-        "18": {
-          "sicherheit": 0.9,
-          "begruendung": "Verkürzt die Zeit vom Call bis zum fertigen Angebot auf höchstens drei Minuten.",
-          "accepted": true
-        }
-      }
-    },
     "407": {
       "titleHash": "21944eee",
       "issuesKey": "f4dd7e68937d",
@@ -629,6 +611,30 @@
       "titleHash": "4e2de23d",
       "issuesKey": "f4dd7e68937d",
       "updatedAt": "2026-11-13T04:35:20.813Z",
+      "pairs": {}
+    },
+    "497": {
+      "titleHash": "18e3d15c",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-14T04:35:15.652Z",
+      "pairs": {
+        "18": {
+          "sicherheit": 0.7,
+          "begruendung": "Die Änderung setzt Feedback des Sales-Teams zum Angebot um, etwa ein Ortsverzeichnis, sachliche Texte und einen Bearbeitungsmodus, und erhöht damit die Qualität der Angebote.",
+          "accepted": true
+        }
+      }
+    },
+    "498": {
+      "titleHash": "aa615348",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-14T04:35:15.652Z",
+      "pairs": {}
+    },
+    "499": {
+      "titleHash": "d77e680c",
+      "issuesKey": "f4dd7e68937d",
+      "updatedAt": "2026-11-14T04:35:15.652Z",
       "pairs": {}
     }
   },

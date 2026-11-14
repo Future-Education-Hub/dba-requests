@@ -1498,5 +1498,11 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-11-12T04:35:34.844Z",
     "pr": 488
+  },
+  "pr:def77270a0cd890604e4": {
+    "text": "Angebote lassen sich jetzt direkt im Dokument bearbeiten, Orte per Postleitzahl finden, und Texte sind sachlicher, mit Fettdruck und passender Berufserfahrung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-14T04:35:17.473Z",
+    "pr": 497
   }
 }
