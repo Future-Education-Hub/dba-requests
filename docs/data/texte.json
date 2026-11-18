@@ -1504,5 +1504,11 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-11-14T04:35:17.473Z",
     "pr": 497
+  },
+  "pr:2f6309b729a0569fd743": {
+    "text": "Im Angebot erscheint der Maßnahmebeginn jetzt automatisch, und alle im Vertrieb können Angebote ihrer Organisation speichern und Kompetenzen bewerten.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-18T04:35:28.171Z",
+    "pr": 437
   }
 }
