@@ -1,11 +1,5 @@
 {
   "prs": {
-    "415": {
-      "titleHash": "18cf762b",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
     "416": {
       "titleHash": "b8a0a45a",
       "issuesKey": "84b7bc505ecb",
@@ -617,6 +611,30 @@
       "titleHash": "7fc01c52",
       "issuesKey": "84b7bc505ecb",
       "updatedAt": "2026-11-18T04:35:00.783Z",
+      "pairs": {}
+    },
+    "506": {
+      "titleHash": "4eb43be1",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-19T04:35:24.922Z",
+      "pairs": {
+        "26": {
+          "sicherheit": 0.97,
+          "begruendung": "Der PR setzt Kalender-Trigger (Wochentag, Tag im Monat, Uhrzeit) für Automationen um und verweist ausdrücklich auf dba-requests#26.",
+          "accepted": true
+        }
+      }
+    },
+    "508": {
+      "titleHash": "5ba2aaae",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-19T04:35:24.922Z",
+      "pairs": {}
+    },
+    "509": {
+      "titleHash": "3eb5b3f5",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-19T04:35:24.922Z",
       "pairs": {}
     }
   },

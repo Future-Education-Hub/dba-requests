@@ -1510,5 +1510,53 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-11-18T04:35:28.171Z",
     "pr": 437
+  },
+  "f9fe0051c2041e6f753f": {
+    "text": "Umfragen lassen sich künftig nach festen Kalenderzeiten wie Wochentag, Monatstag oder einmaligem Datum verschicken, auch gezielt an ganze Kursgruppen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:07.412Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 1
+  },
+  "f85594228d5bdc86c944": {
+    "text": "Umfrage-Automationen berechnen ihre Termine nach Kalenderregeln oder Kurstagen, überspringen freie Tage und zeigen vorab, wann die nächste Runde startet.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:11.851Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 2
+  },
+  "cca27abdbbdbe181d303": {
+    "text": "Geplante Umfragen gehen nun automatisch zur festgelegten Uhrzeit an die aktiven Teilnehmenden, spätestens nach einer Viertelstunde und nie doppelt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:16.331Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 3
+  },
+  "aa3513f5c8f2039679c7": {
+    "text": "Sobald eine neue Runde einer wiederkehrenden Umfrage startet, verschwinden ältere unbeantwortete Runden, sodass Teilnehmende nur noch die aktuelle ausfüllen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:18.013Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 4
+  },
+  "c3d6c0ee39454371baaa": {
+    "text": "Umfragen lassen sich jetzt nach festen Terminen oder Kurstagen planen, gezielt an einzelne oder alle laufenden Kurse richten und in der Übersicht klar nachlesen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:19.595Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 5
+  },
+  "840226182e366978c6c0": {
+    "text": "Das Team sichert die Qualität des Vorhabens ab, damit zeitgesteuerte Umfragen zuverlässig zum richtigen Termin bei den richtigen Teilnehmenden ankommen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:21.036Z",
+    "slug": "automation-calendar-triggers",
+    "phase": 6
+  },
+  "pr:713a299b17cccde117a6": {
+    "text": "Umfragen lassen sich jetzt automatisch zu festen Terminen oder an bestimmten Kurstagen an alle oder an eine ausgewählte Kursgruppe verschicken.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-19T04:35:29.196Z",
+    "pr": 506
   }
 }
