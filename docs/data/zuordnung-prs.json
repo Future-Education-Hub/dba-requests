@@ -1,59 +1,5 @@
 {
   "prs": {
-    "416": {
-      "titleHash": "b8a0a45a",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
-    "417": {
-      "titleHash": "92dd3f24",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
-    "418": {
-      "titleHash": "b7b3788d",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
-    "420": {
-      "titleHash": "070886c0",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
-    "422": {
-      "titleHash": "5e78f26f",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {
-        "18": {
-          "sicherheit": 0.55,
-          "begruendung": "Die Call-Analyse startet wieder und entblockiert damit die Angebots-Kette für DBA-Calls.",
-          "accepted": true
-        }
-      }
-    },
-    "423": {
-      "titleHash": "c510c80a",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {}
-    },
-    "424": {
-      "titleHash": "4777c804",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {
-        "18": {
-          "sicherheit": 0.6,
-          "begruendung": "Der Maßnahmebeginn wird aus dem HubSpot-Batch abgeleitet, damit er in Angeboten nicht mehr fehlt.",
-          "accepted": true
-        }
-      }
-    },
     "425": {
       "titleHash": "e37be16e",
       "issuesKey": "84b7bc505ecb",
@@ -635,6 +581,36 @@
       "titleHash": "3eb5b3f5",
       "issuesKey": "84b7bc505ecb",
       "updatedAt": "2026-11-19T04:35:24.922Z",
+      "pairs": {}
+    },
+    "510": {
+      "titleHash": "bc02068f",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-20T04:35:39.502Z",
+      "pairs": {
+        "12": {
+          "sicherheit": 0.97,
+          "begruendung": "Die Umfrage-Auswertung mit Batch-Vergleich setzt die geforderte Batch-Auswertung um, und der PR verweist ausdrücklich auf dba-requests#12.",
+          "accepted": true
+        }
+      }
+    },
+    "511": {
+      "titleHash": "07b9601c",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-20T04:35:39.502Z",
+      "pairs": {}
+    },
+    "512": {
+      "titleHash": "00b8a318",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-20T04:35:39.502Z",
+      "pairs": {}
+    },
+    "513": {
+      "titleHash": "12131abe",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-20T04:35:39.502Z",
       "pairs": {}
     }
   },

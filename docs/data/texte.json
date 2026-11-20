@@ -1558,5 +1558,123 @@
     "model": "claude-opus-5-5",
     "createdAt": "2026-11-19T04:35:29.196Z",
     "pr": 506
+  },
+  "7071bb63f62e096b972c": {
+    "text": "Beim Bearbeiten einer Umfrage bleiben bereits abgegebene Antworten erhalten, und Fragen lassen sich nach den ersten Beantwortungen nur noch sprachlich korrigieren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:11.942Z",
+    "slug": "survey-analytics",
+    "phase": 1
+  },
+  "4e39ee365c158688d8f2": {
+    "text": "Umfragen lassen sich jetzt kopieren und archivieren, und Umfragen mit Antworten können nicht mehr gelöscht werden, sodass ihre Auswertung erhalten bleibt.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:16.037Z",
+    "slug": "survey-analytics",
+    "phase": 2
+  },
+  "aaa9971ddf499e122f67": {
+    "text": "Ab jetzt wird bei jeder zugewiesenen Umfrage festgehalten, zu welcher Gruppe und Skill-Version sie gehört, sodass sich Ergebnisse später sauber vergleichen lassen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:17.543Z",
+    "slug": "survey-analytics",
+    "phase": 3
+  },
+  "ff6ec04f6714bbcb04da": {
+    "text": "Beim Absenden einer Umfrage werden alle Antworten auf einmal sicher gespeichert und automatisch der richtigen Gruppe zugeordnet, damit die Auswertung verlässlich ist.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:18.544Z",
+    "slug": "survey-analytics",
+    "phase": 4
+  },
+  "9a3e16133905d38a3e5b": {
+    "text": "Berechtigte Mitarbeitende können einzelne abgeschlossene Umfrageantworten mit Begründung aus der Auswertung ausschließen und später nachvollziehbar wieder aufnehmen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:19.706Z",
+    "slug": "survey-analytics",
+    "phase": 5
+  },
+  "3c571e9384836ec82abf": {
+    "text": "Umfrage-Antworten werden laufend zu Zahlen je Gruppe, Kurs und Tag zusammengefasst, damit Auswertungen schnell laden und verlässliche Werte zeigen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:21.171Z",
+    "slug": "survey-analytics",
+    "phase": 6
+  },
+  "c23832433bbc868c4525": {
+    "text": "Verantwortliche sehen nun schnell und verlässlich Kennzahlen, Vergleiche nach Gruppe oder Monat, einzelne Antworten und Exporte ihrer Umfragen, geschützt vor fremdem Zugriff.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:22.909Z",
+    "slug": "survey-analytics",
+    "phase": 7
+  },
+  "7bedc3ecb0ee92a7ed74": {
+    "text": "Nutzerinnen und Nutzer sehen zu jeder Umfrage eine Auswertung mit Rücklauf, Mittelwerten und Antworten je Frage, filterbar nach Gruppe und Zeitraum und exportierbar.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:24.283Z",
+    "slug": "survey-analytics",
+    "phase": 8
+  },
+  "e6cfcdfa791bdb2b5a3a": {
+    "text": "Umfrageergebnisse lassen sich jetzt nach Gruppen und Monaten vergleichen, bis zur einzelnen Antwort nachverfolgen und unpassende Antworten begründet aus der Auswertung nehmen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:25.464Z",
+    "slug": "survey-analytics",
+    "phase": 9
+  },
+  "5744c90cf90efa5ad57a": {
+    "text": "Die alte Übersicht der Umfrage-Punktzahlen entfällt, und das Stimmungsbild zeigt nun verlässliche Werte auf der vertrauten Skala von 1 bis 5 mit Vergleich zum Vormonat.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:26.889Z",
+    "slug": "survey-analytics",
+    "phase": 10
+  },
+  "dc70a5d24d886373a2a6": {
+    "text": "Das Team sichert die Qualität des Vorhabens ab, damit Umfragen, Auswertungen und Batch-Vergleiche verlässlich funktionieren und keine Antworten verloren gehen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:28.788Z",
+    "slug": "survey-analytics",
+    "phase": 11
+  },
+  "a02e132c51197dfd0217": {
+    "text": "Über der Umfrage-Liste zeigen Karten je Bereich den Durchschnitt der letzten 60 Tage im Vergleich zu davor, und Umfragen lassen sich nach Bereich vergleichen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:30.034Z",
+    "slug": "survey-analytics",
+    "phase": 12
+  },
+  "5a613ca886bfb85459d2": {
+    "text": "Nutzerinnen und Nutzer sehen jetzt, wie sich die Bewertungen je Bereich und je Umfrage über die letzten zwölf Monate entwickelt haben, und können einzelne Bereiche hervorheben.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:31.730Z",
+    "slug": "survey-analytics",
+    "phase": 13
+  },
+  "ecf360bf59184bf7ce56": {
+    "text": "In den Verläufen der Umfrage-Auswertung lässt sich der Zeitraum frei wählen, und per Antippen oder Pfeiltasten zeigt jeder Punkt Datum, Mittelwert und Antwortzahl.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:33.359Z",
+    "slug": "survey-analytics",
+    "phase": 14
+  },
+  "b87b1d89c79abe231d05": {
+    "text": "Sie können nun mehrere Kurs-Durchgänge auswählen und deren Umfrageergebnisse im zeitlichen Verlauf nach Kurswoche oder Kalender direkt vergleichen.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:35.004Z",
+    "slug": "survey-analytics",
+    "phase": 15
+  },
+  "8ef56f1d394f629c386c": {
+    "text": "Auf der Seite einer Kohorte gibt es jetzt einen eigenen Bereich mit Rücklauf und Durchschnittsbewertung aller Umfragen, per Klick geht es direkt zur Detailauswertung.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:36.187Z",
+    "slug": "survey-analytics",
+    "phase": 16
+  },
+  "pr:feeaf5d7189f44ba67a5": {
+    "text": "Jede Umfrage hat jetzt eine eigene Auswertung mit Filtern, Verlauf und Vergleich nach Batch, und beim Bearbeiten gehen keine Antworten mehr verloren.",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-11-20T04:35:41.261Z",
+    "pr": 510
   }
 }
