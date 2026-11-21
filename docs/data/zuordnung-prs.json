@@ -1,29 +1,5 @@
 {
   "prs": {
-    "425": {
-      "titleHash": "e37be16e",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {
-        "19": {
-          "sicherheit": 0.5,
-          "begruendung": "Übergangslösung für den Stellenmarkt mit zentralem Betrieb und Suchbegriffen pro Organisation als Schritt zur Neuausrichtung.",
-          "accepted": true
-        }
-      }
-    },
-    "426": {
-      "titleHash": "d6fc5879",
-      "issuesKey": "84b7bc505ecb",
-      "updatedAt": "2026-11-18T04:35:25.943Z",
-      "pairs": {
-        "18": {
-          "sicherheit": 0.75,
-          "begruendung": "Erweitert den Angebotsprozess um Kursdauer, Matrix-Befüllung in der KI-Kette und bessere Job-Pool-Auswahl und verbessert so die Angebotsqualität.",
-          "accepted": true
-        }
-      }
-    },
     "427": {
       "titleHash": "29d2c2aa",
       "issuesKey": "84b7bc505ecb",
@@ -611,6 +587,18 @@
       "titleHash": "12131abe",
       "issuesKey": "84b7bc505ecb",
       "updatedAt": "2026-11-20T04:35:39.502Z",
+      "pairs": {}
+    },
+    "514": {
+      "titleHash": "8a4e4831",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-21T04:34:56.768Z",
+      "pairs": {}
+    },
+    "515": {
+      "titleHash": "8329212c",
+      "issuesKey": "84b7bc505ecb",
+      "updatedAt": "2026-11-21T04:34:56.768Z",
       "pairs": {}
     }
   },
